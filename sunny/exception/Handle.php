@@ -19,7 +19,7 @@ class Handle
 {
 
     protected $ignoreReport = [
-        '\\think\\exception\\HttpException',
+        '\\sunny\\exception\\HttpException',
     ];
 
     /**

@@ -199,9 +199,7 @@ class Loader
         spl_autoload_register($autoload ?: 'sunny\\Loader::autoload', true, true);
         // 注册命名空间定义
         self::addNamespace([
-            'think'    => LIB_PATH . 'think' . DS,
-            'behavior' => LIB_PATH . 'behavior' . DS,
-            'traits'   => LIB_PATH . 'traits' . DS,
+            'sunny'    => LIB_PATH . DS,
         ]);
         // 加载类库映射文件
         if (is_file(RUNTIME_PATH . 'classmap' . EXT)) {
