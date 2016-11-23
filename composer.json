@@ -1,0 +1,6 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "lexpress/doctrine1": "^1.3"
+    }
+}
