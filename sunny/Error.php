@@ -11,10 +11,6 @@
 
 namespace sunny;
 
-use sunny\exception\ErrorException;
-use sunny\exception\Handle;
-use sunny\exception\ThrowableError;
-
 class Error
 {
     /**
@@ -36,15 +32,12 @@ class Error
     public static function appException($e)
     {
         if (!$e instanceof \Exception) {
-            $e = new ThrowableError($e);
+            $e = new \Exception($e);
         }
-
-        self::getExceptionHandler()->report($e);
         if (IS_CLI) {
-            //当前是命令行时，只是输出内容到命令行
-            echo $e->getMessage().PHP_EOL;die;
+           echo $e->getMessage().PHP_EOL;die;
         } else {
-            self::getExceptionHandler()->render($e)->send();
+            echo $e->getMessage();die;
         }
     }
 
@@ -55,16 +48,15 @@ class Error
      * @param  string  $errfile 出错的文件
      * @param  integer $errline 出错行号
      * @param array    $errcontext
-     * @throws ErrorException
      */
     public static function appError($errno, $errstr, $errfile = '', $errline = 0, $errcontext = [])
     {
-        $exception = new ErrorException($errno, $errstr, $errfile, $errline, $errcontext);
+        $exception = new \Exception($errno, $errstr, $errfile, $errline, $errcontext);
         if (error_reporting() & $errno) {
             // 将错误信息托管至 think\exception\ErrorException
             throw $exception;
         } else {
-            self::getExceptionHandler()->report($exception);
+            echo $exception->getMessage();die;
         }
     }
 
@@ -75,13 +67,10 @@ class Error
     {
         if (!is_null($error = error_get_last()) && self::isFatal($error['type'])) {
             // 将错误信息托管至think\ErrorException
-            $exception = new ErrorException($error['type'], $error['message'], $error['file'], $error['line']);
+            $exception = new \Exception($error['type'], $error['message'], $error['file'], $error['line']);
 
             self::appException($exception);
         }
-
-        // 写入日志
-        Log::save();
     }
 
     /**
@@ -95,23 +84,4 @@ class Error
         return in_array($type, [E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_PARSE]);
     }
 
-    /**
-     * Get an instance of the exception handler.
-     *
-     * @return Handle
-     */
-    public static function getExceptionHandler()
-    {
-        static $handle;
-        if (!$handle) {
-            // 异常处理handle
-            $class = Config::get('exception_handle');
-            if ($class && class_exists($class) && is_subclass_of($class, "\\sunny\\exception\\Handle")) {
-                $handle = new $class;
-            } else {
-                $handle = new Handle;
-            }
-        }
-        return $handle;
-    }
 }
