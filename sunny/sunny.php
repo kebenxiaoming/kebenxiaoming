@@ -18,15 +18,15 @@ defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(APP_PATH)) . DS);
 defined('EXTEND_PATH') or define('EXTEND_PATH', ROOT_PATH . 'extend' . DS);
 defined('VENDOR_PATH') or define('VENDOR_PATH', ROOT_PATH . 'vendor' . DS);
 defined('RUNTIME_PATH') or define('RUNTIME_PATH', ROOT_PATH . 'runtime' . DS);
-defined('LOG_PATH') or define('LOG_PATH', RUNTIME_PATH . 'log' . DS);
-defined('TEMP_PATH') or define('TEMP_PATH', RUNTIME_PATH . 'temp' . DS);
-defined('CONF_PATH') or define('CONF_PATH', APP_PATH); // 配置文件目录
+defined('CACHE_PATH') or define('CACHE_PATH', ROOT_PATH . 'cache' . DS);
+defined('CONF_PATH') or define('CONF_PATH', ROOT_PATH.'config'.DS); // 配置文件目录
 defined('CONF_EXT') or define('CONF_EXT', EXT); // 配置文件后缀
 defined('ENV_PREFIX') or define('ENV_PREFIX', 'PHP_'); // 环境变量的配置前缀
 
 // 载入Loader类
 require SUNNY_PATH . 'Loader.php';
 
+defined('APP_DEBUG') or define('APP_DEBUG', true); // 是否开启调试
 // 环境常量
 define('IS_CLI', PHP_SAPI == 'cli' ? true : false);
 define('IS_WIN', strpos(PHP_OS, 'WIN') !== false);
@@ -50,3 +50,8 @@ if (is_file(ROOT_PATH . '.env')) {
 \sunny\Loader::register();
 // 注册错误和异常处理机制
 \sunny\Error::register();
+//载入根目录的配置
+\sunny\Config::set(include CONF_PATH."config.php");
+//路由解析
+$Router=new \sunny\Router();
+$Router->dispatch();

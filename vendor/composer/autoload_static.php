@@ -44,16 +44,6 @@ class ComposerStaticInitd532ce387bc77043cfe9ebd0959f4101
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'D' => 
-        array (
-            'Doctrine_' => 
-            array (
-                0 => __DIR__ . '/..' . '/lexpress/doctrine1/lib',
-            ),
-        ),
-    );
-
     public static $classMap = array (
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
@@ -229,7 +219,6 @@ class ComposerStaticInitd532ce387bc77043cfe9ebd0959f4101
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitd532ce387bc77043cfe9ebd0959f4101::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitd532ce387bc77043cfe9ebd0959f4101::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitd532ce387bc77043cfe9ebd0959f4101::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitd532ce387bc77043cfe9ebd0959f4101::$classMap;
 
         }, null, ClassLoader::class);

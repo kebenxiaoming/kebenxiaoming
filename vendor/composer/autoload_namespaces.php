@@ -6,5 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Doctrine_' => array($vendorDir . '/lexpress/doctrine1/lib'),
 );
