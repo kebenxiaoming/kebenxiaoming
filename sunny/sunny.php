@@ -52,6 +52,10 @@ if (is_file(ROOT_PATH . '.env')) {
 \sunny\Error::register();
 //载入根目录的配置
 \sunny\Config::set(include CONF_PATH."config.php");
+require APP_PATH."home/controller/base".EXT;
+require APP_PATH."home/controller/index".EXT;
+$index=new \app\home\controller\index();
+print_r($index);die;
 //路由解析
 $Router=new \sunny\Router();
 $Router->dispatch();
