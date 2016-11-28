@@ -12,16 +12,12 @@ class Router{
     //请求类
     protected $request;
     //整个路由路径
-    protected static $module;
-    protected static $controller;
-    protected static $action;
+    public static $module;
+    public static $controller;
+    public static $action;
     public function __construct()
     {
         $this->request=new Request();
-    }
-
-    public function dispatch()
-    {
         self::$module=$this->request->input('GET','g');
         self::$controller=$this->request->input('GET','c');
         self::$action=$this->request->input('GET','a');
@@ -34,8 +30,12 @@ class Router{
         if(empty(self::$action)){
             self::$action='index';
         }
-        $classname='\\app\\'.self::$module.'\\controller\\'.self::$controller;
+    }
 
+    public function dispatch()
+    {
+        //引入新增的文件
+        $classname='\\app\\'.self::$module.'\\controller\\'.self::$controller;
         self::invokeMethod(array($classname,self::$action));
     }
 
@@ -46,7 +46,7 @@ class Router{
      * @param array        $vars   变量
      * @return mixed
      */
-    public static function invokeMethod($method)
+    public static function invokeMethod($method,$args=[])
     {
         if (is_array($method)) {
             $class   = is_object($method[0]) ? $method[0] : new $method[0]();
@@ -55,6 +55,7 @@ class Router{
             // 静态方法
             $reflect = new \ReflectionMethod($method);
         }
-        return $reflect;
+        return $reflect->invokeArgs(isset($class) ? $class : null, $args);
     }
+
 }

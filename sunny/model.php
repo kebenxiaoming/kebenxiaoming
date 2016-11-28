@@ -8,7 +8,7 @@
  */
 namespace sunny;
 
-class db{
+class model{
     protected $server = '';
     protected $port ="";
     protected $username = '';
@@ -19,7 +19,7 @@ class db{
     // Optional
     protected $charset = 'utf8';
 
-    public function __construct($database){
+    public function __construct($database=""){
         try {
             $this->server=Config::get('hostname');
             $this->port=Config::get('hostport');
@@ -28,11 +28,11 @@ class db{
             $this->database_name=Config::get('database');
 
             $this->pdo=null;
-            $this->pdo = new PDO('mysql:host=' . $this->server . ';port='.$this->port.';dbname=' . $this->database_name, $this->username,$this->password);
+            $this->pdo = new \PDO('mysql:host=' . $this->server . ';port='.$this->port.';dbname=' . $this->database_name, $this->username,$this->password);
             $this->pdo->exec('SET NAMES \'' . $this->charset . '\'');
 
         }
-        catch (PDOException $e) {
+        catch (\PDOException $e) {
             echo $e->getMessage();
         }
     }

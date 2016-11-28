@@ -42,7 +42,6 @@ class Loader
                 }
             }
         }
-
         if ($file = self::findFile($class)) {
 
             // Win环境严格区分大小写
@@ -200,6 +199,7 @@ class Loader
         // 注册命名空间定义
         self::addNamespace([
             'sunny'    => SUNNY_PATH . DS,
+            'app'      => APP_PATH,
         ]);
         // 加载类库映射文件
         if (is_file(RUNTIME_PATH . 'classmap' . EXT)) {
@@ -240,3 +240,4 @@ function __require_file($file)
 {
     return require $file;
 }
+
