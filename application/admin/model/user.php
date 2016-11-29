@@ -14,7 +14,7 @@ class user extends Model
 {
     public function getList()
     {
-        $result=$this->query("select * from ".Config::get('prefix')."user")->fetchAll();
+        $result=$this->select(Config::get("prefix").__CLASS__,"*");
         print_r($result);
     }
 }

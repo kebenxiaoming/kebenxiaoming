@@ -19,6 +19,6 @@ class index extends base
 
     public function test(){
         $this->assign("hehe","aaa");
-        $this->success("hehe",url("index",array("aa"=>"pp")));
+        $this->success("hehe",url("index/index",array("tt"=>"pp","gg"=>11)));
     }
 }

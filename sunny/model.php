@@ -277,15 +277,14 @@ class model
             $table = $match[1] . ' ' . $join_array[ $match[3] ] . ' JOIN ' . $match[4] . ' ON ';
             $where_clause = str_replace(' WHERE ', '', $where_clause);
         }
-
         $query = $this->query('SELECT ' . (
             is_array($columns) ? implode(', ', $columns) : $columns
             ) . ' FROM ' . $table . $where_clause);
-        return $query ? $query->fetchAll(PDO::FETCH_ASSOC)
+        return $query ? $query->fetchAll(\PDO::FETCH_ASSOC)
             : false;
 
         return $query ? $query->fetchAll(
-            (is_string($columns) && $columns != '*') ? PDO::FETCH_COLUMN : PDO::FETCH_ASSOC
+            (is_string($columns) && $columns != '*') ? \PDO::FETCH_COLUMN : \PDO::FETCH_ASSOC
         ) : false;
 
     }
@@ -430,11 +429,11 @@ class model
     public function info()
     {
         return array(
-            'server' => $this->pdo->getAttribute(PDO::ATTR_SERVER_INFO),
-            'client' => $this->pdo->getAttribute(PDO::ATTR_CLIENT_VERSION),
-            'driver' => $this->pdo->getAttribute(PDO::ATTR_DRIVER_NAME),
-            'version' => $this->pdo->getAttribute(PDO::ATTR_SERVER_VERSION),
-            'connection' => $this->pdo->getAttribute(PDO::ATTR_CONNECTION_STATUS)
+            'server' => $this->pdo->getAttribute(\PDO::ATTR_SERVER_INFO),
+            'client' => $this->pdo->getAttribute(\PDO::ATTR_CLIENT_VERSION),
+            'driver' => $this->pdo->getAttribute(\PDO::ATTR_DRIVER_NAME),
+            'version' => $this->pdo->getAttribute(\PDO::ATTR_SERVER_VERSION),
+            'connection' => $this->pdo->getAttribute(\PDO::ATTR_CONNECTION_STATUS)
         );
     }
 }
