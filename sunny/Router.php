@@ -8,7 +8,8 @@
  */
 namespace sunny;
 
-class Router{
+class Router
+{
     //请求类
     protected $request;
     //整个路由路径

@@ -8,7 +8,8 @@
  */
 namespace sunny;
 
-class Request{
+class Request
+{
     // 全局过滤规则
     protected $filter;
     // php://input

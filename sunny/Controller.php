@@ -8,17 +8,20 @@
  */
 namespace sunny;
 
-class controller{
+class controller
+{
     //自定义一个模板变量用来存储传来的数据
     public $vars=array();
 
-    public function assign($name,$data){
+    public function assign($name,$data)
+    {
         if(!empty($name)) {
             $this->vars = array_merge($this->vars, array($name => $data));
         }
     }
 
-    public function display($tpl=""){
+    public function display($tpl="")
+    {
         if(empty($tpl)){
             $tpl=Router::$controller.'/'.Router::$action;
         }
@@ -26,15 +29,18 @@ class controller{
         require $realtpl;
     }
 
-    public function success($message,$url="",$status=1){
+    public function success($message,$url="",$status=1)
+    {
         $this->redirect($message,$status,$url);
     }
 
-    public function error($message,$url="",$status=0){
+    public function error($message,$url="",$status=0)
+    {
         $this->redirect($message,$status,$url);
     }
 
-    public function redirect($message="",$status=0,$url="",$wait=1){
+    public function redirect($message="",$status=0,$url="",$wait=1)
+    {
         $msg=$message;
         $code=$status;
         if(empty($url)) {

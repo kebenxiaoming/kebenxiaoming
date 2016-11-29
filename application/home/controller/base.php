@@ -9,6 +9,7 @@
 namespace app\home\controller;
 use sunny\Controller;
 
-class base extends Controller{
+class base extends Controller
+{
 
 }

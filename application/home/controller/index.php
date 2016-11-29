@@ -8,8 +8,8 @@
  */
 namespace app\home\controller;
 
-class index extends base{
-
+class index extends base
+{
     public function index()
     {
         model('user')->getList();

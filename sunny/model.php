@@ -8,7 +8,8 @@
  */
 namespace sunny;
 
-class model{
+class model
+{
     protected $server = '';
     protected $port ="";
     protected $username = '';
@@ -19,7 +20,8 @@ class model{
     // Optional
     protected $charset = 'utf8';
 
-    public function __construct($database=""){
+    public function __construct($database="")
+    {
         try {
             $this->server=Config::get('hostname');
             $this->port=Config::get('hostport');

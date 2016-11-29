@@ -8,7 +8,8 @@
  */
 namespace app\admin\controller;
 
-class index extends base{
+class index extends base
+{
 
     public function index()
     {
@@ -17,7 +18,8 @@ class index extends base{
         $this->display();
     }
 
-    public function test(){
+    public function test()
+    {
         $this->assign("hehe","aaa");
         $this->success("hehe",url("index/index"));
     }
