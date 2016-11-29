@@ -34,8 +34,18 @@ if (!function_exists('url')) {
     function url($url = '', $vars = '')
     {
         $new=explode("/",$url);
-        if(empty($new)){
-           throw new Exception("输入有误，规则必须是类似index/index这种");
+        if(empty($new)||count($new)<2){
+           throw new Exception("输入有误，路由的方法url的输入规则必须是类似index/index这种");
+        }
+        $newvars="";
+        if(!empty($vars)&&is_array($vars)){
+            foreach($vars as $k=>$val){
+                $newvars.="&".$k."=".strval($val);
+            }
+        }
+        if(!empty($newvars))
+        {
+            return "index.php?g=".Router::$module."&c=".$new[0]."&a=".$new[1].$newvars;
         }
         return "index.php?g=".Router::$module."&c=".$new[0]."&a=".$new[1];
     }
