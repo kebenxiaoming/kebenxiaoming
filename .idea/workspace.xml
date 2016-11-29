@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9089831d-bb8b-4da7-a718-eebcf8003c8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9089831d-bb8b-4da7-a718-eebcf8003c8e" name="Default" comment="" />
     <ignored path="kebenxiaoming.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -43,18 +41,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sunny/helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-              <folding>
-                <element signature="e#6#99#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sunny.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sunny/sunny.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/model/user.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -91,6 +77,16 @@
                 <element signature="e#127#143#0#PHP" expanded="true" />
                 <marker date="1480398734833" expanded="true" signature="250:293" ph="select * fro... ${Config::get('prefix')}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sunny/helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -289,11 +285,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\kebenxiaoming\sunny" />
       <recent name="D:\wamp64\www\kebenxiaoming\application\admin\view" />
       <recent name="D:\wamp64\www\kebenxiaoming\application\admin\model" />
       <recent name="D:\wamp64\www\kebenxiaoming\application\admin\controller" />
       <recent name="D:\wamp64\www\kebenxiaoming\sunny\tpl" />
-      <recent name="D:\wamp64\www\kebenxiaoming\application\home\view\index" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp64\www\kebenxiaoming\public\images" />
@@ -353,18 +349,18 @@
       <workItem from="1479949793934" duration="18237000" />
       <workItem from="1480295443312" duration="8755000" />
       <workItem from="1480325661909" duration="315000" />
-      <workItem from="1480382491440" duration="10922000" />
+      <workItem from="1480382491440" duration="10977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49031000" />
+    <option name="totallyTimeSpent" value="49086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26609442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26609442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -678,16 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sunny/Router.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -742,6 +728,14 @@
             <element signature="e#127#143#0#PHP" expanded="true" />
             <marker date="1480398734833" expanded="true" signature="250:293" ph="select * fro... ${Config::get('prefix')}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
