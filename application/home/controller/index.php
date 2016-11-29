@@ -19,6 +19,6 @@ class index extends base{
 
     public function test(){
         $this->assign("hehe","aaa");
-        $this->display();
+        $this->success("hehe");
     }
 }

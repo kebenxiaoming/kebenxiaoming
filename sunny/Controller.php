@@ -25,4 +25,24 @@ class controller{
         $realtpl=APP_PATH.Router::$module."/view/".$tpl.".php";
         require $realtpl;
     }
+
+    public function success($message,$status=1){
+        $this->redirect($message,$status);
+    }
+
+    public function error($message,$status=0){
+        $this->redirect($message,$status);
+    }
+
+    public function redirect($message="",$status=0,$url="",$wait=1){
+        $msg=$message;
+        $code=$status;
+        if(empty($url)) {
+            $url=$_SERVER['REQUEST_URI'];
+        }else {
+            $url = $url;
+        }
+        $wait=$wait;
+        require SUNNY_PATH."tpl/redirect.php";
+    }
 }
