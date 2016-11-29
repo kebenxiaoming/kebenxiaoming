@@ -54,7 +54,7 @@ if (is_file(ROOT_PATH . '.env')) {
 //载入根目录的配置
 \sunny\Config::set(include CONF_PATH."config.php");
 //载入帮助类
-require SUNNY_PATH."Helper.php";
+require SUNNY_PATH."helper.php";
 //路由解析
 $Router=new \sunny\Router();
 $Router->dispatch();

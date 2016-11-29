@@ -7,8 +7,8 @@
  * Time: 16:22
  */
 namespace app\home\controller;
-use sunny\controller;
+use sunny\Controller;
 
-class base extends controller{
+class base extends Controller{
 
 }
