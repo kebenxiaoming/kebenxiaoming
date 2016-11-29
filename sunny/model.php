@@ -301,24 +301,6 @@ class model{
         return $this->pdo->lastInsertId();
     }
 
-    //为了用户插入单独实现的而方法字段数据
-    public function insertAll($table, $data)
-    {
-        $keys="real_name,user_name,sex,mobile,user_desc,login_time,status,user_group,template";
-        $values = array();
-        foreach ($data as $key => $value)
-        {
-            $value[]=time();
-            $value[]=1;
-            $value[]=3;
-            $value[]="schoolpainting";
-            $values[] = is_array($value) ? "(".$this->data_implode($value,"," ).")" : $value;
-        }
-        print_r('INSERT INTO ' . $table . ' (' . $keys . ') VALUES ' . implode(",",$values));die;
-        $this->exec('INSERT INTO ' . $table . ' (' . $keys . ') VALUES ' . implode(",",$values));
-        return $this->pdo->lastInsertId();
-    }
-
     public function update($table, $data, $where = null)
     {
         $fields = array();

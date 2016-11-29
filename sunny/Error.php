@@ -37,9 +37,12 @@ class Error
         if (IS_CLI) {
            echo $e->getMessage().PHP_EOL;die;
         } else {
-            ob_end_clean();
+            if(!empty(ob_get_contents())){
+                //清空缓存区
+                ob_end_clean();
+            }
             $errorStr =  $e->getMessage();
-            require PUBLIC_PATH."default/error.php";
+            require SUNNY_PATH."tpl/error.php";
             exit;
         }
     }
@@ -65,9 +68,12 @@ class Error
                 self::halt($errorStr);
                 break;
             default:
-                ob_end_clean();
+                if(!empty(ob_get_contents())){
+                    //清空缓存区
+                    ob_end_clean();
+                }
                 $errorStr = "[$errno] $errstr ".$errfile." 第 $errline 行.";
-                require PUBLIC_PATH."default/error.php";
+                require SUNNY_PATH."tpl/error.php";
                 exit;
                 break;
         }
@@ -85,7 +91,6 @@ class Error
                 case E_CORE_ERROR:
                 case E_COMPILE_ERROR:
                 case E_USER_ERROR:
-                    ob_end_clean();
                     self::halt($e);
                     break;
             }
@@ -130,10 +135,12 @@ class Error
             $message        = is_array($error) ? $error['message'] : $error;
             $e['message']   =$message;
         }
-        // 输出异常信息
-        ob_end_clean();
+        if(!empty(ob_get_contents())){
+            //清空缓存区
+            ob_end_clean();
+        }
         $errorStr = $e['message'];
-        require PUBLIC_PATH."default/error.php";
+        require SUNNY_PATH."tpl/error.php";
         exit;
     }
 

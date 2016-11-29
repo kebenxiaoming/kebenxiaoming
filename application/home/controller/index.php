@@ -14,7 +14,6 @@ class index extends base{
     {
         model('user')->getList();
         $this->assign("test","demo");
-        $this->assign("aa","hehe");
         $this->display();
     }
 
