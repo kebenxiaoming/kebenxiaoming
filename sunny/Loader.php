@@ -201,10 +201,6 @@ class Loader
             'sunny'    => SUNNY_PATH . DS,
             'app'      => APP_PATH,
         ]);
-        // 加载类库映射文件
-        if (is_file(RUNTIME_PATH . 'classmap' . EXT)) {
-            self::addClassMap(__include_file(RUNTIME_PATH . 'classmap' . EXT));
-        }
 
         // Composer自动加载支持
         if (is_dir(VENDOR_PATH . 'composer')) {
