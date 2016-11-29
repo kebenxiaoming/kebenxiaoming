@@ -26,12 +26,12 @@ class controller{
         require $realtpl;
     }
 
-    public function success($message,$status=1){
-        $this->redirect($message,$status);
+    public function success($message,$url="",$status=1){
+        $this->redirect($message,$status,$url);
     }
 
-    public function error($message,$status=0){
-        $this->redirect($message,$status);
+    public function error($message,$url="",$status=0){
+        $this->redirect($message,$status,$url);
     }
 
     public function redirect($message="",$status=0,$url="",$wait=1){
