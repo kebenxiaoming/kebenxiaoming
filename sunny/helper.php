@@ -20,7 +20,10 @@ if (!function_exists('model')) {
     {
         //引入新增的文件
         $classname='\\app\\'.Router::$module.'\\'.$layer.'\\'.$name;
-        return new $classname;
+        $model=new $classname;
+        $reflect=new \ReflectionMethod($model,"__construct");
+        $reflect->invokeArgs($model,array($name));
+        return  $model;
     }
 }
 

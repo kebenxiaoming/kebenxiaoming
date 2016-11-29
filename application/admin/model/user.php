@@ -12,9 +12,12 @@ use sunny\Config;
 
 class user extends Model
 {
+    private $tablename="user";
+
     public function getList()
     {
-        $result=$this->select(Config::get("prefix").__CLASS__,"*");
+        $where=array("user_id"=>1);
+        $result=$this->select($this->tablename,"*",$where);
         print_r($result);
     }
 }
