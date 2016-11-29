@@ -127,12 +127,13 @@ class Error
                 $e['trace']     = ob_get_clean();
             } else {
                 $e              = $error;
+                $e['message']=$error['message']."</br>错误位置位于".$error['file'].'的'.$error['line']."行";
             }
             if(IS_CLI){
                 exit(iconv('UTF-8','gbk',$e['message']).PHP_EOL.'FILE: '.$e['file'].'('.$e['line'].')'.PHP_EOL.$e['trace']);
             }
         } else {
-            $message        = is_array($error) ? $error['message'] : $error;
+            $message        = is_array($error) ? $error['message']."</br>错误位置位于".$error['file'].'的'.$error['line']."行" : $error;
             $e['message']   =$message;
         }
         if(!empty(ob_get_contents())){
