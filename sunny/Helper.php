@@ -16,7 +16,7 @@ if (!function_exists('model')) {
      * @param bool      $appendSuffix 是否添加类名后缀
      * @return \sunny\Model
      */
-    function model($name = '', $layer = 'model', $appendSuffix = false)
+    function model($name = '', $layer = 'model')
     {
         //引入新增的文件
         $classname='\\app\\'.Router::$module.'\\'.$layer.'\\'.$name;

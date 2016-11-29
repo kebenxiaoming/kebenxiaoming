@@ -15,7 +15,8 @@ defined('SUNNY_PATH') or define('SUNNY_PATH', __DIR__ . DS);
 
 defined('APP_PATH') or define('APP_PATH', dirname($_SERVER['SCRIPT_FILENAME']) . DS);
 defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(APP_PATH)) . DS);
-defined('EXTEND_PATH') or define('EXTEND_PATH', ROOT_PATH . 'extend' . DS);
+defined('PUBLIC_PATH') or define('PUBLIC_PATH', ROOT_PATH.'public'.DS);
+defined("TPL_PATH") or define("TPL_PATH",SUNNY_PATH."tpl".DS);
 defined('VENDOR_PATH') or define('VENDOR_PATH', ROOT_PATH . 'vendor' . DS);
 defined('RUNTIME_PATH') or define('RUNTIME_PATH', ROOT_PATH . 'runtime' . DS);
 defined('CACHE_PATH') or define('CACHE_PATH', ROOT_PATH . 'cache' . DS);

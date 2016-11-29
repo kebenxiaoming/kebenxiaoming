@@ -37,7 +37,10 @@ class Error
         if (IS_CLI) {
            echo $e->getMessage().PHP_EOL;die;
         } else {
-            echo $e->getMessage();die;
+            ob_end_clean();
+            $errorStr =  $e->getMessage();
+            require PUBLIC_PATH."default/error.php";
+            exit;
         }
     }
 
@@ -62,8 +65,10 @@ class Error
                 self::halt($errorStr);
                 break;
             default:
+                ob_end_clean();
                 $errorStr = "[$errno] $errstr ".$errfile." 第 $errline 行.";
-                echo  $errorStr;exit;
+                require PUBLIC_PATH."default/error.php";
+                exit;
                 break;
         }
     }
@@ -125,8 +130,10 @@ class Error
             $message        = is_array($error) ? $error['message'] : $error;
             $e['message']   =$message;
         }
-        // 包含异常页面模板
-        print_r($e);
+        // 输出异常信息
+        ob_end_clean();
+        $errorStr = $e['message'];
+        require PUBLIC_PATH."default/error.php";
         exit;
     }
 

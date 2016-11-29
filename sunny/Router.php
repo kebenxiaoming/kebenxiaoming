@@ -18,9 +18,9 @@ class Router{
     public function __construct()
     {
         $this->request=new Request();
-        self::$module=$this->request->input('GET','g');
-        self::$controller=$this->request->input('GET','c');
-        self::$action=$this->request->input('GET','a');
+        self::$module=$this->request->input($_GET,'g');
+        self::$controller=$this->request->input($_GET,'c');
+        self::$action=$this->request->input($_GET,'a');
         if(empty(self::$module)){
             self::$module=Config::get('default_module');
         }

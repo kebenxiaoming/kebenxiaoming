@@ -210,9 +210,6 @@ class Loader
         if (is_dir(VENDOR_PATH . 'composer')) {
             require VENDOR_PATH . 'autoload.php';
         }
-
-        // 自动加载extend目录
-        self::$fallbackDirsPsr4[] = rtrim(EXTEND_PATH, DS);
     }
 
     /**

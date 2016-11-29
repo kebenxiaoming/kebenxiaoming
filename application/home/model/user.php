@@ -12,7 +12,7 @@ use sunny\Config;
 
 class user extends model{
     public function getList(){
-        $result=$this->query("select * from ".Config::get('prefix')."user");
-        print_r($result->execute());
+        $result=$this->query("select * from ".Config::get('prefix')."user")->fetchAll();
+        print_r($result);
     }
 }
