@@ -6,7 +6,7 @@
  * Date: 2016/11/24
  * Time: 15:55
  */
-namespace sunny;
+namespace sunny; 
 
 class model{
     protected $server = '';
