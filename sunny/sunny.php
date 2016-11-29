@@ -18,10 +18,7 @@ defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(APP_PATH)) . DS);
 defined('PUBLIC_PATH') or define('PUBLIC_PATH', ROOT_PATH.'public'.DS);
 defined("TPL_PATH") or define("TPL_PATH",SUNNY_PATH."tpl".DS);
 defined('VENDOR_PATH') or define('VENDOR_PATH', ROOT_PATH . 'vendor' . DS);
-defined('RUNTIME_PATH') or define('RUNTIME_PATH', ROOT_PATH . 'runtime' . DS);
-defined('CACHE_PATH') or define('CACHE_PATH', ROOT_PATH . 'cache' . DS);
 defined('CONF_PATH') or define('CONF_PATH', ROOT_PATH.'config'.DS); // 配置文件目录
-defined('CONF_EXT') or define('CONF_EXT', EXT); // 配置文件后缀
 defined('ENV_PREFIX') or define('ENV_PREFIX', 'PHP_'); // 环境变量的配置前缀
 
 // 载入Loader类
