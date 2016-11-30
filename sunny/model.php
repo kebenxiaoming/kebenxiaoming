@@ -338,6 +338,11 @@ class model
     {
         if(is_array($where))
         {
+            //判断该字段是否在表中的字段中
+            $single_condition = array_diff_key($where, $this->getTableInfo());
+            if(!empty($single_condition)){
+                throw new \PDOException("所传条件中的字段在该表中不存在！！");
+            }
             if ($where != array())
             {
                 $this->options['where'] = ' WHERE ' . $this->data_implode($where, '');
@@ -360,7 +365,7 @@ class model
     //limit条件
     public function limit($start,$listrow)
     {
-        if(!empty($start)&&!empty($listrow))
+        if((!empty($start)||$start===0)&&!empty($listrow))
         {
             $this->options['limit'] = ' LIMIT ' . $start.','.$listrow;
         }else{

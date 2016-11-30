@@ -12,7 +12,7 @@ class index extends base
 {
     public function index()
     {
-        print_r(model('module')->order("module_id DESC")->limit(1,3)->select());
+        print_r(model('user')->where(array("module_id"=>1))->limit(0,3)->select());
         print_r(model("")->getLastSql());
     }
 
