@@ -13,7 +13,7 @@ class index extends base
 
     public function index()
     {
-        print_r(model('user')->getList());
+        print_r(model('user')->find(1));
     }
 
     public function test()

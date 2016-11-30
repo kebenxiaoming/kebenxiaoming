@@ -12,7 +12,8 @@ class index extends base
 {
     public function index()
     {
-        print_r(model('user')->select());
+        print_r(model('module')->order("module_id DESC")->limit(1,3)->select());
+        print_r(model("")->getLastSql());
     }
 
     public function test(){

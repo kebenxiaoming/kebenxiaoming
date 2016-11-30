@@ -16,6 +16,8 @@ class Mysql{
     private static $_instance;
     // Optional
     protected $charset = 'utf8';
+    //最后一条Sql
+    protected $lastSql="";
 
     public function __construct()
     {
@@ -49,5 +51,13 @@ class Mysql{
 
     public function getPdo(){
         return $this->pdo;
+    }
+
+    public function setLastSql($sql){
+        $this->lastSql=$sql;
+    }
+
+    public function getLastSql(){
+        return $this->lastSql;
     }
 }

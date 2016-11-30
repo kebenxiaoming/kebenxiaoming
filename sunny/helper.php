@@ -18,12 +18,19 @@ if (!function_exists('model')) {
      */
     function model($name = '', $layer = 'model')
     {
-        //引入新增的文件
-        $classname='\\app\\'.Router::$module.'\\'.$layer.'\\'.$name;
-        $model=new $classname;
-        $reflect=new \ReflectionMethod($model,"__construct");
-        $reflect->invokeArgs($model,array($name));
-        return  $model;
+        if(!empty($name))
+        {
+            //引入新增的文件
+            $classname = '\\app\\' . Router::$module . '\\' . $layer . '\\' . $name;
+            $model = new $classname;
+            $reflect = new \ReflectionMethod($model, "__construct");
+            $reflect->invokeArgs($model, array($name));
+            return $model;
+        }else{
+            $classname = '\\sunny\\Model';
+            $model = new $classname;
+            return $model;
+        }
     }
 }
 

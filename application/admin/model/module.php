@@ -3,13 +3,12 @@
  * Created by sunny.
  * User: sunny
  * For Darling
- * Date: 2016/11/28
- * Time: 11:50
+ * Date: 2016/11/30
+ * Time: 14:48
  */
 namespace app\admin\model;
 use sunny\Model;
 
-class user extends Model
-{
-    
+class Module extends Model{
+
 }

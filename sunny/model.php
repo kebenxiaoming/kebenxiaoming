@@ -20,14 +20,17 @@ class model
     // 事务指令数
     protected $transTimes = 0;
     //当前表的主键
-    protected $pk;
-    //最后一条sql的保存
-    protected $lastSql;
+    protected $pk="id";
+    // 查询表达式参数
+    protected $options          =   array();
+    //mysql的单例
+    protected $mysql=null;
 
     public function __construct($name="")
     {
         //单例模式获取pdo实例
-        $this->pdo=Mysql::getInstance()->getPdo();
+        $this->mysql=Mysql::getInstance();
+        $this->pdo=$this->mysql->getPdo();
         //定义时传入表名
         $this->name=$name;
     }
@@ -320,9 +323,9 @@ class model
             $table = Config::get("prefix") .$table;
         }
         $where_clause = " WHERE ".$this->getPk()."=".$value;
-        $this->lastSql='SELECT ' . (
+        $this->mysql->setLastSql('SELECT ' . (
             is_array($columns) ? implode(', ', $columns) : $columns
-            ) . ' FROM ' . $table . $where_clause;
+            ) . ' FROM ' . $table . $where_clause);
         $query = $this->query('SELECT ' . (
             is_array($columns) ? implode(', ', $columns) : $columns
             ) . ' FROM ' . $table . $where_clause);
@@ -330,8 +333,77 @@ class model
             : false;
 
     }
+    //where条件
+    public function where($where)
+    {
+        if(is_array($where))
+        {
+            if ($where != array())
+            {
+                $this->options['where'] = ' WHERE ' . $this->data_implode($where, '');
+            }
+        }else{
+            $this->options['where'] = ' WHERE ' . $where;
+        }
+        return $this;
+    }
+    //order条件
+    public function order($order)
+    {
+        if(strval($order)) {
+            $this->options['order'] = ' ORDER BY ' . $order;
+        }else{
+            throw new \PDOException("传参不正确，请直接传递使用的排序的字符串！！");
+        }
+        return $this;
+    }
+    //limit条件
+    public function limit($start,$listrow)
+    {
+        if(!empty($start)&&!empty($listrow))
+        {
+            $this->options['limit'] = ' LIMIT ' . $start.','.$listrow;
+        }else{
+            throw new \PDOException("传参不完整，分页参数应该传递起始页和单页数目！！");
+        }
+        return $this;
+    }
+
+    //group条件
+    public function group($group)
+    {
+        if(!empty($group))
+        {
+            $this->options['group'] = ' GROUP BY ' . $group;
+        }else{
+            throw new \PDOException("传参不完整，分组需要传入分组的字段名！！");
+        }
+        return $this;
+    }
+    //组合所有已有的where条件
+    public function combineWhere()
+    {
+        $where="";
+        if(!empty($this->options['where']))
+        {
+            $where.=$this->options['where'];
+        }
+        if(!empty($this->options['group']))
+        {
+            $where.=$this->options['group'];
+        }
+        if(!empty($this->options['order']))
+        {
+            $where.=$this->options['order'];
+        }
+        if(!empty($this->options['limit']))
+        {
+            $where.=$this->options['limit'];
+        }
+        return $where;
+    }
     //加入排序条件
-    public function select($table="", $columns="*", $where = null)
+    public function select($table="", $columns="*")
     {
         if(empty($table))
         {
@@ -343,7 +415,7 @@ class model
         }else {
             $table = Config::get("prefix") .$table;
         }
-        $where_clause = $this->where_clause($where);
+        $where_clause = $this->combineWhere();
 
         preg_match('/([a-zA-Z0-9_-]*)\s*(\[(\<|\>|\>\<|\<\>)\])?\s*([a-zA-Z0-9_-]*)/i', $table, $match);
 
@@ -362,9 +434,9 @@ class model
         $query = $this->query('SELECT ' . (
             is_array($columns) ? implode(', ', $columns) : $columns
             ) . ' FROM ' . $table . $where_clause);
-        $this->lastSql='SELECT ' . (
+        $this->setLastSql('SELECT ' . (
             is_array($columns) ? implode(', ', $columns) : $columns
-            ) . ' FROM ' . $table . $where_clause;
+            ) . ' FROM ' . $table . $where_clause);
         return $query ? $query->fetchAll(\PDO::FETCH_ASSOC)
             : false;
     }
@@ -378,7 +450,7 @@ class model
         {
             $values[] = is_array($value) ? serialize($value) : $value;
         }
-        $this->lastSql='INSERT INTO ' . $table . ' (' . $keys . ') VALUES (' . $this->data_implode(array_values($values), ',') . ')';
+        $this->setLastSql('INSERT INTO ' . $table . ' (' . $keys . ') VALUES (' . $this->data_implode(array_values($values), ',') . ')');
         $this->exec('INSERT INTO ' . $table . ' (' . $keys . ') VALUES (' . $this->data_implode(array_values($values), ',') . ')');
         return $this->pdo->lastInsertId();
     }
@@ -409,13 +481,13 @@ class model
                 }
             }
         }
-        $this->lastSql='UPDATE ' . $table . ' SET ' . implode(',', $fields) . $this->where_clause($where);
+        $this->setLastSql('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $this->where_clause($where));
         return $this->exec('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $this->where_clause($where));
     }
 
     public function delete($table, $where)
     {
-        $this->lastSql='DELETE FROM ' . $table . $this->where_clause($where);
+        $this->setLastSql('DELETE FROM ' . $table . $this->where_clause($where));
         return $this->exec('DELETE FROM ' . $table . $this->where_clause($where));
     }
 
@@ -453,7 +525,7 @@ class model
                 $replace_query = $columns . ' = REPLACE(' . $columns . ', ' . $this->quote($search) . ', ' . $this->quote($replace) . ')';
             }
         }
-        $this->lastSql='UPDATE ' . $table . ' SET ' . $replace_query . $this->where_clause($where);
+        $this->setLastSql('UPDATE ' . $table . ' SET ' . $replace_query . $this->where_clause($where));
         return $this->exec('UPDATE ' . $table . ' SET ' . $replace_query . $this->where_clause($where));
     }
 
@@ -470,37 +542,37 @@ class model
 
     public function has($table, $where)
     {
-        $this->lastSql='SELECT EXISTS(SELECT 1 FROM ' . $table . $this->where_clause($where) . ')';
+        $this->setLastSql('SELECT EXISTS(SELECT 1 FROM ' . $table . $this->where_clause($where) . ')');
         return $this->query('SELECT EXISTS(SELECT 1 FROM ' . $table . $this->where_clause($where) . ')')->fetchColumn() === '1';
     }
 
     public function count($table, $where = null)
     {
-        $this->lastSql='SELECT COUNT(*) FROM ' . $table . $this->where_clause($where);
+        $this->setLastSql('SELECT COUNT(*) FROM ' . $table . $this->where_clause($where));
         return 0 + ($this->query('SELECT COUNT(*) FROM ' . $table . $this->where_clause($where))->fetchColumn());
     }
 
     public function max($table, $column, $where = null)
     {
-        $this->lastSql='SELECT MAX(' . $column . ') FROM ' . $table . $this->where_clause($where);
+        $this->setLastSql('SELECT MAX(' . $column . ') FROM ' . $table . $this->where_clause($where));
         return 0 + ($this->query('SELECT MAX(' . $column . ') FROM ' . $table . $this->where_clause($where))->fetchColumn());
     }
 
     public function min($table, $column, $where = null)
     {
-        $this->lastSql='SELECT MIN(' . $column . ') FROM ' . $table . $this->where_clause($where);
+        $this->setLastSql('SELECT MIN(' . $column . ') FROM ' . $table . $this->where_clause($where));
         return 0 + ($this->query('SELECT MIN(' . $column . ') FROM ' . $table . $this->where_clause($where))->fetchColumn());
     }
 
     public function avg($table, $column, $where = null)
     {
-        $this->lastSql='SELECT AVG(' . $column . ') FROM ' . $table . $this->where_clause($where);
+        $this->setLastSql('SELECT AVG(' . $column . ') FROM ' . $table . $this->where_clause($where));
         return 0 + ($this->query('SELECT AVG(' . $column . ') FROM ' . $table . $this->where_clause($where))->fetchColumn());
     }
 
     public function sum($table, $column, $where = null)
     {
-        $this->lastSql='SELECT SUM(' . $column . ') FROM ' . $table . $this->where_clause($where);
+        $this->setLastSql('SELECT SUM(' . $column . ') FROM ' . $table . $this->where_clause($where));
         return 0 + ($this->query('SELECT SUM(' . $column . ') FROM ' . $table . $this->where_clause($where))->fetchColumn());
     }
 
@@ -571,8 +643,12 @@ class model
         return true;
     }
     //返回最后一条sql
+    public function setLastSql($sql){
+        $this->mysql->setLastSql($sql);
+    }
+
     public function getLastSql(){
-        return $this->lastSql;
+        return $this->mysql->getLastSql();
     }
 }
 ?>
