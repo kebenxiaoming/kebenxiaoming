@@ -7,41 +7,23 @@
  * Time: 15:55
  */
 namespace sunny;
+use sunny\db\Mysql;
 
 class model
 {
-    protected $server = '';
-    protected $port ="";
-    protected $username = '';
-    protected $password = '';
-    protected $database_name= '';
-    protected $pdo =null;
+    //PDO连接
+    protected $pdo=null;
     //表名
     protected $tablename="";
     //模型名
     protected $name="";
 
-    // Optional
-    protected $charset = 'utf8';
-
     public function __construct($name="")
     {
-        try {
-            $this->server=Config::get('hostname');
-            $this->port=Config::get('hostport');
-            $this->username=Config::get('username');
-            $this->password=Config::get('password');
-            $this->database_name=Config::get('database');
-
-            $this->pdo=null;
-            $this->pdo = new \PDO('mysql:host=' . $this->server . ';port='.$this->port.';dbname=' . $this->database_name, $this->username,$this->password);
-            $this->pdo->exec('SET NAMES \'' . $this->charset . '\'');
-            //定义时传入表名
-            $this->name=$name;
-        }
-        catch (\PDOException $e) {
-            echo $e->getMessage();
-        }
+        //单例模式获取pdo实例
+        $this->pdo=Mysql::getInstance()->getPdo();
+        //定义时传入表名
+        $this->name=$name;
     }
 
     public function query($query)
