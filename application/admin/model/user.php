@@ -15,7 +15,7 @@ class user extends Model
 
     public function getList()
     {
-        $result=$this->find();
-        print_r($result);
+        $this->find(1);
+        print_r($this->getLastSql());
     }
 }
