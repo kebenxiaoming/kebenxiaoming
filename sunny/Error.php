@@ -19,7 +19,7 @@ class Error
      */
     public static function register()
     {
-        error_reporting(E_ALL);
+        error_reporting(0);
         set_error_handler([__CLASS__, 'appError']);
         set_exception_handler([__CLASS__, 'appException']);
         register_shutdown_function([__CLASS__, 'appShutdown']);
@@ -95,17 +95,6 @@ class Error
                     break;
             }
         }
-    }
-
-    /**
-     * 确定错误类型是否致命
-     *
-     * @param  int $type
-     * @return bool
-     */
-    protected static function isFatal($type)
-    {
-        return in_array($type, [E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_PARSE]);
     }
 
     /**

@@ -16,12 +16,15 @@ class model
     protected $password = '';
     protected $database_name= '';
     protected $pdo =null;
+    //表名
     protected $tablename="";
+    //模型名
+    protected $name="";
 
     // Optional
     protected $charset = 'utf8';
 
-    public function __construct($tablename="")
+    public function __construct($name="")
     {
         try {
             $this->server=Config::get('hostname');
@@ -33,7 +36,8 @@ class model
             $this->pdo=null;
             $this->pdo = new \PDO('mysql:host=' . $this->server . ';port='.$this->port.';dbname=' . $this->database_name, $this->username,$this->password);
             $this->pdo->exec('SET NAMES \'' . $this->charset . '\'');
-            $this->tablename=$tablename;
+            //定义时传入表名
+            $this->name=$name;
         }
         catch (\PDOException $e) {
             echo $e->getMessage();
@@ -261,10 +265,14 @@ class model
     //加入排序条件
     public function select($table="", $columns="*", $where = null)
     {
-        if(empty($table)) {
+        if(empty($table))
+        {
             //带上配置的表前缀
+            $table = Config::get("prefix") . $this->name;
+        }elseif(!empty($this->tablename))
+        {
             $table = Config::get("prefix") . $this->tablename;
-        }else{
+        }else {
             $table = Config::get("prefix") .$table;
         }
         $where_clause = $this->where_clause($where);

@@ -8,15 +8,14 @@
  */
 namespace app\admin\model;
 use sunny\Model;
-use sunny\Config;
 
 class user extends Model
 {
-    private $tablename="user";
+    protected $tablename="module";
 
     public function getList()
     {
-        $where=array("user_id"=>1);
+        $where=array("module_id"=>1);
         $result=$this->select($this->tablename,"*",$where);
         print_r($result);
     }

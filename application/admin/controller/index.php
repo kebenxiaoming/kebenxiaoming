@@ -13,9 +13,7 @@ class index extends base
 
     public function index()
     {
-        model('user')->getList();
-        $this->assign("test","demo");
-        $this->display();
+        print_r(model('user')->getList());
     }
 
     public function test()
