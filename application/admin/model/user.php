@@ -11,12 +11,11 @@ use sunny\Model;
 
 class user extends Model
 {
-    protected $tablename="module";
+    protected $tablename="user";
 
     public function getList()
     {
-        $where=array("module_id"=>1);
-        $result=$this->select($this->tablename,"*",$where);
+        $result=$this->find();
         print_r($result);
     }
 }

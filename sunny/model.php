@@ -17,6 +17,10 @@ class model
     protected $tablename="";
     //模型名
     protected $name="";
+    // 事务指令数
+    protected $transTimes = 0;
+    //当前表的主键
+    protected $pk;
 
     public function __construct($name="")
     {
@@ -243,7 +247,88 @@ class model
         }
         return $where_clause;
     }
+    //获取当前表信息
+    public function getTableInfo($table="")
+    {
+        if(empty($table))
+        {
+            //带上配置的表前缀
+            $table = Config::get("prefix") . $this->name;
+        }elseif(!empty($this->tablename))
+        {
+            $table = Config::get("prefix") . $this->tablename;
+        }else {
+            $table = Config::get("prefix") .$table;
+        }
+        list($table) = explode(' ', $table);
+        if(strpos($table,'.')){
+            list($dbName,$tableName) = explode('.',$table);
+            $sql   = 'SHOW COLUMNS FROM `'.$dbName.'`.`'.$tableName.'`';
+        }else{
+            $sql   = 'SHOW COLUMNS FROM `'.$table.'`';
+        }
+        $result = $this->query($sql);
+        $info   =   array();
+        if($result) {
+            foreach ($result as $key => $val) {
+                if(\PDO::CASE_LOWER != $this->pdo->getAttribute(\PDO::ATTR_CASE)){
+                    $val = array_change_key_case ( $val ,  CASE_LOWER );
+                }
+                $info[$val['field']] = array(
+                    'name'    => $val['field'],
+                    'type'    => $val['type'],
+                    'notnull' => (bool) ($val['null'] === ''), // not null is empty, null is yes
+                    'default' => $val['default'],
+                    'primary' => (strtolower($val['key']) == 'pri'),
+                    'autoinc' => (strtolower($val['extra']) == 'auto_increment'),
+                );
+            }
+        }
+        return $info;
+    }
+    //获取当前表的主键
+    public function getPk(){
+        $info=$this->getTableInfo();
+        foreach ($info as $k=>$val)
+        {
+            if($val['primary'])
+            {
+                $this->pk=$k;
+                return $this->pk;
+            }
+        }
+        return $this->pk;
+    }
+    //增加find方法
+    public function find($value="")
+    {
+        if(empty($value)){
+            throw new \PDOException("请传入要查询的主键值！！");
+        }
+        $columns="*";
+        if(empty($table))
+        {
+            //带上配置的表前缀
+            $table = Config::get("prefix") . $this->name;
+        }elseif(!empty($this->tablename))
+        {
+            $table = Config::get("prefix") . $this->tablename;
+        }else {
+            $table = Config::get("prefix") .$table;
+        }
+        $where_clause = " WHERE ".$this->getPk()."=".$value;
 
+        $query = $this->query('SELECT ' . (
+            is_array($columns) ? implode(', ', $columns) : $columns
+            ) . ' FROM ' . $table . $where_clause);
+        return $query ? $query->fetch(\PDO::FETCH_ASSOC)
+            : false;
+
+        return $query ? $query->fetch(
+            (is_string($columns) && $columns != '*') ? \PDO::FETCH_COLUMN : \PDO::FETCH_ASSOC
+        ) : false;
+
+    }
     //加入排序条件
     public function select($table="", $columns="*", $where = null)
     {
@@ -431,6 +516,57 @@ class model
             'version' => $this->pdo->getAttribute(\PDO::ATTR_SERVER_VERSION),
             'connection' => $this->pdo->getAttribute(\PDO::ATTR_CONNECTION_STATUS)
         );
+    }
+    /**
+     * 启动事务
+     * @access public
+     * @return void
+     */
+    public function startTrans()
+    {
+        if ( !$this->pdo ) return false;
+        //数据rollback 支持
+        if ($this->transTimes == 0) {
+            $this->pdo->beginTransaction();
+        }
+        $this->transTimes++;
+        return ;
+    }
+
+    /**
+     * 用于非自动提交状态下面的查询提交
+     * @access public
+     * @return boolean
+     */
+    public function commit()
+    {
+        if ($this->transTimes > 0) {
+            $result = $this->pdo->commit();
+            $this->transTimes = 0;
+            if(!$result){
+                $this->error();
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 事务回滚
+     * @access public
+     * @return boolean
+     */
+    public function rollback()
+    {
+        if ($this->transTimes > 0) {
+            $result = $this->pdo->rollback();
+            $this->transTimes = 0;
+            if(!$result){
+                $this->error();
+                return false;
+            }
+        }
+        return true;
     }
 }
 ?>
