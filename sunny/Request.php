@@ -16,6 +16,10 @@ class Request
     protected $filter;
     // php://input
     protected $input;
+    //控制器名
+    protected $controller;
+    //方法名
+    protected $action;
     /**
      * 架构函数
      * @access protected
@@ -89,6 +93,36 @@ class Request
     public function isDelete()
     {
         return $_SERVER['REQUEST_METHOD']=="DELETE"?true:false;
+    }
+    /**
+     * 设置或者获取当前的控制器名
+     * @access public
+     * @param string $controller 控制器名
+     * @return string|Request
+     */
+    public function controller($controller = null)
+    {
+        if (!is_null($controller)) {
+            $this->controller = $controller;
+            return $this;
+        } else {
+            return $this->controller ? '':Router::$controller;
+        }
+    }
+    /**
+     * 设置或者获取当前的操作名
+     * @access public
+     * @param string $action 操作名
+     * @return string|Request
+     */
+    public function action($action = null)
+    {
+        if (!is_null($action)) {
+            $this->action = $action;
+            return $this;
+        } else {
+            return $this->action ?'': Router::$action;
+        }
     }
     /**
      * 获取变量 支持过滤和默认值

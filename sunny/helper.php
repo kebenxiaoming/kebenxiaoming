@@ -11,6 +11,7 @@ use sunny\Config;
 use sunny\Session;
 use sunny\Cookie;
 use sunny\Request;
+use sunny\Response;
 
 if (!function_exists('model')) {
     /**
@@ -174,5 +175,20 @@ if (!function_exists('input')) {
             $method = 'param';
         }
         return request()->$method($key, $default, $filter);
+    }
+}
+
+if (!function_exists('response')) {
+    /**
+     * 创建普通 Response 对象实例
+     * @param mixed      $data   输出数据
+     * @param int|string $code   状态码
+     * @param array      $header 头信息
+     * @param string     $type
+     * @return Response
+     */
+    function response($data = [], $code = 200, $header = [], $type = 'html')
+    {
+        return Response::create($data, $type, $code, $header);
     }
 }

@@ -294,13 +294,13 @@ class Model
     }
     //获取当前表的主键
     public function getPk(){
-        $info=$this->getTableInfo();
-        foreach ($info as $k=>$val)
-        {
-            if($val['primary'])
-            {
-                $this->pk=$k;
-                return $this->pk;
+        if(empty($this->pk)) {
+            $info = $this->getTableInfo();
+            foreach ($info as $k => $val) {
+                if ($val['primary']) {
+                    $this->pk = $k;
+                    return $this->pk;
+                }
             }
         }
         return $this->pk;
@@ -510,12 +510,29 @@ class Model
         return $this->pdo->lastInsertId();
     }
 
-    public function update($table, $data, $where = null)
+    //更新数据
+    public function update($data)
     {
+        if(empty($table))
+        {
+            //带上配置的表前缀
+            $table = Config::get("prefix") . $this->name;
+        }elseif(!empty($this->tablename))
+        {
+            $table = Config::get("prefix") . $this->tablename;
+        }else {
+            $table = Config::get("prefix") .$table;
+        }
+
         $fields = array();
 
         foreach ($data as $key => $value)
         {
+            if($key==$this->getPk()){
+                $where_condition=" WHERE ".$key."='".$value."'";
+            }else{
+                $where_condition=$this->combineWhere();
+            }
             if (is_array($value))
             {
                 $fields[] = $key . '=' . $this->quote(serialize($value));
@@ -536,8 +553,8 @@ class Model
                 }
             }
         }
-        $this->setLastSql('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $this->where_clause($where));
-        return $this->exec('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $this->where_clause($where));
+        $this->setLastSql('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $where_condition);
+        return $this->exec('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $where_condition);
     }
 
     public function delete($table, $where)

@@ -13,6 +13,17 @@ class controller
     //自定义一个模板变量用来存储传来的数据
     public $vars=array();
 
+    public function __construct()
+    {
+        // 控制器初始化
+        $this->_initialize();
+    }
+
+    // 初始化
+    protected function _initialize()
+    {
+    }
+
     /**
      * 模板赋值方法
      * @param $name
@@ -46,7 +57,7 @@ class controller
      */
     public function success($message,$url="",$status=1)
     {
-        $this->redirect($message,$status,$url);
+        $this->inredirect($message,$status,$url);
     }
 
     /**
@@ -57,7 +68,7 @@ class controller
      */
     public function error($message,$url="",$status=0)
     {
-        $this->redirect($message,$status,$url);
+        $this->inredirect($message,$status,$url);
     }
 
     /**
@@ -67,8 +78,17 @@ class controller
      * @param string $url
      * @param int $wait
      */
-    public function redirect($message="",$status=0,$url="",$wait=1)
+    public function redirect($url="")
     {
+        if(empty($url)) {
+            $url=$_SERVER['REQUEST_URI'];
+        }else {
+            $url = $url;
+        }
+        header("location: ".$url);die;
+    }
+    //内部重定向
+    public function inredirect($url="",$message="",$status=0,$wait=1){
         $msg=$message;
         $code=$status;
         if(empty($url)) {

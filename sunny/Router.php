@@ -7,6 +7,7 @@
  * Time: 16:14
  */
 namespace sunny;
+use sunny\Request;
 
 class Router
 {
@@ -21,11 +22,11 @@ class Router
 
     public function __construct()
     {
-        $this->request=new Request();
+        $this->request=Request::instance();
         //统一转换为小写
         self::$module=ucfirst($this->request->input($_GET,'g'));
         self::$controller=ucfirst($this->request->input($_GET,'c'));
-        self::$action=ucfirst($this->request->input($_GET,'a'));
+        self::$action=$this->request->input($_GET,'a');
         if(empty(self::$module)){
             self::$module=Config::get('default_module');
         }
