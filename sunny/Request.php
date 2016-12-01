@@ -52,6 +52,45 @@ class Request
         trigger_error('Clone is not allow!',E_USER_ERROR);
     }
     /**
+     * 是否为GET请求
+     * @access public
+     * @return bool
+     */
+    public function isGet()
+    {
+        return $_SERVER['REQUEST_METHOD']=="GET"?true:false;
+    }
+
+    /**
+     * 是否为POST请求
+     * @access public
+     * @return bool
+     */
+    public function isPost()
+    {
+        return $_SERVER['REQUEST_METHOD']=="POST"?true:false;
+    }
+
+    /**
+     * 是否为PUT请求
+     * @access public
+     * @return bool
+     */
+    public function isPut()
+    {
+        return $_SERVER['REQUEST_METHOD']=="PUT"?true:false;
+    }
+
+    /**
+     * 是否为DELTE请求
+     * @access public
+     * @return bool
+     */
+    public function isDelete()
+    {
+        return $_SERVER['REQUEST_METHOD']=="DELETE"?true:false;
+    }
+    /**
      * 获取变量 支持过滤和默认值
      * @param array         $data 数据源
      * @param string|false  $name 字段名

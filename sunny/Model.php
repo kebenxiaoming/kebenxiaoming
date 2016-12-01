@@ -486,6 +486,29 @@ class Model
         $this->exec('INSERT INTO ' . $table . ' (' . $keys . ') VALUES (' . $this->data_implode(array_values($values), ',') . ')');
         return $this->pdo->lastInsertId();
     }
+    //新增数据
+    public function save($data=""){
+        if(empty($table))
+        {
+            //带上配置的表前缀
+            $table = Config::get("prefix") . $this->name;
+        }elseif(!empty($this->tablename))
+        {
+            $table = Config::get("prefix") . $this->tablename;
+        }else {
+            $table = Config::get("prefix") .$table;
+        }
+        $keys = implode(',', array_keys($data));
+        $values = array();
+
+        foreach ($data as $key => $value)
+        {
+            $values[] = is_array($value) ? serialize($value) : $value;
+        }
+        $this->setLastSql('INSERT INTO ' . $table . ' (' . $keys . ') VALUES (' . $this->data_implode(array_values($values), ',') . ')');
+        $this->exec('INSERT INTO ' . $table . ' (' . $keys . ') VALUES (' . $this->data_implode(array_values($values), ',') . ')');
+        return $this->pdo->lastInsertId();
+    }
 
     public function update($table, $data, $where = null)
     {

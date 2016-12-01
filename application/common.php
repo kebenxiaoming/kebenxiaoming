@@ -6,6 +6,18 @@
  * Date: 2016/12/1
  * Time: 14:13
  */
+function Adminlog($user_name,$action,$class_name,$class_obj,$result){
+    $data=array(
+        "user_name"=>$user_name,
+        "action"=>$action,
+        "class_name"=>$class_name,
+        "class_obj"=>$class_obj,
+        "result"=>$result,
+        "op_time"=>time()
+    );
+    $res=model("SysLog")->save($data);
+    return $res;
+}
 function encrypt($value){
     if(!$value){return false;}
     $key = \sunny\Config::get('SECRET');
