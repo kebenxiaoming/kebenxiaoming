@@ -16,6 +16,9 @@ class Router
     public static $module;
     public static $controller;
     public static $action;
+    //单例
+    protected static $_instance;
+
     public function __construct()
     {
         $this->request=new Request();
@@ -31,6 +34,19 @@ class Router
         if(empty(self::$action)){
             self::$action='index';
         }
+    }
+
+    //创建__clone方法防止对象被复制克隆
+    public function __clone(){
+        trigger_error('Clone is not allow!',E_USER_ERROR);
+    }
+
+    //单例方法,用于访问实例的公共的静态方法
+    public static function getInstance(){
+        if(!(self::$_instance instanceof self)){
+            self::$_instance = new self;
+        }
+        return self::$_instance;
     }
 
     public function dispatch()

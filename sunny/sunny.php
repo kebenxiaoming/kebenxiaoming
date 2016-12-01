@@ -53,5 +53,5 @@ if (is_file(ROOT_PATH . '.env')) {
 //载入帮助类
 require SUNNY_PATH."helper.php";
 //路由解析
-$Router=new \sunny\Router();
+$Router=\sunny\Router::getInstance();
 $Router->dispatch();

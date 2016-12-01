@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9089831d-bb8b-4da7-a718-eebcf8003c8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/home/controller/index.php" afterPath="$PROJECT_DIR$/application/home/controller/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sunny/Router.php" afterPath="$PROJECT_DIR$/sunny/Router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sunny/sunny.php" afterPath="$PROJECT_DIR$/sunny/sunny.php" />
     </list>
     <ignored path="kebenxiaoming.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,28 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/home/controller/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-              <folding>
-                <element signature="e#6#99#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/home/model/module.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/home/controller/base.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,18 +55,18 @@
       <file leaf-file-name="Mysql.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sunny/db/Mysql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="31" column="160" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="160" />
+            <state relative-caret-position="817">
+              <caret line="49" column="5" selection-start-line="38" selection-start-column="3" selection-end-line="49" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sunny/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="475">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="39" />
               <folding>
                 <marker date="1480560869781" expanded="true" signature="14571:14678" ph="INSERT INTO ${$table}... " />
                 <marker date="1480560869781" expanded="true" signature="14703:14810" ph="INSERT INTO ${$table}... " />
@@ -106,14 +84,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sunny/Router.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="39" column="26" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="26" />
-              <folding>
-                <element signature="e#6#99#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sunny.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sunny/sunny.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="715">
+              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Loader.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sunny/Loader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3724">
+              <caret line="204" column="25" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Error.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sunny/Error.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,13 +174,11 @@
         <option value="$PROJECT_DIR$/sunny/controller.php" />
         <option value="$PROJECT_DIR$/sunny/model.php" />
         <option value="$PROJECT_DIR$/sunny/Loader.php" />
-        <option value="$PROJECT_DIR$/sunny/sunny.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/base.php" />
         <option value="$PROJECT_DIR$/application/home/controller/base.php" />
         <option value="$PROJECT_DIR$/sunny/Controller.php" />
         <option value="$PROJECT_DIR$/sunny/Request.php" />
-        <option value="$PROJECT_DIR$/sunny/Router.php" />
         <option value="$PROJECT_DIR$/application/home/model/user.php" />
         <option value="$PROJECT_DIR$/sunny/Db.php" />
         <option value="$PROJECT_DIR$/sunny/Error.php" />
@@ -187,6 +191,8 @@
         <option value="$PROJECT_DIR$/sunny/helper.php" />
         <option value="$PROJECT_DIR$/application/home/controller/index.php" />
         <option value="$PROJECT_DIR$/sunny/Model.php" />
+        <option value="$PROJECT_DIR$/sunny/Router.php" />
+        <option value="$PROJECT_DIR$/sunny/sunny.php" />
       </list>
     </option>
   </component>
@@ -511,12 +517,12 @@
       <workItem from="1480325661909" duration="315000" />
       <workItem from="1480382491440" duration="22412000" />
       <workItem from="1480468185998" duration="18147000" />
-      <workItem from="1480557173588" duration="678000" />
+      <workItem from="1480557173588" duration="1050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79346000" />
+    <option name="totallyTimeSpent" value="79718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,6 +611,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="142" column="22" selection-start-line="142" selection-start-column="10" selection-end-line="142" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -648,17 +655,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/sunny.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sunny/Request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1414">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#99#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -677,17 +680,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3478">
-          <caret line="210" column="7" selection-start-line="210" selection-start-column="7" selection-end-line="210" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sunny/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -702,6 +699,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="801" column="20" selection-start-line="801" selection-start-column="20" selection-end-line="801" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -737,20 +735,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sunny/mysqldb.php" />
     <entry file="file://$PROJECT_DIR$/sunny/Db.php" />
-    <entry file="file://$PROJECT_DIR$/sunny/Error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -816,16 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sunny/helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -834,18 +808,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/Loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3724">
+          <caret line="204" column="25" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sunny/db/Mysql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="31" column="160" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="160" />
+        <state relative-caret-position="817">
+          <caret line="49" column="5" selection-start-line="38" selection-start-column="3" selection-end-line="49" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sunny/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="475">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="39" />
           <folding>
             <marker date="1480560869781" expanded="true" signature="14571:14678" ph="INSERT INTO ${$table}... " />
             <marker date="1480560869781" expanded="true" signature="14703:14810" ph="INSERT INTO ${$table}... " />
@@ -859,6 +849,32 @@
             <marker date="1480560869781" expanded="true" signature="18401:18422" ph="SELECT COUNT... ${$table}" />
             <marker date="1480560869781" expanded="true" signature="18577:18584" ph="SELECT COUNT... ${$table}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/sunny.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/Error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
