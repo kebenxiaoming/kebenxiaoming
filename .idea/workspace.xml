@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9089831d-bb8b-4da7-a718-eebcf8003c8e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/home/controller/index.php" afterPath="$PROJECT_DIR$/application/home/controller/index.php" />
     </list>
     <ignored path="kebenxiaoming.iws" />
@@ -31,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/home/controller/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+            <state relative-caret-position="304">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
                 <element signature="e#6#99#0#PHP" expanded="true" />
               </folding>
@@ -73,23 +74,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Mysql.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sunny/db/Mysql.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="31" column="160" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="160" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sunny/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
-              <caret line="355" column="20" selection-start-line="355" selection-start-column="20" selection-end-line="355" selection-end-column="20" />
+            <state relative-caret-position="95">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding>
-                <marker date="1480490654855" expanded="true" signature="14571:14678" ph="INSERT INTO ${$table}... " />
-                <marker date="1480490654855" expanded="true" signature="14703:14810" ph="INSERT INTO ${$table}... " />
-                <marker date="1480490654855" expanded="true" signature="15962:15974" ph="DELETE FROM " />
-                <marker date="1480490654855" expanded="true" signature="16045:16057" ph="DELETE FROM " />
-                <marker date="1480490654855" expanded="true" signature="18008:18081" ph="SELECT EXIST... " />
-                <marker date="1480490654855" expanded="true" signature="18022:18036" ph="SELECT 1 FRO... ${$table}" />
-                <marker date="1480490654855" expanded="true" signature="18114:18187" ph="SELECT EXIST... " />
-                <marker date="1480490654855" expanded="true" signature="18128:18142" ph="SELECT 1 FRO... ${$table}" />
-                <marker date="1480490654855" expanded="true" signature="18303:18324" ph="SELECT COUNT... ${$table}" />
-                <marker date="1480490654855" expanded="true" signature="18401:18422" ph="SELECT COUNT... ${$table}" />
-                <marker date="1480490654855" expanded="true" signature="18577:18584" ph="SELECT COUNT... ${$table}" />
+                <marker date="1480560869781" expanded="true" signature="14571:14678" ph="INSERT INTO ${$table}... " />
+                <marker date="1480560869781" expanded="true" signature="14703:14810" ph="INSERT INTO ${$table}... " />
+                <marker date="1480560869781" expanded="true" signature="15962:15974" ph="DELETE FROM " />
+                <marker date="1480560869781" expanded="true" signature="16045:16057" ph="DELETE FROM " />
+                <marker date="1480560869781" expanded="true" signature="18008:18081" ph="SELECT EXIST... " />
+                <marker date="1480560869781" expanded="true" signature="18022:18036" ph="SELECT 1 FRO... ${$table}" />
+                <marker date="1480560869781" expanded="true" signature="18114:18187" ph="SELECT EXIST... " />
+                <marker date="1480560869781" expanded="true" signature="18128:18142" ph="SELECT 1 FRO... ${$table}" />
+                <marker date="1480560869781" expanded="true" signature="18303:18324" ph="SELECT COUNT... ${$table}" />
+                <marker date="1480560869781" expanded="true" signature="18401:18422" ph="SELECT COUNT... ${$table}" />
+                <marker date="1480560869781" expanded="true" signature="18577:18584" ph="SELECT COUNT... ${$table}" />
               </folding>
             </state>
           </provider>
@@ -98,7 +109,7 @@
       <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sunny/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
+            <state relative-caret-position="627">
               <caret line="39" column="26" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="26" />
               <folding>
                 <element signature="e#6#99#0#PHP" expanded="true" />
@@ -174,8 +185,8 @@
         <option value="$PROJECT_DIR$/application/admin/model/module.php" />
         <option value="$PROJECT_DIR$/application/home/model/module.php" />
         <option value="$PROJECT_DIR$/sunny/helper.php" />
-        <option value="$PROJECT_DIR$/sunny/Model.php" />
         <option value="$PROJECT_DIR$/application/home/controller/index.php" />
+        <option value="$PROJECT_DIR$/sunny/Model.php" />
       </list>
     </option>
   </component>
@@ -219,6 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -424,7 +436,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -499,12 +510,13 @@
       <workItem from="1480295443312" duration="8755000" />
       <workItem from="1480325661909" duration="315000" />
       <workItem from="1480382491440" duration="22412000" />
-      <workItem from="1480468185998" duration="17189000" />
+      <workItem from="1480468185998" duration="18147000" />
+      <workItem from="1480557173588" duration="678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77710000" />
+    <option name="totallyTimeSpent" value="79346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,7 +531,7 @@
     <frame x="-8" y="0" width="1924" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26877683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27145922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -577,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="590">
           <caret line="144" column="9" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="142" column="22" selection-start-line="142" selection-start-column="10" selection-end-line="142" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -651,9 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1414">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#99#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -669,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="801" column="20" selection-start-line="801" selection-start-column="20" selection-end-line="801" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,33 +732,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#99#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/mysqldb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/mysqldb.php" />
+    <entry file="file://$PROJECT_DIR$/sunny/Db.php" />
     <entry file="file://$PROJECT_DIR$/sunny/Error.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,14 +766,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="18" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/PDO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
@@ -806,35 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/db/Mysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -843,6 +787,16 @@
         <state relative-caret-position="114">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/controller/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#99#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -862,32 +816,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Model.php">
+    <entry file="file://$PROJECT_DIR$/sunny/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="355" column="20" selection-start-line="355" selection-start-column="20" selection-end-line="355" selection-end-column="20" />
+        <state relative-caret-position="627">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="26" />
           <folding>
-            <marker date="1480490654855" expanded="true" signature="14571:14678" ph="INSERT INTO ${$table}... " />
-            <marker date="1480490654855" expanded="true" signature="14703:14810" ph="INSERT INTO ${$table}... " />
-            <marker date="1480490654855" expanded="true" signature="15962:15974" ph="DELETE FROM " />
-            <marker date="1480490654855" expanded="true" signature="16045:16057" ph="DELETE FROM " />
-            <marker date="1480490654855" expanded="true" signature="18008:18081" ph="SELECT EXIST... " />
-            <marker date="1480490654855" expanded="true" signature="18022:18036" ph="SELECT 1 FRO... ${$table}" />
-            <marker date="1480490654855" expanded="true" signature="18114:18187" ph="SELECT EXIST... " />
-            <marker date="1480490654855" expanded="true" signature="18128:18142" ph="SELECT 1 FRO... ${$table}" />
-            <marker date="1480490654855" expanded="true" signature="18303:18324" ph="SELECT COUNT... ${$table}" />
-            <marker date="1480490654855" expanded="true" signature="18401:18422" ph="SELECT COUNT... ${$table}" />
-            <marker date="1480490654855" expanded="true" signature="18577:18584" ph="SELECT COUNT... ${$table}" />
+            <element signature="e#6#99#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/home/controller/index.php">
+    <entry file="file://$PROJECT_DIR$/sunny/helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+        <state relative-caret-position="437">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/db/Mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" column="160" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="160" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
-            <element signature="e#6#99#0#PHP" expanded="true" />
+            <marker date="1480560869781" expanded="true" signature="14571:14678" ph="INSERT INTO ${$table}... " />
+            <marker date="1480560869781" expanded="true" signature="14703:14810" ph="INSERT INTO ${$table}... " />
+            <marker date="1480560869781" expanded="true" signature="15962:15974" ph="DELETE FROM " />
+            <marker date="1480560869781" expanded="true" signature="16045:16057" ph="DELETE FROM " />
+            <marker date="1480560869781" expanded="true" signature="18008:18081" ph="SELECT EXIST... " />
+            <marker date="1480560869781" expanded="true" signature="18022:18036" ph="SELECT 1 FRO... ${$table}" />
+            <marker date="1480560869781" expanded="true" signature="18114:18187" ph="SELECT EXIST... " />
+            <marker date="1480560869781" expanded="true" signature="18128:18142" ph="SELECT 1 FRO... ${$table}" />
+            <marker date="1480560869781" expanded="true" signature="18303:18324" ph="SELECT COUNT... ${$table}" />
+            <marker date="1480560869781" expanded="true" signature="18401:18422" ph="SELECT COUNT... ${$table}" />
+            <marker date="1480560869781" expanded="true" signature="18577:18584" ph="SELECT COUNT... ${$table}" />
           </folding>
         </state>
       </provider>
