@@ -305,13 +305,23 @@ class Model
         }
         return $this->pk;
     }
+    //增加field方法
+    public function field($columns){
+        if(!empty($columns)){
+            $this->options['columns']=$columns;
+        }else{
+            throw new \PDOException("必须输入要查询的字段！！");
+        }
+        return $this;
+    }
     //增加find方法
     public function find($value="")
     {
-        if(empty($value)){
-            throw new \PDOException("请传入要查询的主键值！！");
+        if(!empty($this->options['columns'])){
+            $columns=$this->options['columns'];
+        }else {
+            $columns = "*";
         }
-        $columns="*";
         if(empty($table))
         {
             //带上配置的表前缀
@@ -322,7 +332,11 @@ class Model
         }else {
             $table = Config::get("prefix") .$table;
         }
-        $where_clause = " WHERE ".$this->getPk()."=".$value;
+        if(!empty($value)) {
+            $where_clause = " WHERE " . $this->getPk() . "=" . $value;
+        }else{
+            $where_clause = " LIMIT 0,1";
+        }
         $this->mysql->setLastSql('SELECT ' . (
             is_array($columns) ? implode(', ', $columns) : $columns
             ) . ' FROM ' . $table . $where_clause);
@@ -410,6 +424,9 @@ class Model
     //加入排序条件
     public function select($table="", $columns="*")
     {
+        if(!empty($this->options['columns'])){
+            $columns=$this->options['columns'];
+        }
         if(empty($table))
         {
             //带上配置的表前缀

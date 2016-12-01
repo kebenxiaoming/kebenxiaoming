@@ -206,6 +206,10 @@ class Loader
         if (is_dir(VENDOR_PATH . 'composer')) {
             require VENDOR_PATH . 'autoload.php';
         }
+        //加载common.php
+        if(is_file(APP_PATH."common.php")){
+            require APP_PATH."common.php";
+        }
     }
 
     /**
