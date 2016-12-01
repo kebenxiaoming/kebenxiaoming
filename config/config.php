@@ -31,4 +31,6 @@ return [
     'default_filter' => '',
     //默认模块名
     'default_module' =>'home',
+    //路由模式
+    'default_router'=>1,
 ];

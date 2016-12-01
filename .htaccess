@@ -5,4 +5,5 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+  RewriteRule ^(.*)home/(\d+).html index.php?g=admin&c=index&a=index&id=1
 </IfModule>

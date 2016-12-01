@@ -13,6 +13,11 @@ class controller
     //自定义一个模板变量用来存储传来的数据
     public $vars=array();
 
+    /**
+     * 模板赋值方法
+     * @param $name
+     * @param $data
+     */
     public function assign($name,$data)
     {
         if(!empty($name)) {
@@ -20,6 +25,10 @@ class controller
         }
     }
 
+    /**
+     * 引入模板方法
+     * @param string $tpl
+     */
     public function display($tpl="")
     {
         if(empty($tpl)){
@@ -29,16 +38,35 @@ class controller
         require $realtpl;
     }
 
+    /**
+     * 成功方法
+     * @param $message
+     * @param string $url
+     * @param int $status
+     */
     public function success($message,$url="",$status=1)
     {
         $this->redirect($message,$status,$url);
     }
 
+    /**
+     * 失败方法
+     * @param $message
+     * @param string $url
+     * @param int $status
+     */
     public function error($message,$url="",$status=0)
     {
         $this->redirect($message,$status,$url);
     }
 
+    /**
+     * 重定向方法
+     * @param string $message
+     * @param int $status
+     * @param string $url
+     * @param int $wait
+     */
     public function redirect($message="",$status=0,$url="",$wait=1)
     {
         $msg=$message;

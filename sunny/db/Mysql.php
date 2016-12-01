@@ -27,7 +27,9 @@ class Mysql{
             $this->username = Config::get('username');
             $this->password = Config::get('password');
             $this->database_name = Config::get('database');
-
+            if(empty($this->server)||empty($this->port)||empty($this->username)||empty($this->database_name)){
+                throw new \PDOException("请填写数据库配置先！！！");
+            }
             $this->pdo = null;
             $this->pdo = new \PDO('mysql:host=' . $this->server . ';port=' . $this->port . ';dbname=' . $this->database_name, $this->username, $this->password);
             $this->pdo->exec('SET NAMES \'' . $this->charset . '\'');

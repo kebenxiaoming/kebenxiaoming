@@ -13,6 +13,7 @@ class index extends base
 
     public function index()
     {
+        echo "id:".$_GET['id'];
         print_r(model('user')->find(1));
     }
 

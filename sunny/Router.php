@@ -22,9 +22,10 @@ class Router
     public function __construct()
     {
         $this->request=new Request();
-        self::$module=$this->request->input($_GET,'g');
-        self::$controller=$this->request->input($_GET,'c');
-        self::$action=$this->request->input($_GET,'a');
+        //统一转换为小写
+        self::$module=strtolower($this->request->input($_GET,'g'));
+        self::$controller=strtolower($this->request->input($_GET,'c'));
+        self::$action=strtolower($this->request->input($_GET,'a'));
         if(empty(self::$module)){
             self::$module=Config::get('default_module');
         }
