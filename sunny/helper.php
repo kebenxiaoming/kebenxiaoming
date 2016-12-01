@@ -10,6 +10,7 @@ use sunny\Router;
 use sunny\Config;
 use sunny\Session;
 use sunny\Cookie;
+use sunny\Request;
 
 if (!function_exists('model')) {
     /**
@@ -138,5 +139,40 @@ if (!function_exists('cookie')) {
             // 设置
             return Cookie::set($name, $value, $option);
         }
+    }
+}
+if (!function_exists('request')) {
+    /**
+     * 获取当前Request对象实例
+     * @return Request
+     */
+    function request()
+    {
+        return Request::instance();
+    }
+}
+if (!function_exists('input')) {
+    /**
+     * 获取输入数据 支持默认值和过滤
+     * @param string    $key 获取的变量名
+     * @param mixed     $default 默认值
+     * @param string    $filter 过滤方法
+     * @return mixed
+     */
+    function input($key = '', $default = null, $filter = null)
+    {
+        if ($pos = strpos($key, '.')) {
+            // 指定参数来源
+            $method = substr($key, 0, $pos);
+            if (in_array($method, ['get', 'post', 'put', 'patch', 'delete', 'param', 'request', 'session', 'cookie', 'server', 'env', 'path', 'file'])) {
+                $key = substr($key, $pos + 1);
+            } else {
+                $method = 'param';
+            }
+        } else {
+            // 默认为自动判断
+            $method = 'param';
+        }
+        return request()->$method($key, $default, $filter);
     }
 }

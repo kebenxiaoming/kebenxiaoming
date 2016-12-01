@@ -10,6 +10,8 @@ namespace sunny;
 
 class Request
 {
+    //单例模式
+    protected static $_instance;
     // 全局过滤规则
     protected $filter;
     // php://input
@@ -31,6 +33,23 @@ class Request
         }
         // 保存 php://input
         $this->input = file_get_contents('php://input');
+    }
+    /**
+     * 初始化
+     * @access public
+     * @param array $options 参数
+     * @return \sunny\Request
+     */
+    public static function instance($options = [])
+    {
+        if (is_null(self::$_instance)) {
+            self::$_instance = new static($options);
+        }
+        return self::$_instance;
+    }
+    //创建__clone方法防止对象被复制克隆
+    public function __clone(){
+        trigger_error('Clone is not allow!',E_USER_ERROR);
     }
     /**
      * 获取变量 支持过滤和默认值
@@ -173,5 +192,97 @@ class Request
                     throw new \InvalidArgumentException('variable type error：' . gettype($data));
                 }
         }
+    }
+    /**
+     * 获取客户端IP地址
+     * @param integer   $type 返回类型 0 返回IP地址 1 返回IPV4地址数字
+     * @param boolean   $adv 是否进行高级模式获取（有可能被伪装）
+     * @return mixed
+     */
+    public function ip($type = 0, $adv = false)
+    {
+        $type      = $type ? 1 : 0;
+        static $ip = null;
+        if (null !== $ip) {
+            return $ip[$type];
+        }
+
+        if ($adv) {
+            if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+                $arr = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+                $pos = array_search('unknown', $arr);
+                if (false !== $pos) {
+                    unset($arr[$pos]);
+                }
+                $ip = trim(current($arr));
+            } elseif (isset($_SERVER['HTTP_CLIENT_IP'])) {
+                $ip = $_SERVER['HTTP_CLIENT_IP'];
+            } elseif (isset($_SERVER['REMOTE_ADDR'])) {
+                $ip = $_SERVER['REMOTE_ADDR'];
+            }
+        } elseif (isset($_SERVER['REMOTE_ADDR'])) {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+        // IP地址合法验证
+        $long = sprintf("%u", ip2long($ip));
+        $ip   = $long ? array($ip, $long) : array('0.0.0.0', 0);
+        return $ip[$type];
+    }
+    /**
+     * 获取request变量
+     * @param string        $name 数据名称
+     * @param string        $default 默认值
+     * @param string|array  $filter 过滤方法
+     * @return mixed
+     */
+    public function request($name = '', $default = null, $filter = null)
+    {
+        if (empty($this->request)) {
+            $this->request = $_REQUEST;
+        }
+        if (is_array($name)) {
+            $this->param          = [];
+            return $this->request = array_merge($this->request, $name);
+        }
+        return $this->input($this->request, $name, $default, $filter);
+    }
+    /**
+     * 设置获取获取GET参数
+     * @access public
+     * @param string|array  $name 变量名
+     * @param mixed         $default 默认值
+     * @param string|array  $filter 过滤方法
+     * @return mixed
+     */
+    public function get($name = '', $default = null, $filter = null)
+    {
+        if (empty($this->get)) {
+            $this->get = $_GET;
+        }
+        if (is_array($name)) {
+            $this->param      = [];
+            return $this->get = array_merge($this->get, $name);
+        }
+        return $this->input($this->get, $name, $default, $filter);
+    }
+
+    /**
+     * 设置获取获取POST参数
+     * @access public
+     * @param string        $name 变量名
+     * @param mixed         $default 默认值
+     * @param string|array  $filter 过滤方法
+     * @return mixed
+     */
+    public function post($name = '', $default = null, $filter = null)
+    {
+        if (empty($this->post)) {
+            $this->post = $_POST;
+        }
+        if (is_array($name)) {
+            $this->param       = [];
+            return $this->post = array_merge($this->post, $name);
+        }
+        return $this->input($this->post, $name, $default, $filter);
     }
 }
