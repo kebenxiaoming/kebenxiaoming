@@ -647,11 +647,18 @@ class Model
         }
         return true;
     }
-    //返回最后一条sql
+    /**
+     * 赋值sql
+     * @access public
+     * @param $sql
+     */
     public function setLastSql($sql){
         $this->mysql->setLastSql($sql);
     }
-
+    /**
+     * 返回最后一条sql
+     * @return string
+     */
     public function getLastSql(){
         return $this->mysql->getLastSql();
     }
