@@ -335,7 +335,17 @@ class Model
         if(!empty($value)) {
             $where_clause = " WHERE " . $this->getPk() . "=" . $value;
         }else{
-            $where_clause = " LIMIT 0,1";
+            if(!empty($this->options)) {
+                if(!empty($this->options['limit']))
+                {
+                    unset($this->options['limit']);
+                    $where_clause = $this->combineWhere()." LIMIT 0,1";
+                }else{
+                    $where_clause=$this->combineWhere();
+                }
+            }else{
+                $where_clause="LIMIT 0,1";
+            }
         }
         $this->mysql->setLastSql('SELECT ' . (
             is_array($columns) ? implode(', ', $columns) : $columns
