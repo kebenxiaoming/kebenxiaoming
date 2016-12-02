@@ -358,4 +358,34 @@ class Request
         }
         return $this->input($this->post, $name, $default, $filter);
     }
+    /**
+     * 设置获取获取当前请求的参数
+     * @access public
+     * @param string|array  $name 变量名
+     * @param mixed         $default 默认值
+     * @param string|array  $filter 过滤方法
+     * @return mixed
+     */
+    public function param($name = '', $default = null, $filter = null)
+    {
+        if (empty($this->param)) {
+            $method = $_SERVER['REQUEST_METHOD'];
+            // 自动获取请求变量
+            switch ($method) {
+                case 'POST':
+                    $vars = $this->post(false);
+                    break;
+                case 'PUT':
+                case 'DELETE':
+                case 'PATCH':
+                    //$vars = $this->put(false);
+                    break;
+                default:
+                    $vars = [];
+            }
+            // 当前请求参数和URL地址中的参数合并
+            $this->param = array_merge($this->get(false), $vars);
+        }
+        return $this->input($this->param, $name, $default, $filter);
+    }
 }
