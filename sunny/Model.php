@@ -513,10 +513,11 @@ class Model
         return $this->exec('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $where_condition);
     }
 
-    public function delete($table, $where)
+    public function delete($table="")
     {
-        $this->setLastSql('DELETE FROM ' . $table . $this->where_clause($where));
-        return $this->exec('DELETE FROM ' . $table . $this->where_clause($where));
+        $table=$this->getNowTableName($table);
+        $this->setLastSql('DELETE FROM ' . $table . $this->combineWhere());
+        return $this->exec('DELETE FROM ' . $table . $this->combineWhere());
     }
 
     public function replace($table, $columns, $search = null, $replace = null, $where = null)
