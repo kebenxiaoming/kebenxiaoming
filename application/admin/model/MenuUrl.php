@@ -11,6 +11,7 @@ use sunny\Model;
 
 class MenuUrl extends Model
 {
+    protected $tablename='menu_url';
     //获取当前用户所有的菜单
     public function getTrees(){
         $user_info = session("user");
@@ -40,10 +41,8 @@ class MenuUrl extends Model
     public function getMenuByRole($user_role,$online=1){
         $url_array = array();
 
-        $sql = "select * from " .config('database.prefix'). "menu_url me," . config('database.prefix') . "module mo where me.menu_id in ($user_role) and me.online = $online and me.module_id = mo.module_id and mo.online = 1";
-
-        $list=$this->db() ->query($sql);
-
+        $sql = "select * from " .config('prefix'). "menu_url me," . config('prefix') . "module mo where me.menu_id in ($user_role) and me.online = $online and me.module_id = mo.module_id and mo.online = 1";
+        $list=$this->query($sql)->fetchAll();
         if ($list) {
             foreach ($list as $menu_info) {
                 $url_array[] = $menu_info['menu_id'];
@@ -74,12 +73,9 @@ class MenuUrl extends Model
         }
         $sub_condition["module_id"] = $module_id;
         $order="sort DESC";
-        $listobjarr=$this->where($sub_condition)->order($order)->select();
-        if(!empty($listobjarr)) {
-            foreach ($listobjarr as $val) {
-                $list[] = $val->toArray();
-            }
-            if ($list) return $list;
+        $list=$this->where($sub_condition)->order($order)->select();
+        if(!empty($list)) {
+            return $list;
         }
         return array();
     }
@@ -88,21 +84,15 @@ class MenuUrl extends Model
     {
         $condition = array("menu_url" => $url);
 
-        $listobj = $this->where($condition)->find();
-        $list="";
-        if(!empty($listobj)){
-            $list=$listobj->toArray();
-        }
+        $list = $this->where($condition)->find();
         if ($list) {
             $menu = $list;
-            $moduleobj = model("Module")->where("module_id=".$menu['module_id'])->find();
-            $module=$moduleobj->toArray();
+            $module = model("Module")->where("module_id=".$menu['module_id'])->find();
             $menu['module_id'] = $module['module_id'];
             $menu['module_name'] = $module['module_name'];
             $menu['module_url'] = $module['module_url'];
             if ($menu['father_menu'] > 0) {
-                $father_menuobj = $this->where("menu_id=".$menu['father_menu'])->find();
-                $father_menu=$father_menuobj->toArray();
+                $father_menu = $this->where("menu_id=".$menu['father_menu'])->find();
                 $menu['father_menu_url'] = $father_menu['menu_url'];
                 $menu['father_menu_name'] = $father_menu['menu_name'];
             }

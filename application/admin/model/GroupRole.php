@@ -9,11 +9,12 @@
 namespace app\admin\model;
 use sunny\Model;
 
-class GroupRole extends Model{
-    
-    Protected $autoCheckFields = false;
+class GroupRole extends Model
+{
+    protected $tablename='group_role';
 
-    public function getGroupRoles($group_id) {
+    public function getGroupRoles($group_id)
+    {
         if (! $group_id || ! is_numeric ( $group_id )) {
             return false;
         }
@@ -29,7 +30,8 @@ class GroupRole extends Model{
         return $data;
     }
 
-    public function getGroupForOptions() {
+    public function getGroupForOptions()
+    {
         $group_list = model("UserGroup")->getAllGroup ();
         $group_options_array=array();
         foreach ( $group_list as $group ) {

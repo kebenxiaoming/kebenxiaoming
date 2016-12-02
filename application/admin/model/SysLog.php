@@ -10,5 +10,6 @@ namespace app\admin\model;
 use sunny\Model;
 
 class SysLog extends Model{
+    protected $tablename="sys_log";
     
 }

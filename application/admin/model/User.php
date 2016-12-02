@@ -18,7 +18,6 @@ class User extends Model
             "user_name"=>$username,
         );
         $userdata=$this->where($where)->find();
-        $userdata=$userdata->data;
         if($userdata){
             if($userdata['password']==md5($password)){
                 //更新登录信息

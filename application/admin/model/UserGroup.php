@@ -11,15 +11,12 @@ use sunny\Model;
 
 class UserGroup extends Model{
 
+    protected $tablename="user_group";
+
     public function getAllGroup(){
-        $listobjarr=$this->select();
-        if (!empty($listobjarr)) {
-            foreach($listobjarr as $val){
-                $list[]=$val->toArray();
-            }
-            if(!empty($list)) {
+        $list=$this->select();
+        if (!empty($list)) {
                 return $list;
-            }
         }
         return array ();
     }

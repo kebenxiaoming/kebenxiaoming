@@ -17,18 +17,12 @@ class Module extends Model{
             $condition=array("online"=>$is_online);
         }
         $order = ' module_sort asc,module_id asc';
-        $listobjarr=$this->where($condition)->order($order)->select();
-        if(!empty($listobjarr)) {
-            foreach ($listobjarr as $val) {
-                $list[] = $val->toArray();
-            }
-            if (!empty($list)) {
+        $list=$this->where($condition)->order($order)->select();
+        if(!empty($list)) {
                 return $list;
-            }else{
+        }else{
                 return array();
-            }
         }
-        return array ();
     }
 
     public function getModuleForOptions() {
