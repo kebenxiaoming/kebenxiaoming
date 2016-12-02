@@ -8,14 +8,14 @@ require dirname(dirname(__FILE__))."/Public/simple_header.php";
         <form name="loginForm" method="post" action="">
             <table width="356" border="0" cellspacing="0" cellpadding="0" class="login2_nr_xx">
                 <tr>
-                    <td height="62" colspan="2" valign="top"><input type="text" name="user_name" value="{$Request.post.user_name}" id="textfield1" placeholder="Username" class="login2_nr_sr"></td>
+                    <td height="62" colspan="2" valign="top"><input type="text" name="user_name" value="<?php echo input('post.user_name');?>" id="textfield1" placeholder="Username" class="login2_nr_sr"></td>
                 </tr>
                 <tr>
-                    <td height="61" colspan="2" valign="top"><input type="password" name="password" id="textfield2" value = "{$Request.post.password}" placeholder="Password" class="login2_nr_sr"></td>
+                    <td height="61" colspan="2" valign="top"><input type="password" name="password" id="textfield2" value = "<?php echo input('post.password');?>" placeholder="Password" class="login2_nr_sr"></td>
                 </tr>
                 <tr>
                     <td width="177" height="53" valign="top"><input type="text" name="verify_code" id="textfield" placeholder="输入验证码" class="login2_nr_yz"></td>
-                    <td width="240" valign="top"><a href="#"><img title="验证码" id="verify_code" src="<?php captcha_src();?>" style="vertical-align:top"></a><span style="color:red;font-size:10px;">{$error|default=''}</span></td>
+                    <td width="240" valign="top"><a href="#"><img title="验证码" id="verify_code" src="<?php echo url('Login/verify');?>" style="vertical-align:top"></a><span style="color:red;font-size:10px;"><?php if(isset($this->vars['error'])){echo $this->vars['error'];}?></span></td>
                 </tr>
                 <tr>
                     <td height="58" valign="top"><input type="checkbox" name="remember" value="remember-me" id="checkbox"  class="login2_nr_xz"></td>
@@ -30,7 +30,7 @@ require dirname(dirname(__FILE__))."/Public/simple_header.php";
 </body>
 <script type="text/javascript">
     $("#verify_code").click(function(){
-        $(this).attr("src","{:captcha_src()}?rr="+Math.random());
+        $(this).attr("src","<?php echo url('Login/verify');?>&rr="+Math.random());
     });
 </script>
 </html>

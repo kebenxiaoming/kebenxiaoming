@@ -39,6 +39,10 @@ class Login extends Base
         $this->display();
     }
 
+    public function verify(){
+        return captcha_src();
+    }
+
 
     public function logout(){
         //清空session和缓存
