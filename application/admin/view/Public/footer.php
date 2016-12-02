@@ -1,4 +1,4 @@
 </div>
 </body>
-<?php if(isset($action_confirm)){echo $action_confirm;}?>
+<?php if(isset($this->vars['action_confirm'])){echo $this->vars['action_confirm'];}?>
 </html>
