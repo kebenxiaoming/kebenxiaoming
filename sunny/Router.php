@@ -24,7 +24,7 @@ class Router
     {
         $this->request=Request::instance();
         //统一转换为小写
-        self::$module=ucfirst($this->request->input($_GET,'g'));
+        self::$module=$this->request->input($_GET,'g');
         self::$controller=ucfirst($this->request->input($_GET,'c'));
         self::$action=$this->request->input($_GET,'a');
         if(empty(self::$module)){
