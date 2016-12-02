@@ -574,34 +574,59 @@ class Model
         return $this->query('SELECT EXISTS(SELECT 1 FROM ' . $table . $this->where_clause($where) . ')')->fetchColumn() === '1';
     }
 
-    public function count($table, $where = null)
+    public function count($table="")
     {
-        $this->setLastSql('SELECT COUNT(*) FROM ' . $table . $this->where_clause($where));
-        return 0 + ($this->query('SELECT COUNT(*) FROM ' . $table . $this->where_clause($where))->fetchColumn());
+        $table=$this->getNowTableName($table);
+        $this->setLastSql('SELECT COUNT(*) FROM ' . $table . $this->combineWhere());
+        return 0 + ($this->query('SELECT COUNT(*) FROM ' . $table . $this->combineWhere())->fetchColumn());
     }
 
-    public function max($table, $column, $where = null)
+    public function max($table="")
     {
-        $this->setLastSql('SELECT MAX(' . $column . ') FROM ' . $table . $this->where_clause($where));
-        return 0 + ($this->query('SELECT MAX(' . $column . ') FROM ' . $table . $this->where_clause($where))->fetchColumn());
+        $table=$this->getNowTableName($table);
+        if(!empty($this->options['columns'])){
+            $column=$this->options['columns'];
+        }else{
+            throw new \PDOException("请输入要统计的字段名");
+        }
+        $this->setLastSql('SELECT MAX(' . $column . ') FROM ' . $table . $this->combineWhere());
+        return 0 + ($this->query('SELECT MAX(' . $column . ') FROM ' . $table . $this->combineWhere())->fetchColumn());
     }
 
-    public function min($table, $column, $where = null)
+    public function min($table="")
     {
-        $this->setLastSql('SELECT MIN(' . $column . ') FROM ' . $table . $this->where_clause($where));
-        return 0 + ($this->query('SELECT MIN(' . $column . ') FROM ' . $table . $this->where_clause($where))->fetchColumn());
+        $table=$this->getNowTableName($table);
+        if(!empty($this->options['columns'])){
+            $column=$this->options['columns'];
+        }else{
+            throw new \PDOException("请输入要统计的字段名");
+        }
+        $this->setLastSql('SELECT MIN(' . $column . ') FROM ' . $table . $this->combineWhere());
+        return 0 + ($this->query('SELECT MIN(' . $column . ') FROM ' . $table . $this->combineWhere())->fetchColumn());
     }
 
-    public function avg($table, $column, $where = null)
+    public function avg($table="")
     {
+        $table=$this->getNowTableName($table);
+        if(!empty($this->options['columns'])){
+            $column=$this->options['columns'];
+        }else{
+            throw new \PDOException("请输入要统计的字段名");
+        }
         $this->setLastSql('SELECT AVG(' . $column . ') FROM ' . $table . $this->where_clause($where));
-        return 0 + ($this->query('SELECT AVG(' . $column . ') FROM ' . $table . $this->where_clause($where))->fetchColumn());
+        return 0 + ($this->query('SELECT AVG(' . $column . ') FROM ' . $table .$this->combineWhere())->fetchColumn());
     }
 
-    public function sum($table, $column, $where = null)
+    public function sum($table="")
     {
+        $table=$this->getNowTableName($table);
+        if(!empty($this->options['columns'])){
+            $column=$this->options['columns'];
+        }else{
+            throw new \PDOException("请输入要统计的字段名");
+        }
         $this->setLastSql('SELECT SUM(' . $column . ') FROM ' . $table . $this->where_clause($where));
-        return 0 + ($this->query('SELECT SUM(' . $column . ') FROM ' . $table . $this->where_clause($where))->fetchColumn());
+        return 0 + ($this->query('SELECT SUM(' . $column . ') FROM ' . $table . $this->combineWhere())->fetchColumn());
     }
 
     public function error()
