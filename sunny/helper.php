@@ -55,9 +55,9 @@ if (!function_exists('url')) {
         $newvars="";
         if(!empty($vars)&&is_array($vars)){
             foreach($vars as $k=>$val){
-                if(in_array($k,array('g','c','a'))){
-                    throw new Exception("输入有误，路由的方法url的输入传参中禁止使用默认的get参数：g,c,a！");
-                }
+//                if(in_array($k,array('g','c','a'))){
+//                    throw new Exception("输入有误，路由的方法url的输入传参中禁止使用默认的get参数：g,c,a！");
+//                }
                 $newvars.="&".$k."=".strval($val);
             }
         }
