@@ -8,31 +8,33 @@
  */
 namespace app\admin\controller;
 
-use think\Request;
 class User extends Base{
     public function index(){
+        $count=model("User")->count();
         $listrows=config("LISTROWS")?config("LISTROWS"):10;
-        $user_infos=model("User")->paginate($listrows);
-        $userlists=$user_infos->toArray()['data'];
+        $page=new \sunny\Page($count,$listrows);
+        $userlists=model("User")->limit($page->firstRow,$page->listRows)->select();
         foreach ($userlists as $k=>$v){
             $userlists[$k]['group_name']=getGroupName($v['user_group']);
         }
         $this->assign("user_infos",$userlists);
-        $this->assign("page_html",$user_infos->render());
+        $this->assign("page_html",$page->show());
 
         $acjs=renderJsConfirm("icon-remove");
         $this->assign("action_confirm",$acjs);
-        return $this->fetch();
+        $this->display();
     }
 
     public function showGroup($group_id){
+        $count=model("User")->where("user_group=".$group_id)->count();
         $listrows=config("LISTROWS")?config("LISTROWS"):10;
-        $user_infos=model("User")->where("user_group",$group_id)->paginate($listrows);
+        $page=new \sunny\Page($count,$listrows);
+        $user_infos=model("User")->where("user_group",$group_id)->limit($page->firstRow,$page->listRows)->select();
         if(!empty($user_infos)){
-            $this->assign("user_infos",$user_infos->toArray()['data']);
-            $this->assign("page_html",$user_infos->render());
+            $this->assign("user_infos",$user_infos);
+            $this->assign("page_html",$page->show());
         }
-        return $this->fetch();
+        $this->display();
     }
 
     public function add(){
@@ -42,11 +44,11 @@ class User extends Base{
             //判断邮箱格式
             $pattern = "/^([0-9A-Za-z\\-_\\.]+)@([0-9a-z]+\\.[a-z]{2,3}(\\.[a-z]{2})?)$/i";
             if(!preg_match($pattern,$data['email'] )){
-                $this->error("邮箱格式不正确，请重新输入！");
+                $this->error("邮箱格式不正确，请重新输入！");die;
             }
             //判断手机号格式
             if(!preg_match("/^0{0,1}(13[0-9]|15[7-9]|153|17[0-9]|156|18[0-9])[0-9]{8}$/",$data['mobile'])){
-                $this->error("手机号格式不正确，请重新输入！");
+                $this->error("手机号格式不正确，请重新输入！");die;
             }
             $data['password']=md5($data['password']);
             $res = $user->save($data);
@@ -61,7 +63,7 @@ class User extends Base{
         }else{
             $group_option_list = model("GroupRole")->getGroupForOptions ();
             $this->assign ( 'group_option_list', $group_option_list );
-            return $this->fetch();
+            $this->display();
         }
     }
 
@@ -83,7 +85,7 @@ class User extends Base{
             }else{
                 unset($data['password']);
             }
-            $res = $user->isUpdate(true)->save($data);
+            $res = $user->update($data);
             if ($res) {
                 Adminlog(session("user")['user_name'],"MODIFY" , "User",$res ,json_encode($data) );
                 $this->success("修改成功！", url("User/index"));
@@ -97,16 +99,14 @@ class User extends Base{
             if(empty($user_id)){
                 $this->error("未获取到用户id");die;
             }
-            $user=model("User")->find($user_id);
-            if($user){
-                $userinfo=$user->toArray();
-            }else{
+            $userinfo=model("User")->find($user_id);
+            if(!$userinfo){
                 $this->error("未获取到用户信息！");die;
             }
             $this->assign("user",$userinfo);
             $group_option_list = model("GroupRole")->getGroupForOptions ();
             $this->assign ( 'group_option_list', $group_option_list );
-            return $this->fetch();
+            $this->display();
         }
     }
     //删除
