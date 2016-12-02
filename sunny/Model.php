@@ -38,7 +38,6 @@ class Model
     public function query($query)
     {
         $this->queryString = $query;
-
         return $this->pdo->query($query);
     }
 
@@ -255,16 +254,7 @@ class Model
     //获取当前表信息
     public function getTableInfo($table="")
     {
-        if(empty($table))
-        {
-            //带上配置的表前缀
-            $table = Config::get("prefix") . $this->name;
-        }elseif(!empty($this->tablename))
-        {
-            $table = Config::get("prefix") . $this->tablename;
-        }else {
-            $table = Config::get("prefix") .$table;
-        }
+        $table=$this->getNowTableName($table);
         list($table) = explode(' ', $table);
         if(strpos($table,'.')){
             list($dbName,$tableName) = explode('.',$table);
@@ -322,16 +312,7 @@ class Model
         }else {
             $columns = "*";
         }
-        if(empty($table))
-        {
-            //带上配置的表前缀
-            $table = Config::get("prefix") . $this->name;
-        }elseif(!empty($this->tablename))
-        {
-            $table = Config::get("prefix") . $this->tablename;
-        }else {
-            $table = Config::get("prefix") .$table;
-        }
+        $table=$this->getNowTableName();
         if(!empty($value)) {
             $where_clause = " WHERE " . $this->getPk() . "=" . $value;
         }else{
@@ -365,12 +346,11 @@ class Model
             //判断该字段是否在表中的字段中
             $single_condition = array_diff_key($where, $this->getTableInfo());
             if($single_condition!=array()){
-                print_r($this->getLastSql());die;
                 throw new \PDOException("所传条件中的字段在该表中不存在！！");
             }
             if ($where != array())
             {
-                $this->options['where'] = ' WHERE ' . $this->data_implode($where, '');
+                $this->options['where'] = ' WHERE ' . $this->data_implode($where, ' AND ');
             }
         }else{
             $this->options['where'] = ' WHERE ' . $where;
@@ -438,16 +418,7 @@ class Model
         if(!empty($this->options['columns'])){
             $columns=$this->options['columns'];
         }
-        if(empty($table))
-        {
-            //带上配置的表前缀
-            $table = Config::get("prefix") . $this->name;
-        }elseif(!empty($this->tablename))
-        {
-            $table = Config::get("prefix") . $this->tablename;
-        }else {
-            $table = Config::get("prefix") .$table;
-        }
+        $table=$this->getNowTableName($table);
         $where_clause = $this->combineWhere();
 
         preg_match('/([a-zA-Z0-9_-]*)\s*(\[(\<|\>|\>\<|\<\>)\])?\s*([a-zA-Z0-9_-]*)/i', $table, $match);
@@ -474,8 +445,9 @@ class Model
             : false;
     }
 
-    public function insert($table, $data)
+    public function insert($table="", $data)
     {
+        $table=$this->getNowTableName($table);
         $keys = implode(',', array_keys($data));
         $values = array();
 
@@ -489,16 +461,7 @@ class Model
     }
     //新增数据
     public function save($data=""){
-        if(empty($table))
-        {
-            //带上配置的表前缀
-            $table = Config::get("prefix") . $this->name;
-        }elseif(!empty($this->tablename))
-        {
-            $table = Config::get("prefix") . $this->tablename;
-        }else {
-            $table = Config::get("prefix") .$table;
-        }
+        $table=$this->getNowTableName();
         $keys = implode(',', array_keys($data));
         $values = array();
 
@@ -514,16 +477,7 @@ class Model
     //更新数据
     public function update($data)
     {
-        if(empty($table))
-        {
-            //带上配置的表前缀
-            $table = Config::get("prefix") . $this->name;
-        }elseif(!empty($this->tablename))
-        {
-            $table = Config::get("prefix") . $this->tablename;
-        }else {
-            $table = Config::get("prefix") .$table;
-        }
+        $table=$this->getNowTableName();
 
         $fields = array();
 
@@ -730,6 +684,27 @@ class Model
      */
     public function getLastSql(){
         return $this->mysql->getLastSql();
+    }
+
+    /**
+     * @param $tablename
+     * @return string
+     */
+    private function getNowTableName($table=""){
+        if(empty($table))
+        {
+            if(!empty($this->tablename))
+            {
+                $table = Config::get("prefix") . $this->tablename;
+            }else
+            {
+                //带上配置的表前缀
+                $table = Config::get("prefix") . $this->name;
+            }
+        }else {
+            $table = Config::get("prefix") .$table;
+        }
+        return $table;
     }
 }
 ?>
