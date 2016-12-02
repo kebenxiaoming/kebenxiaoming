@@ -32,7 +32,7 @@ class Model
         $this->mysql=Mysql::getInstance();
         $this->pdo=$this->mysql->getPdo();
         //定义时传入表名
-        $this->name=$name;
+        $this->name=strtolower($name);
     }
 
     public function query($query)
@@ -364,7 +364,8 @@ class Model
         {
             //判断该字段是否在表中的字段中
             $single_condition = array_diff_key($where, $this->getTableInfo());
-            if(!empty($single_condition)){
+            if($single_condition!=array()){
+                print_r($this->getLastSql());die;
                 throw new \PDOException("所传条件中的字段在该表中不存在！！");
             }
             if ($where != array())
@@ -530,8 +531,6 @@ class Model
         {
             if($key==$this->getPk()){
                 $where_condition=" WHERE ".$key."='".$value."'";
-            }else{
-                $where_condition=$this->combineWhere();
             }
             if (is_array($value))
             {
@@ -552,6 +551,9 @@ class Model
                     $fields[] = $key . ' = ' . $this->quote($value);
                 }
             }
+        }
+        if(empty($where_condition)){
+            $where_condition=$this->combineWhere();
         }
         $this->setLastSql('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $where_condition);
         return $this->exec('UPDATE ' . $table . ' SET ' . implode(',', $fields) . $where_condition);
