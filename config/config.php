@@ -95,4 +95,8 @@ return [
     'PUBLIC'=>'/public',
     //网页title'
     'TITLE'=>'CMS后台管理',
+    //分页的单页数目
+    'LISTROWS'=>10,
+    //分页变量名
+    'VAR_PAGE'=>'p',
 ];
