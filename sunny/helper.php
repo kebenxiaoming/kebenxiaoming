@@ -63,9 +63,9 @@ if (!function_exists('url')) {
         }
         if(!empty($newvars))
         {
-            return "index.php?g=".Router::$module."&c=".$new[0]."&a=".$new[1].$newvars;
+            return "/index.php?g=".Router::$module."&c=".$new[0]."&a=".$new[1].$newvars;
         }
-        return "index.php?g=".Router::$module."&c=".$new[0]."&a=".$new[1];
+        return "/index.php?g=".Router::$module."&c=".$new[0]."&a=".$new[1];
     }
 }
 if (!function_exists('config')) {
