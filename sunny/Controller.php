@@ -57,7 +57,7 @@ class controller
      */
     public function success($message,$url="",$status=1)
     {
-        $this->inredirect($message,$status,$url);
+        $this->inredirect($message,$url,$status);
     }
 
     /**
@@ -68,7 +68,7 @@ class controller
      */
     public function error($message,$url="",$status=0)
     {
-        $this->inredirect($message,$status,$url);
+        $this->inredirect($message,$url,$status);
     }
 
     /**
@@ -88,7 +88,7 @@ class controller
         header("location: ".$url);die;
     }
     //内部重定向
-    public function inredirect($url="",$message="",$status=0,$wait=1){
+    public function inredirect($message="",$url="",$status=0,$wait=1){
         $msg=$message;
         $code=$status;
         if(empty($url)) {
