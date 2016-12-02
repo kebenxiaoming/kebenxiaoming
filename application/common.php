@@ -70,3 +70,41 @@ function getIp() {
     }
     return ($ip);
 }
+
+//获取用户所在分组
+function getGroupName($group_id){
+    if(empty($group_id)){
+        return false;
+    }
+    $name=model("UserGroup")->field("group_name")->find($group_id);
+    if(!empty($name)){
+        return $name['group_name'];
+    }else{
+        return false;
+    }
+}
+//添加js
+function renderJsConfirm($class,$confirm_title="确定要这样做吗？"){
+    $confirm_html="<script>";
+    if(!is_array($class)){
+        $class=explode(',',$class);
+    }
+
+    foreach($class as $item){
+        $confirm_html .= "
+				$('.$item').click(function(){
+						
+						var href=$(this).attr('goto');
+						var result=window.confirm('$confirm_title');
+							if(result){
+								window.location.href=href;
+							}
+					})
+				";
+    }
+
+    $confirm_html.="</script>
+
+";
+    return $confirm_html;
+}
