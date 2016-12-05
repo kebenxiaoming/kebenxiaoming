@@ -7,7 +7,6 @@
  * Time: 16:14
  */
 namespace sunny;
-use sunny\Request;
 
 class Router
 {
