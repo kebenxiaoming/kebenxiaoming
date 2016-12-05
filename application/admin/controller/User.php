@@ -25,11 +25,12 @@ class User extends Base{
         $this->display();
     }
 
-    public function showGroup($group_id){
+    public function showGroup(){
+        $group_id=input("get.group_id");
         $count=model("User")->where("user_group=".$group_id)->count();
         $listrows=config("LISTROWS")?config("LISTROWS"):10;
         $page=new \sunny\Page($count,$listrows);
-        $user_infos=model("User")->where("user_group",$group_id)->limit($page->firstRow,$page->listRows)->select();
+        $user_infos=model("User")->where(array("user_group"=>$group_id))->limit($page->firstRow,$page->listRows)->select();
         if(!empty($user_infos)){
             $this->assign("user_infos",$user_infos);
             $this->assign("page_html",$page->show());
