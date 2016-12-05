@@ -12,25 +12,24 @@ namespace app\admin\controller;
 class Group extends Base{
     //分组列表管理
     public function index(){
+        $count=model("UserGroup")->count();
         $listrows=config("LISTROWS")?config("LISTROWS"):10;
-
-        $groupsobj=model("UserGroup")->paginate($listrows);
-        $groups=$groupsobj->toArray()['data'];
+        $page=new \sunny\Page($count,$listrows);
+        $groups=model("UserGroup")->limit($page->firstRow,$page->listRows)->select();
         foreach($groups as $k=>$v){
             $user=model("User")->find($v['owner_id']);
-            $groups[$k]['owner_name']=$user->toArray()['user_name'];
+            $groups[$k]['owner_name']=$user['user_name'];
         }
         $this->assign("groups",$groups);
-        $this->assign("page_html",$groupsobj->render());
+        $this->assign("page_html",$page->show());
         $acjs=renderJsConfirm("icon-remove");
         $this->assign("action_confirm",$acjs);
-        return $this->fetch();
+        $this->display();
     }
 
-    public function edit($group_id){
-        $group_id=intval($group_id);
-        $groupobj=model("UserGroup")->where("group_id=".$group_id)->find();
-        $group=$groupobj->toArray();
+    public function edit(){
+        $group_id=input("get.group_id");
+        $group=model("UserGroup")->where("group_id=".$group_id)->find();
         if(empty($group)){
             $this->error("不存在该用户组！",url("Group/edit",array("group_id"=>$group_id)));die;
         }
@@ -42,8 +41,7 @@ class Group extends Base{
             }else{
                 $data=input("post.");
                 $data['group_id']=$group_id;
-                $result = model("UserGroup")->isUpdate(true)->save($data);
-
+                $result = model("UserGroup")->update($data);
                 if ($result>=0) {
                     Adminlog(session("user")['user_name'],"MODIFY" , "UserGroup",$group_id ,json_encode($data) );
                     $this->success( '账号组修改完成',url("Group/index"));die;
@@ -52,19 +50,16 @@ class Group extends Base{
                 }
             }
         }
-
         $groupOptions=model("UserGroup")->getGroupForOptions();
         $this->assign ( 'group', $group );
         $this->assign ( 'groupOptions', $groupOptions );
-        return $this->fetch();
+        $this->display();
     }
 
-    public function del($group_id){
+    public function del(){
+        $group_id=input("get.group_id");
         //先查看该分类下是否存在用户，存在则提醒删除用户再删除分组
-        $usersobj=model("User")->where("user_group",$group_id)->find();
-        if(!empty($usersobj)) {
-            $users = $usersobj->toArray();
-        }
+        $users=model("User")->where(array("user_group"=>$group_id))->find();
         if(!empty($users)){
             $this->error("请先删除该分组下用户，才允许删除分组！",url("Group/index"));die;
         }
@@ -77,20 +72,14 @@ class Group extends Base{
     }
 
     //权限管理
-    public function group_role($group_id=1){
+    public function group_role(){
+        $group_id=input("get.group_id");
         $menu_ids=array();
         $group_option_list = model("GroupRole")->getGroupForOptions ();
-        $group_infoobj = model("UserGroup")->where("group_id=".$group_id)->find();
-        $group_info=array();
-        if(!empty($group_infoobj)){
-            $group_info=$group_infoobj->toArray();
-        }
+        $group_info = model("UserGroup")->where("group_id=".$group_id)->find();
         if(!$group_info){
             $group_id =1;
-            $group_infoobj =  model("UserGroup")->where("group_id=".$group_id)->find();
-            if(!empty($group_infoobj)){
-                $group_info=$group_infoobj->toArray();
-            }
+            $group_info =  model("UserGroup")->where("group_id=".$group_id)->find();
         }
         $role_list = model("GroupRole")->getGroupRoles ( $group_id );
         $group_role = $group_info ['group_role'];
@@ -115,7 +104,7 @@ class Group extends Base{
             }
             $group_role = join ( ',', $menu_ids );
             $group_data = array ("group_id"=>$group_id,'group_role' => $group_role );
-            $result = model("UserGroup")->isUpdate(true)->save($group_data );
+            $result = model("UserGroup")->update($group_data );
             if ($result>=0) {
                 Adminlog(session("user")['user_name'], 'MODIFY', 'UserGroup' ,$group_id, json_encode($group_data) );
                 //如果属于当前用户的用户组，则必须重新给当前用户菜单权限
@@ -129,7 +118,7 @@ class Group extends Base{
         $this->assign ( 'group_id', $group_id );
         $this->assign ( 'group_option_list', $group_option_list );
         $this->assign ( 'group_role', $group_role_array );
-        return $this->fetch();
+        $this->display();
     }
 
     public function add(){
@@ -153,6 +142,6 @@ class Group extends Base{
             }
         }
 
-        return $this->fetch();
+        $this->display();
     }
 }
