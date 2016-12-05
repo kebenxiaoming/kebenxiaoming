@@ -10,10 +10,12 @@ namespace app\admin\controller;
 
 class Menu extends Base{
     public function index(){
+        $count=model("MenuUrl")->count();
         $listrows=config("LISTROWS")?config("LISTROWS"):10;
-        $menus=model("MenuUrl")->paginate($listrows);
-        $this->assign("menus",$menus->toArray()['data']);
-        $this->assign("page_html",$menus->render());
+        $page=new \sunny\Page($count,$listrows);
+        $menus=model("MenuUrl")->limit($page->firstRow,$page->listRows)->select();
+        $this->assign("menus",$menus);
+        $this->assign("page_html",$page->show());
 
         $module_options_list = model("Module")->getModuleForOptions ();
         $module_options_list[0]="全部";
@@ -22,7 +24,7 @@ class Menu extends Base{
 
         $acjs=renderJsConfirm("icon-remove");
         $this->assign("action_confirm",$acjs);
-        return $this->fetch();
+        $this->display();
     }
 
     /**
@@ -46,7 +48,7 @@ class Menu extends Base{
             $this->assign("module_options_list",$module_options_list);
             $father_menu_options_list = model("MenuUrl")->getFatherMenuForOptions ();
             $this->assign("father_menu_options_list",$father_menu_options_list);
-            return $this->fetch();
+            $this->display();
         }
     }
 
@@ -58,7 +60,7 @@ class Menu extends Base{
         if(IS_POST) {
             $data = input("post.");
             $data['menu_id']=intval(input("param.menu_id"));
-            $res = $menuurl->isUpdate(true)->save($data);
+            $res = $menuurl->update($data);
             if ($res>=0) {
                 Adminlog(session("user")['user_name'],"MODIFY" , "MenuUrl", $data['menu_id'] ,json_encode($data) );
                 $this->success("修改成功！", url("Menu/index"));
@@ -68,11 +70,8 @@ class Menu extends Base{
             }
         }else{
             $menu_id=intval(input("param.menu_id"));
-            $menuobj=$menuurl->find($menu_id);
-            $menu=array();
-            if(!empty($menuobj)){
-                $menu=$menuobj->toArray();
-            }else{
+            $menu=$menuurl->find($menu_id);
+            if(empty($menu)){
                 $this->error("未获取到菜单信息！");
             }
             $this->assign("currentmenu",$menu);
@@ -80,7 +79,7 @@ class Menu extends Base{
             $this->assign("module_options_list",$module_options_list);
             $father_menu_options_list = model("MenuUrl")->getFatherMenuForOptions ();
             $this->assign("father_menu_options_list",$father_menu_options_list);
-            return $this->fetch();
+            $this->display();
         }
     }
 
