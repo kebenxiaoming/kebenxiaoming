@@ -15,6 +15,6 @@ class File extends Base{
             $info=model("File")->upload();
             print_r($info);die;
         }
-        return $this->fetch();
+        $this->display();
     }
 }

@@ -10,6 +10,6 @@ namespace app\admin\controller;
 
 class Test extends Base{
     public function index(){
-        return "Hello Tp5";
+        echo "Hello Tp5";
     }
 }
