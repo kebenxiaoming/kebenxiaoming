@@ -108,3 +108,32 @@ function renderJsConfirm($class,$confirm_title="确定要这样做吗？"){
 ";
     return $confirm_html;
 }
+
+function getSysInfo() {
+    $sys_info_array = array ();
+    $sys_info_array ['gmt_time'] = gmdate ( "Y年m月d日 H:i:s", time () );
+    $sys_info_array ['bj_time'] = gmdate ( "Y年m月d日 H:i:s", time () + 8 * 3600 );
+    $sys_info_array ['server_ip'] = gethostbyname ( $_SERVER ["SERVER_NAME"] );
+    $sys_info_array ['software'] = $_SERVER ["SERVER_SOFTWARE"];
+    $sys_info_array ['port'] = $_SERVER ["SERVER_PORT"];
+    $sys_info_array ['admin'] = $_SERVER ["SERVER_ADMIN"];
+    $sys_info_array ['diskfree'] = intval ( diskfreespace ( "." ) / (1024 * 1024) ) . 'Mb';
+    $sys_info_array ['current_user'] = @get_current_user ();
+    $sys_info_array ['timezone'] = date_default_timezone_get();
+    $mysql_version =model()->query("select version()")->fetch();
+    $sys_info_array ['mysql_version'] = $mysql_version['version()'];
+    return $sys_info_array;
+}
+
+function getMenuName($menu_id){
+    if(empty($menu_id)){
+        return "未知";
+    }else{
+        $menu=model("MenuUrl")->find($menu_id);
+        if(!empty($menu)){
+            return $menu['menu_name'];
+        }else{
+            return "未知";
+        }
+    }
+}
