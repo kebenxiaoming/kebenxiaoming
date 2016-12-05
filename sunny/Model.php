@@ -20,7 +20,7 @@ class Model
     // 事务指令数
     protected $transTimes = 0;
     //当前表的主键
-    protected $pk="id";
+    protected $pk="";
     // 查询表达式参数
     protected $options          =   array();
     //mysql的单例
@@ -480,11 +480,12 @@ class Model
         $table=$this->getNowTableName();
 
         $fields = array();
-
         foreach ($data as $key => $value)
         {
             if($key==$this->getPk()){
                 $where_condition=" WHERE ".$key."='".$value."'";
+                unset($data[$key]);
+                continue;
             }
             if (is_array($value))
             {
