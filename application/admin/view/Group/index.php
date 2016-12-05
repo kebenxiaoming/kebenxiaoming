@@ -26,7 +26,7 @@ require dirname(dirname(__FILE__))."/Public/sidebar.php";
             </tr>
         </table>
         <?php } ?>
-        <div class="intro_cxcp_nr_fy"><?php echo $this->vars['page_html'];?></div>
+        <div class="intro_cxcp_nr_fy"><?php  if(isset($this->vars['page_html'])){echo $this->vars['page_html'];}?></div>
     </div>
     </div>
     </div>
