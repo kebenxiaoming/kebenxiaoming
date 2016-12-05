@@ -388,4 +388,63 @@ class Request
         }
         return $this->input($this->param, $name, $default, $filter);
     }
+    /**
+     * 获取上传的文件信息
+     * @access public
+     * @param string|array $name 名称
+     * @return null|array|\sunny\File
+     */
+    public function file($name = '')
+    {
+        if (empty($this->file)) {
+            $this->file = isset($_FILES) ? $_FILES : [];
+        }
+        if (is_array($name)) {
+            return $this->file = array_merge($this->file, $name);
+        }
+        $files = $this->file;
+        if (!empty($files)) {
+            // 处理上传文件
+            $array = [];
+            foreach ($files as $key => $file) {
+                if (is_array($file['name'])) {
+                    $item  = [];
+                    $keys  = array_keys($file);
+                    $count = count($file['name']);
+                    for ($i = 0; $i < $count; $i++) {
+                        if (empty($file['tmp_name'][$i])) {
+                            continue;
+                        }
+                        $temp['key'] = $key;
+                        foreach ($keys as $_key) {
+                            $temp[$_key] = $file[$_key][$i];
+                        }
+                        $item[] = (new File($temp['tmp_name']))->setUploadInfo($temp);
+                    }
+                    $array[$key] = $item;
+                } else {
+                    if ($file instanceof File) {
+                        $array[$key] = $file;
+                    } else {
+                        if (empty($file['tmp_name'])) {
+                            continue;
+                        }
+                        $array[$key] = (new File($file['tmp_name']))->setUploadInfo($file);
+                    }
+                }
+            }
+            if (strpos($name, '.')) {
+                list($name, $sub) = explode('.', $name);
+            }
+            if ('' === $name) {
+                // 获取全部文件
+                return $array;
+            } elseif (isset($sub) && isset($array[$name][$sub])) {
+                return $array[$name][$sub];
+            } elseif (isset($array[$name])) {
+                return $array[$name];
+            }
+        }
+        return null;
+    }
 }
