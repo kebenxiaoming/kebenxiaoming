@@ -99,4 +99,27 @@ return [
     'LISTROWS'=>10,
     //分页变量名
     'VAR_PAGE'=>'p',
+    //日志的解释配置
+    "COMMAND_FOR_LOG" => [
+        'SUCCESS' => '成功',
+        'ERROR' => '失败',
+        'ADD' => '增加',
+        'DELETE' => '删除',
+        'MODIFY' => '修改',
+        'LOGIN' => '登录',
+        'LOGOUT' => '退出',
+        'PAUSE' => '封停',
+        'PLAY' => '解封',
+        'DEL' => '删除',
+    ],
+    //模型
+
+    "CLASS_FOR_LOG" => [
+        'ALL' => '全部',
+        'User' => '用户',
+        'UserGroup' => '账号组',
+        'Module' => '菜单模块',
+        'MenuUrl' => '功能',
+        'GroupRole' => '权限',
+    ],
 ];
