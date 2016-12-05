@@ -13,6 +13,6 @@ class System extends Base{
     public function index(){
         $sys_info = getSysInfo ();
         $this->assign ( 'sys_info', $sys_info );
-        return $this->fetch("index");
+        $this->display();
     }
 }
