@@ -11,8 +11,10 @@ namespace app\admin\controller;
 class Syslog extends Base{
     //日志列表
     public function index(){
+        $count=model("SysLog")->count();
         $listrows=config("LISTROWS")?config("LISTROWS"):10;
-        $logs=model("SysLog")->order("op_time DESC")->paginate($listrows);
+        $page=new \sunny\Page($count,$listrows);
+        $logs=model("SysLog")->limit($page->firstRow,$page->listRows)->select();
         foreach($logs as &$log){
 
             if(array_key_exists($log['action'],config("COMMAND_FOR_LOG"))){
@@ -55,7 +57,7 @@ class Syslog extends Base{
             }
         }
         $this->assign("logs",$logs);
-        $this->assign("page_html",$logs->render());
-        return $this->fetch();
+        $this->assign("page_html",$page->show());
+        $this->display();
     }
 }
