@@ -31,7 +31,7 @@ class Router
             self::$module=Config::get('default_module');
         }
         if(empty(self::$controller)){
-            self::$controller='index';
+            self::$controller='Index';
         }
         if(empty(self::$action)){
             self::$action='index';
