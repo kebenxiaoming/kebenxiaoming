@@ -49,7 +49,7 @@ require dirname(dirname(__FILE__))."/Public/sidebar.php";
         </table>
         <?php } ?>
         <!--- START 分页模板 --->
-        <?php $this->vars['page_html']?>
+        <?php  if(isset($this->vars['page_html'])){echo $this->vars['page_html'];}?>
 
         <!--- END --->
     </div>
