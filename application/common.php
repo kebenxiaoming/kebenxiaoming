@@ -119,6 +119,8 @@ function getSysInfo() {
     if(isset($_SEVER['SERVER_ADMIN']))
     {
         $sys_info_array ['admin'] = $_SERVER ["SERVER_ADMIN"];
+    }else{
+        $sys_info_array ['admin'] = 'unknown';
     }
     $sys_info_array ['diskfree'] = intval ( diskfreespace ( "." ) / (1024 * 1024) ) . 'Mb';
     $sys_info_array ['current_user'] = @get_current_user ();
