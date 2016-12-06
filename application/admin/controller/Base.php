@@ -74,4 +74,9 @@ class Base extends Controller
     public function showError($error){
         $this->assign("error",$error);
     }
+
+    //返回json数据
+    public function ajaxReturn($data){
+        echo json_encode($data);die;
+    }
 }
