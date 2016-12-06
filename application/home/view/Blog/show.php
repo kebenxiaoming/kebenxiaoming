@@ -10,7 +10,7 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8" style="width: 100%;">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="about-inner">
