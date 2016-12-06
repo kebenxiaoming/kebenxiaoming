@@ -11,10 +11,10 @@ use sunny\Model;
 
 class File extends Model
 {
-    public function upload()
+    public function upload($name="")
     {
         // 获取表单上传文件 例如上传了001.jpg
-        $file = request()->file('image');
+        $file = request()->file($name);
         // 移动到框架应用根目录/public/uploads/ 目录下
         $info = $file->move(ROOT_PATH . 'uploads' . DS );
         if($info){
