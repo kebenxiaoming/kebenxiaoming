@@ -51,15 +51,15 @@
                 </td>
                 <td width="130"><div class="cp_xz"><a href="<?php echo url('Module/add');?>">添加模块</a></div></td>
                 <?php }elseif($this->vars['content_header']['menu_id'] == 2){ ?>
-
                 </td>
                 <td width="130"><div class="cp_xz"><a href="<?php echo url('User/add');?>">添加用户</a></div></td>
                 <?php }elseif($this->vars['content_header']['menu_id'] == 14){ ?>
-
                 </td>
                 <td width="130"><div class="cp_xz"><a href="<?php echo url('Menu/add');?>">添加菜单</a></div></td>
+                <?php }elseif($this->vars['content_header']['menu_id'] == 24){ ?>
+                    </td>
+                    <td width="130"><div class="cp_xz"><a href="<?php echo url('Blog/add');?>">添加博客</a></div></td>
                 <?php }elseif($this->vars['content_header']['menu_id'] == 7){ ?>
-
                 </td>
                 <td width="130"><div class="cp_xz"><a href="<?php echo url('Group/add');?>">添加账号组</a></div></td>
                 <?php } ?>

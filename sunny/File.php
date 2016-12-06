@@ -117,7 +117,7 @@ class File extends SplFileObject
             return true;
         }
 
-        if (mkdir($path, 0755, true)) {
+        if (mkdir($path, 0777, true)) {
             return true;
         } else {
             $this->error = "目录 {$path} 创建失败！";
