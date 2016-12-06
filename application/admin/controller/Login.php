@@ -49,6 +49,6 @@ class Login extends Base
         session("user",null);
         setcookie("sunny_remember",'');
         //跳转到登录页
-        $this->redirect("Login/index");
+        $this->redirect(url("Login/index"));
     }
 }
