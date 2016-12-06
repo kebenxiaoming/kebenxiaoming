@@ -62,8 +62,7 @@ class Base extends Controller
     //检测用户权限
     private function checkAccess($menu,$user){
         if(!empty($user)) {
-            $group_roleobj = model("UserGroup")->field("group_role")->where("group_id=" . $user['user_group'])->find();
-            $group_role=$group_roleobj->toArray();
+            $group_role = model("UserGroup")->field("group_role")->where("group_id=" . $user['user_group'])->find();
         }else{
             $this->error("请先登录！");die;
         }
