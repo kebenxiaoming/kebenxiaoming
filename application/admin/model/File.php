@@ -30,6 +30,9 @@ class File extends Model
             $data['sha1']=$info->hash("sha1");
             //查看是否已经存在该文件
             if($old=$this->isExist($data)){
+                if(!IS_WIN){
+                    unlink(ROOT_PATH . 'uploads' . DS .$data['savepath']);
+                }
                 return array("error"=>0,"info"=>$old);
             }
             if($id=$this->save($data)){
