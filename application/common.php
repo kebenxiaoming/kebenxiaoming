@@ -116,7 +116,10 @@ function getSysInfo() {
     $sys_info_array ['server_ip'] = gethostbyname ( $_SERVER ["SERVER_NAME"] );
     $sys_info_array ['software'] = $_SERVER ["SERVER_SOFTWARE"];
     $sys_info_array ['port'] = $_SERVER ["SERVER_PORT"];
-    $sys_info_array ['admin'] = $_SERVER ["SERVER_ADMIN"];
+    if(isset($_SEVER['SERVER_ADMIN']))
+    {
+        $sys_info_array ['admin'] = $_SERVER ["SERVER_ADMIN"];
+    }
     $sys_info_array ['diskfree'] = intval ( diskfreespace ( "." ) / (1024 * 1024) ) . 'Mb';
     $sys_info_array ['current_user'] = @get_current_user ();
     $sys_info_array ['timezone'] = date_default_timezone_get();
