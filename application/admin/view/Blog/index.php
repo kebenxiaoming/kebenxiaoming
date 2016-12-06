@@ -18,7 +18,7 @@ require dirname(dirname(__FILE__))."/Public/sidebar.php";
             <td width="50" height="48" align="center"><?php echo $new['id'];?></td>
             <td width="251" align="center"><?php echo $new['title'];?></td>
             <td width="200" align="center"><?php echo date('Y-m-d H:i:s',$new['create_time']);?></td>
-            <td width="136" align="center"><input type="text" value="<?php echo $new['sort'];?>" class="listorder" data-id="<?php echo $new['id'];?>"/></td>
+            <td width="136" align="center"><?php echo $new['sort'];?></td>
             <td width="139" align="center"><a href="<?php echo url('Blog/edit',array('id'=>$new['id']));?>"><img src="<?php echo config('PUBLIC');?>/Admin/images/cp_11.jpg" width="27" height="27" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a goto="<?php echo url('Blog/del',array('id'=>$new['id']));?>" class="icon-remove"><img src="<?php echo config('PUBLIC');?>/Admin/images/cp_13.jpg" width="27" height="27" /></a></td>
         </tr>
     </table>
