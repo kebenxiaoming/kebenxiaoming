@@ -1,0 +1,49 @@
+<?php
+require dirname(dirname(__FILE__))."/Public/header.php";
+require dirname(dirname(__FILE__))."/Public/navibar.php";
+require dirname(dirname(__FILE__))."/Public/sidebar.php";
+?>
+
+<!--&lt;!&ndash;- START 以上内容不需更改，保证该TPL页内的标签匹配即可 -&ndash;&gt;-->
+
+
+<!--<include file="Public/message"/>-->
+<if condition="$user_info['user_type']==0">
+<table width="855" border="0" cellspacing="0" cellpadding="0" class="right_nr_sy_bt">
+    <tr>
+        <td width="21"><img src="<?php echo config('PUBLIC');?>/Admin/images/sy_06.jpg" width="4" height="18" /></td>
+        <td width="834">快捷菜单</td>
+    </tr>
+</table>
+<div class="right_nr_kj_cd"><a href="<?php echo url('User/index');?>">账号列表</a></div>
+</if>
+<table width="855" border="0" cellspacing="0" cellpadding="0" class="right_nr_sy_bt">
+    <tr>
+        <td width="21"><img src="<?php echo config('PUBLIC');?>/Admin/images/sy_06.jpg" width="4" height="18" /></td>
+        <td width="834">当前账号信息</td>
+    </tr>
+</table>
+<table width="855" border="0" cellspacing="0" cellpadding="0" class="right_nr_zhxx">
+    <tr>
+        <td width="101" height="65" align="center" style="background-color:#f4f4f4">用户名 </td>
+        <td width="103" align="center" style="background-color:#f4f4f4">真实姓名</td>
+        <td width="128" align="center" style="background-color:#f4f4f4">手机号</td>
+        <td width="194" align="center" style="background-color:#f4f4f4">Email</td>
+        <td width="193" align="center" style="background-color:#f4f4f4">登录时间</td>
+        <td width="136" align="center" style="background-color:#f4f4f4">登录IP</td>
+    </tr>
+    <tr>
+        <td height="60" align="center"><?php echo $this->vars['user_info']['user_name'];?></td>
+        <td align="center"><?php echo $this->vars['user_info']['real_name'];?></td>
+        <td align="center"><?php echo $this->vars['user_info']['mobile'];?></td>
+        <td align="center"><?php echo $this->vars['user_info']['email'];?></td>
+        <td align="center"><?php echo date('Y-m-d H:i:s',$this->vars['user_info']['login_time']);?></td>
+        <td align="center"><?php echo $this->vars['user_info']['login_ip'];?></td>
+    </tr>
+</table>
+</div>
+</div>
+<!--- END 以下内容不需更改，请保证该TPL页内的标签匹配即可 --->
+<?php
+require dirname(dirname(__FILE__))."/Public/footer.php";
+?>
