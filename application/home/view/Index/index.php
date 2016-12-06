@@ -5,7 +5,7 @@ require dirname(dirname(__FILE__))."/Public/header.php";
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h2>Know Nothing May Be Better than know a little</h2>
+                    <h2>Know Nothing May Be Better Than know A Little</h2>
                 </div>
             </div>
         </div>
