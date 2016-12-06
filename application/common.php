@@ -142,3 +142,19 @@ function getMenuName($menu_id){
         }
     }
 }
+
+//根据传来的pics返回第一张图
+function getImg($pics){
+    if(!empty($pics)) {
+        $arrpic = explode(",", $pics);
+        $file = model('File')->find($arrpic[0]);
+        if(!empty($file)){
+            $imgurl=DS."uploads".DS.$file["savepath"];
+            return $imgurl;
+        }else{
+            return false;
+        }
+    }else{
+        return false;
+    }
+}
