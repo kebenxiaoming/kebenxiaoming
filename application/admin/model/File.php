@@ -22,7 +22,7 @@ class File extends Model
             $data['name']=$file->getInfo()['name'];
             $data['savepath']= $info->getSaveName();
             $data['savename']=$info->getFilename();
-            $data['mime']=$file->getMime();
+            //$data['mime']=$file->getMime();
             $data['size']=$info->getSize();
             $data['create_time']=$info->getMTime();
             $data['location']=$info->getPathname();
