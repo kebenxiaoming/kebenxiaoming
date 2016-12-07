@@ -140,4 +140,12 @@ class Page{
             $this->config['theme']);
         return "<div>{$page_str}</div>";
     }
+
+    public function getNowPage(){
+        return $this->nowPage;
+    }
+
+    public function getTotalPages(){
+        return  ceil($this->totalRows / $this->listRows);
+    }
 }

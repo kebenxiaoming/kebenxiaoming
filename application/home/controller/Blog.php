@@ -13,9 +13,15 @@ class Blog extends base
     public function index()
     {
         $count=model("Article")->count();
-        $listrows=config("LISTROWS")?config("LISTROWS"):10;
+        $listrows=6;//config("LISTROWS")?config("LISTROWS"):10;
         $page=new \sunny\Page($count,$listrows);
         $articles=model("Article")->limit($page->firstRow,$page->listRows)->order('sort DESC')->select();
+        $this->assign('current_page',$page->getNowPage());
+        if($page->getTotalPages()>$page->getNowPage()){
+            $this->assign("has_more",true);
+        }else{
+            $this->assign("has_more",false);
+        }
         $this->assign("blogs",$articles);
         $this->display();
     }
@@ -25,5 +31,33 @@ class Blog extends base
         $article=model('Article')->find($id);
         $this->assign("blog",$article);
         $this->display();
+    }
+
+    //ajax返回数据
+    public function ajaxLoadPage(){
+        $count=model("Article")->count();
+        $listrows=6;
+        $page=new \sunny\Page($count,$listrows);
+        $articles=model("Article")->limit($page->firstRow,$page->listRows)->order('sort DESC')->select();
+        if(!empty($articles)) {
+            foreach ($articles as $key => $val) {
+                if (!empty($val['pics'])) {
+                    $articles[$key]['imageurl'] = getImg($val['pics']);
+                }
+                $articles[$key]['url'] = url('Blog/show', array('id' => $val['id']));
+            }
+            $data=array(
+                'status'=>1,
+                'now_page'=>$page->getNowPage(),
+                'articles'=>$articles
+            );
+        }else{
+            $data=array(
+                'status'=>0,
+                'now_page'=>$page->getNowPage(),
+                'articles'=>$articles
+            );
+        }
+        echo json_encode($data);die;
     }
 }
