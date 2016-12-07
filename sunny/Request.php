@@ -447,4 +447,49 @@ class Request
         }
         return null;
     }
+
+    // 分析路由规则中的变量
+    public function parseVar($url)
+    {
+        //截取url
+        if(stripos($url, '?')!==false) {
+            $url = substr($url, 0, stripos($url, '?'));
+        }
+        $urlarr=explode('/',$url);
+        // 提取路由规则中的变量
+        if($urlarr[1]=='index.php'){
+            if(isset($urlarr[2])) {
+                $var['g'] = $urlarr[2];
+            }else{
+                $var['g']="";
+            }
+            if(isset($urlarr[3])) {
+                $var['c'] = $urlarr[3];
+            }else{
+                $var['c']="";
+            }
+            if(isset($urlarr[4])) {
+                $var['a'] = $urlarr[4];
+            }else{
+                $var['a']="";
+            }
+        }else{
+            if(isset($urlarr[1])) {
+                $var['g'] = $urlarr[1];
+            }else{
+                $var['g']="";
+            }
+            if(isset($urlarr[2])) {
+                $var['c'] = $urlarr[2];
+            }else{
+                $var['c']="";
+            }
+            if(isset($urlarr[3])) {
+                $var['a'] = $urlarr[3];
+            }else{
+                $var['a']="";
+            }
+        }
+        return $var;
+    }
 }
