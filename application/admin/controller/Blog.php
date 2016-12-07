@@ -56,6 +56,8 @@ class Blog extends Base{
                 if(empty($data['sort'])){
                     $data['sort']=0;
                 }
+                $id=input('get.id');
+                $data['id']=$id;
                 $now=time();
                 $data['update_time']=$now;
                 if ($res = model("Article")->update($data)) {
