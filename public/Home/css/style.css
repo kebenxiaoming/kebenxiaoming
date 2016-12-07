@@ -1220,4 +1220,9 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 200px;
   width:100%;
 }
+
+.blog-inner{
+  height:466px;
+}
+
 /*# sourceMappingURL=style.css.map */

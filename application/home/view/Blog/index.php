@@ -19,8 +19,8 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                             <?php } ?>
                     <a href="<?php echo url('Blog/show',array('id'=>$blog['id']));?>"><img class="img-responsive" src="<?php echo getImg($blog['pics']);?>" alt="Blog"></a>
                     <div class="desc">
-                        <h3><a href="<?php echo url('Blog/show',array('id'=>$blog['id']));?>"><?php echo $blog['title'];?></a></h3>
-                        <p><?php echo $blog['description'];?></p>
+                        <h3><a style="display:block;overflow: hidden;height:32px;" href="<?php echo url('Blog/show',array('id'=>$blog['id']));?>"><?php echo $blog['title'];?></a></h3>
+                        <p style="height:30px;overflow: hidden;"><?php echo $blog['description'];?></p>
                         <p><a href="<?php echo url('Blog/show',array('id'=>$blog['id']));?>" class="btn btn-primary btn-outline with-arrow">Read More<i class="icon-arrow-right"></i></a></p>
                     </div>
                 </div>
@@ -55,8 +55,8 @@ require dirname(dirname(__FILE__))."/Public/footer.php";
                             str+='<div class="row">';
                             }
                             str+='<a href="'+dataarr.articles[i]['url']+'"><img class="img-responsive" src="'+dataarr.articles[i]['imageurl']+'" alt="Blog"></a><div class="desc">';
-                            str+='<h3><a href="'+dataarr.articles[i]['imageurl']+'">'+dataarr.articles[i]['title']+'</a></h3>';
-                            str+='<p>'+dataarr.articles[i]['description']+'</p>';
+                            str+='<h3><a style="display:block;overflow: hidden;height:32px;" href="'+dataarr.articles[i]['imageurl']+'">'+dataarr.articles[i]['title']+'</a></h3>';
+                            str+='<p style="height:30px;overflow: hidden;">'+dataarr.articles[i]['description']+'</p>';
                             str+='<p><a href="'+dataarr.articles[i]['url']+'" class="btn btn-primary btn-outline with-arrow">Read More<i class="icon-arrow-right"></i></a></p>';
                             str+='</div>';
                             str+='</div>';
