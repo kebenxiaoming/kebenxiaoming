@@ -22,10 +22,17 @@ class Router
     public function __construct()
     {
         $this->request=Request::instance();
-        //统一转换为小写
-        self::$module=$this->request->input($_GET,'g');
-        self::$controller=ucfirst($this->request->input($_GET,'c'));
-        self::$action=$this->request->input($_GET,'a');
+        if(Config::get('URL_MODE')==1) {
+            $vars=$this->request->parseVar($_SERVER['REQUEST_URI']);
+            self::$module = $vars['g'];
+            self::$controller = ucfirst($vars['c']);
+            self::$action = $vars['a'];;
+        }else {
+            //统一转换为小写
+            self::$module = $this->request->input($_GET, 'g');
+            self::$controller = ucfirst($this->request->input($_GET, 'c'));
+            self::$action = $this->request->input($_GET, 'a');
+        }
         if(empty(self::$module)){
             self::$module=Config::get('default_module');
         }

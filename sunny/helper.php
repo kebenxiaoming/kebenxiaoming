@@ -53,19 +53,33 @@ if (!function_exists('url')) {
            throw new Exception("输入有误，路由的方法url的输入规则必须是类似index/index这种！");
         }
         $newvars="";
-        if(!empty($vars)&&is_array($vars)){
-            foreach($vars as $k=>$val){
+        if(Config::get('URL_MODE')!=1) {
+            if(!empty($vars)&&is_array($vars)){
+                foreach($vars as $k=>$val){
 //                if(in_array($k,array('g','c','a'))){
 //                    throw new Exception("输入有误，路由的方法url的输入传参中禁止使用默认的get参数：g,c,a！");
 //                }
-                $newvars.="&".$k."=".strval($val);
+                    $newvars.="&".$k."=".strval($val);
+                }
             }
+            if (!empty($newvars)) {
+                return "/index.php?g=" . Router::$module . "&c=" . $new[0] . "&a=" . $new[1] . $newvars;
+            }
+            return "/index.php?g=" . Router::$module . "&c=" . $new[0] . "&a=" . $new[1];
+        }else{
+            if(!empty($vars)&&is_array($vars)){
+                foreach($vars as $k=>$val){
+//                if(in_array($k,array('g','c','a'))){
+//                    throw new Exception("输入有误，路由的方法url的输入传参中禁止使用默认的get参数：g,c,a！");
+//                }
+                    $newvars.="?".$k."=".strval($val);
+                }
+            }
+            if (!empty($newvars)) {
+                return "/index.php/" . Router::$module . "/" . $new[0] . "/" . $new[1] . $newvars;
+            }
+            return "/index.php/" . Router::$module . "/" . $new[0] . "/" . $new[1];
         }
-        if(!empty($newvars))
-        {
-            return "/index.php?g=".Router::$module."&c=".$new[0]."&a=".$new[1].$newvars;
-        }
-        return "/index.php?g=".Router::$module."&c=".$new[0]."&a=".$new[1];
     }
 }
 if (!function_exists('config')) {
