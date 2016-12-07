@@ -1215,4 +1215,9 @@ h1, h2, h3, h4, h5, h6, figure {
   display:block;
   max-width:100%;
 }
+
+.blog img{
+  height: 200px;
+  width:100%;
+}
 /*# sourceMappingURL=style.css.map */
