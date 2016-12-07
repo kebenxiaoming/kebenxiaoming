@@ -18,7 +18,7 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                     <p>我的生活轨迹和我的存在方式</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row blog">
                 <?php foreach($this->vars['blogs'] as $key=>$blog){?>
                     <div class="col-md-4 text-center">
                         <div class="blog-inner">
