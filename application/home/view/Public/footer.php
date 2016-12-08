@@ -37,5 +37,20 @@
 <!-- MAIN JS -->
 <script src="<?php echo config('PUBLIC');?>/Home/js/main.js"></script>
 
+<div class="back-to-top" style="display: block;
+    position: fixed;
+	bottom: 10px;
+	right: 25%;
+	z-index: 10;" onclick="jQuery(this).scrollTop();">
+    <a style="cursor: pointer;
+	width: 35px;
+	height: 35px;
+	text-indent: -20000px;
+	display: block;
+    border-radius: 100%;
+    background-color: #D43638;
+    border-color: #910101;
+    background-image: -moz-linear-gradient(center top , #EB5367, #E04751 50%, #DE404A 50%, #D43638);">返回顶部</a></div>
+<script src="https://lanterncn.cn/wp-content/themes/SimPo/js/backtotop.js" type="text/javascript"></script>
 </body>
 </html>
