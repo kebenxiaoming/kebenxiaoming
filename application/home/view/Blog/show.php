@@ -11,8 +11,8 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                     <?php echo $this->vars['blog']['content'];?>
             </div>
             <!-- UY BEGIN -->
-<!--            <div id="uyan_frame"></div>-->
-<!--            <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>-->
+            <div id="uyan_frame"></div>
+            <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
             <!-- UY END -->
     </div>
 <?php
