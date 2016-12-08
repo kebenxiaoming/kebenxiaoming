@@ -50,7 +50,7 @@
     border-radius: 100%;
     background-color: #D43638;
     border-color: #910101;
-    background-image: -moz-linear-gradient(center top , #EB5367, #E04751 50%, #DE404A 50%, #D43638);">返回顶部</a></div>
+    background-image: -moz-linear-gradient(center top , #EB5367, #E04751 50%, #DE404A 50%, #D43638);">回到顶部</a></div>
 <script src="https://lanterncn.cn/wp-content/themes/SimPo/js/backtotop.js" type="text/javascript"></script>
 </body>
 </html>
