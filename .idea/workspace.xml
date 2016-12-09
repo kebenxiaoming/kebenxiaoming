@@ -2,12 +2,182 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9089831d-bb8b-4da7-a718-eebcf8003c8e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/img/editor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/jquery.scrollto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/pagedown-extra.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/pagedown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/markdown.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/.scrutinizer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/GithubMarkdown.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/Markdown.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/MarkdownExtra.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/Parser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/bin/markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/CodeTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/FencedCodeTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/HeadlineTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/HtmlTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/ListTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/QuoteTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/RuleTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/TableTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/CodeTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/EmphStrongTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/LinkTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/StrikeoutTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/UrlLinkTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/BaseMarkdownTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/GithubMarkdownTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/MarkdownExtraTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/MarkdownOLStartNumTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/MarkdownTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/ParserTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/fenced-code.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/fenced-code.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/special-attributes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/special-attributes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/tables.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/test_precedence.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/test_precedence.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/del.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/del.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/dense-block-markers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/dense-block-markers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/dense-block-markers2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/dense-block-markers2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-basics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-basics.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-code-in-numbered-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-code-in-numbered-list.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-sample.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-sample.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/issue-33.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/issue-33.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/issue-38.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/issue-38.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/lists.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/lists.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/non-tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/non-tables.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/tables.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/test_precedence.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/test_precedence.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/url.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/blockquote-nested.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/blockquote-nested.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/blockquote.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/blockquote.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/code.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/code.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/dense-block-markers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/dense-block-markers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/emphasis.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/emphasis.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/empty-line.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/empty-line.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/endless_loop_bug.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/endless_loop_bug.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/escape-in-link.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/escape-in-link.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/headline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/headline.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/hr.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/hr.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/html-block.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/html-block.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/images.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/images.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/inline-html.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/inline-html.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/lazy-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/lazy-list.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/links.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/links.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list-marker-in-paragraph.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list-marker-in-paragraph.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list_and_reference.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list_and_reference.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list_items_with_undefined_ref.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list_items_with_undefined_ref.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_amps_and_angle_encoding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_amps_and_angle_encoding.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_auto_links.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_auto_links.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_backslash_escapes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_backslash_escapes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_blockquotes_with_code_blocks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_blockquotes_with_code_blocks.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_horizontal_rules.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_horizontal_rules.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_avanced.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_avanced.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_comments.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_comments.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_simple.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_links_inline_style.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_links_inline_style.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_links_reference_style.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_links_reference_style.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_literal_quotes_in_titles.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_literal_quotes_in_titles.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_markdown_documentation_basics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_markdown_documentation_basics.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_nested_blockquotes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_nested_blockquotes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_ordered_and_unordered_lists.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_ordered_and_unordered_lists.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_strong_and_em_together.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_strong_and_em_together.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_tabs.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_tidyness.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_tidyness.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/nested-lists.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/nested-lists.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/newline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/newline.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/paragraph.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/paragraph.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/references.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/references.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/specs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/specs.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/test_precedence.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/test_precedence.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/unicode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/unicode.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/utf8-do-not-kill-characters.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/utf8-do-not-kill-characters.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-ol-start-num-data/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-ol-start-num-data/list.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-ol-start-num-data/md1_ordered_and_unordered_lists.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-ol-start-num-data/md1_ordered_and_unordered_lists.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/profile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/controller/Base.php" afterPath="$PROJECT_DIR$/application/admin/controller/Base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/Public/sidebar.php" afterPath="$PROJECT_DIR$/application/admin/view/Public/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/index/index.php" afterPath="$PROJECT_DIR$/application/admin/view/index/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sunny/File.php" afterPath="$PROJECT_DIR$/sunny/File.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
+    <list id="6546833f-7d4c-4ef1-9ff6-cc2279ea1a6b" name="Failed commit: Default" comment="Merge https://github.com/kebenxiaoming/kebenxiaoming&#10;&#10;# Conflicts:&#10;#&#9;composer.lock&#10;" />
     <ignored path="kebenxiaoming.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -35,18 +205,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="File.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/model/File.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#6#98#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Blog.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Blog.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,7 +220,7 @@
       <file leaf-file-name="File.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sunny/File.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
+            <state relative-caret-position="2109">
               <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
               <folding />
             </state>
@@ -73,7 +231,7 @@
         <entry file="file://$PROJECT_DIR$/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1919">
-              <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -82,32 +240,28 @@
       <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sunny/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
+            <state relative-caret-position="874">
               <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-              <folding>
-                <marker date="1480902544200" expanded="true" signature="14749:14856" ph="INSERT INTO ${$table}... " />
-                <marker date="1480902544200" expanded="true" signature="14881:14988" ph="INSERT INTO ${$table}... " />
-                <marker date="1480902544200" expanded="true" signature="15366:15473" ph="INSERT INTO ${$table}... " />
-                <marker date="1480902544200" expanded="true" signature="15498:15605" ph="INSERT INTO ${$table}... " />
-                <marker date="1480902544200" expanded="true" signature="17084:17096" ph="DELETE FROM " />
-                <marker date="1480902544200" expanded="true" signature="17161:17173" ph="DELETE FROM " />
-                <marker date="1480902544200" expanded="true" signature="19118:19191" ph="SELECT EXIST... " />
-                <marker date="1480902544200" expanded="true" signature="19132:19146" ph="SELECT 1 FRO... ${$table}" />
-                <marker date="1480902544200" expanded="true" signature="19224:19297" ph="SELECT EXIST... " />
-                <marker date="1480902544200" expanded="true" signature="19238:19252" ph="SELECT 1 FRO... ${$table}" />
-                <marker date="1480902544200" expanded="true" signature="19448:19469" ph="SELECT COUNT... ${$table}" />
-                <marker date="1480902544200" expanded="true" signature="19540:19561" ph="SELECT COUNT... ${$table}" />
-                <marker date="1480902544200" expanded="true" signature="19906:19913" ph="SELECT COUNT... ${$table}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Base.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Base.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="505">
               <caret line="64" column="116" selection-start-line="64" selection-start-column="116" selection-end-line="64" selection-end-column="116" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.lock" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -126,12 +280,9 @@
       <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
-              <folding>
-                <marker date="1480924295995" expanded="true" signature="4710:4746" ph="..." />
-                <marker date="1480924295995" expanded="true" signature="4760:4785" ph="..." />
-              </folding>
+            <state relative-caret-position="1406">
+              <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,7 +315,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/admin/model/User.php" />
         <option value="$PROJECT_DIR$/application/admin/model/Module.php" />
         <option value="$PROJECT_DIR$/application/admin/view/Public/header.php" />
         <option value="$PROJECT_DIR$/application/admin/view/Index/index.php" />
@@ -215,6 +365,7 @@
         <option value="$PROJECT_DIR$/application/admin/view/Blog/index.php" />
         <option value="$PROJECT_DIR$/application/admin/view/Blog/add.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Base.php" />
+        <option value="$PROJECT_DIR$/composer.lock" />
       </list>
     </option>
   </component>
@@ -231,7 +382,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -259,7 +410,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,56 +439,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="topthink" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="think-captcha" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunny" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,6 +616,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -596,6 +697,7 @@
       <workItem from="1480645292699" duration="16530000" />
       <workItem from="1480900190213" duration="17860000" />
       <workItem from="1480988027272" duration="1392000" />
+      <workItem from="1481264590704" duration="189000" />
     </task>
     <task id="LOCAL-00001" summary="更新模型方法的update方法，修改条件使用primary key作为条件">
       <created>1480648858218</created>
@@ -944,7 +1046,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130720000" />
+    <option name="totallyTimeSpent" value="130909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -956,11 +1058,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21641791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21888413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12026002" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1332611" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -990,7 +1093,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="日志控制器" />
     <MESSAGE value="日志页面" />
     <MESSAGE value="修改分页输出" />
     <MESSAGE value="更新" />
@@ -1015,7 +1117,8 @@
     <MESSAGE value="去掉删除文件部分" />
     <MESSAGE value="当前版本的数据库" />
     <MESSAGE value="修改66行" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改66行" />
+    <MESSAGE value="Merge https://github.com/kebenxiaoming/kebenxiaoming&#10;&#10;# Conflicts:&#10;#&#9;composer.lock&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge https://github.com/kebenxiaoming/kebenxiaoming&#10;&#10;# Conflicts:&#10;#&#9;composer.lock&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,13 +1127,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/admin/view/User/showGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="46" column="84" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/Group/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -1038,7 +1134,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/SysLog/index.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/Syslog/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
@@ -1063,7 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="840" column="9" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,9 +1230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-          <folding>
-            <element signature="e#6#98#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1160,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="42" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,7 +1299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="587" column="21" selection-start-line="587" selection-start-column="9" selection-end-line="587" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,7 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1273,7 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,7 +1369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2375">
           <caret line="133" column="31" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1384,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/model/File.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#6#98#0#PHP" expanded="true" />
@@ -1338,12 +1425,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
-          <folding>
-            <marker date="1480924295995" expanded="true" signature="4710:4746" ph="..." />
-            <marker date="1480924295995" expanded="true" signature="4760:4785" ph="..." />
-          </folding>
+        <state relative-caret-position="1406">
+          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1359,7 +1443,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sunny/File.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
+        <state relative-caret-position="2109">
           <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
           <folding />
         </state>
@@ -1368,30 +1452,16 @@
     <entry file="file://$PROJECT_DIR$/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1919">
-          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sunny/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
+        <state relative-caret-position="874">
           <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-          <folding>
-            <marker date="1480902544200" expanded="true" signature="14749:14856" ph="INSERT INTO ${$table}... " />
-            <marker date="1480902544200" expanded="true" signature="14881:14988" ph="INSERT INTO ${$table}... " />
-            <marker date="1480902544200" expanded="true" signature="15366:15473" ph="INSERT INTO ${$table}... " />
-            <marker date="1480902544200" expanded="true" signature="15498:15605" ph="INSERT INTO ${$table}... " />
-            <marker date="1480902544200" expanded="true" signature="17084:17096" ph="DELETE FROM " />
-            <marker date="1480902544200" expanded="true" signature="17161:17173" ph="DELETE FROM " />
-            <marker date="1480902544200" expanded="true" signature="19118:19191" ph="SELECT EXIST... " />
-            <marker date="1480902544200" expanded="true" signature="19132:19146" ph="SELECT 1 FRO... ${$table}" />
-            <marker date="1480902544200" expanded="true" signature="19224:19297" ph="SELECT EXIST... " />
-            <marker date="1480902544200" expanded="true" signature="19238:19252" ph="SELECT 1 FRO... ${$table}" />
-            <marker date="1480902544200" expanded="true" signature="19448:19469" ph="SELECT COUNT... ${$table}" />
-            <marker date="1480902544200" expanded="true" signature="19540:19561" ph="SELECT COUNT... ${$table}" />
-            <marker date="1480902544200" expanded="true" signature="19906:19913" ph="SELECT COUNT... ${$table}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1399,6 +1469,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
           <caret line="64" column="116" selection-start-line="64" selection-start-column="116" selection-end-line="64" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
           <folding />
         </state>
       </provider>
