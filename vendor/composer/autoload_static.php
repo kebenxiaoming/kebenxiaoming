@@ -15,12 +15,20 @@ class ComposerStaticInit14cab941852aa6e4d2d330b1bd2e59d1
         array (
             'think\\captcha\\' => 14,
         ),
+        'c' => 
+        array (
+            'cebe\\markdown\\' => 14,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'think\\captcha\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-captcha/src',
+        ),
+        'cebe\\markdown\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cebe/markdown',
         ),
     );
 

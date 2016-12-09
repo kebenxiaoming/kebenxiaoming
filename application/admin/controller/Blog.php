@@ -30,6 +30,10 @@ class Blog extends Base{
                 if(empty($data['sort'])){
                     $data['sort']=0;
                 }
+                if(!empty($data['content'])) {
+                    $parser = new \cebe\markdown\Markdown();
+                    $data['content']=$parser->parse($data['content']);
+                }
                 $data['status']=1;
                 $now=time();
                 $data['create_time']=$now;
@@ -46,6 +50,11 @@ class Blog extends Base{
                 die;
             }
         }
+        if (input('get.editor') == 'markdown') {
+                $this->assign('editor', "markdown");
+            } else {
+                $this->assign('editor', "kindeditor");
+         }
         $this->display();
     }
     //编辑博客
@@ -60,6 +69,10 @@ class Blog extends Base{
                 $data['id']=$id;
                 $now=time();
                 $data['update_time']=$now;
+                if(!empty($data['content'])) {
+                    $parser = new \cebe\markdown\Markdown();
+                    $data['content']=$parser->parse($data['content']);
+                }
                 if ($res = model("Article")->update($data)) {
                     $this->success("编辑文章成功！",url('Blog/index'));
                     die;
@@ -85,6 +98,11 @@ class Blog extends Base{
             }else{
                 $this->error("未获取到文章详情！");die;
             }
+        }
+        if (input('get.editor') == 'markdown') {
+            $this->assign('editor', "markdown");
+        } else {
+            $this->assign('editor', "kindeditor");
         }
         $this->display();
     }

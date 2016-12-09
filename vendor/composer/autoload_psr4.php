@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'think\\captcha\\' => array($vendorDir . '/topthink/think-captcha/src'),
+    'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
 );
