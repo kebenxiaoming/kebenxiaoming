@@ -24,7 +24,7 @@ require dirname(dirname(__FILE__))."/Public/sidebar.php";
 <form method="post" action="">
     <div class="wz_qxgl_nr">
         <?php foreach($this->vars['role_list'] as $key=>$role){ ?>
-        <?php if(count($role['menu_info']) > 0){?>
+        <?php if(!empty($role['menu_info'])){if(count($role['menu_info']) > 0){?>
         <table width="399" border="0" cellspacing="0" cellpadding="0" class="wz_qxgl_nr_xx">
             <tr>
                 <td height="50" colspan="3" valign="top"><div class="wz_qxgl_nr_xx_bt"><?php echo $role['module_name'];?></div></td>
@@ -43,7 +43,7 @@ require dirname(dirname(__FILE__))."/Public/sidebar.php";
                 </td>
             </tr>
         </table>
-        <?php } ?>
+        <?php }} ?>
         <?php } ?>
     </div>
 
