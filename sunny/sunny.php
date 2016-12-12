@@ -6,6 +6,7 @@
  * Date: 2016/11/24
  * Time: 9:13
  */
+date_default_timezone_set('PRC');
 define('SUNNY_VERSION', '0.0.1beta');
 define('SUNNY_START_TIME', microtime(true));
 define('SUNNY_START_MEM', memory_get_usage());
