@@ -30,10 +30,13 @@ class Blog extends Base{
                 if(empty($data['sort'])){
                     $data['sort']=0;
                 }
-                if(!empty($data['content'])) {
-                    $parser = new \cebe\markdown\Markdown();
-                    $data['content']=$parser->parse($data['content']);
+                if($data['editor']=="markdown") {
+                    if (!empty($data['content'])) {
+                        $parser = new \cebe\markdown\Markdown();
+                        $data['content'] = $parser->parse($data['content']);
+                    }
                 }
+                unset($data['editor']);
                 $data['status']=1;
                 $now=time();
                 $data['create_time']=$now;
@@ -69,10 +72,13 @@ class Blog extends Base{
                 $data['id']=$id;
                 $now=time();
                 $data['update_time']=$now;
-                if(!empty($data['content'])) {
-                    $parser = new \cebe\markdown\Markdown();
-                    $data['content']=$parser->parse($data['content']);
+                if($data['editor']=="markdown") {
+                    if (!empty($data['content'])) {
+                        $parser = new \cebe\markdown\Markdown();
+                        $data['content'] = $parser->parse($data['content']);
+                    }
                 }
+                unset($data['editor']);
                 if ($res = model("Article")->update($data)) {
                     $this->success("编辑文章成功！",url('Blog/index'));
                     die;
