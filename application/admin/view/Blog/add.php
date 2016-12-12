@@ -44,7 +44,7 @@ require dirname(dirname(__FILE__))."/Public/sidebar.php";
             <tr>
                 <td width="106" height="80">编辑器选择</td>
                 <td width="749"><div class="cpgl_cptj_xl">
-                        <select onchange="javascript:location.replace('<?php echo url('Blog/add');?>&editor='+this.options[this.selectedIndex].value)" style="margin:5px 0px 0px">
+                        <select name="editor" onchange="javascript:location.replace('<?php echo url('Blog/add');?>&editor='+this.options[this.selectedIndex].value)" style="margin:5px 0px 0px">
                             <?php if($this->vars['editor']=='markdown'){?>
                                  <option value="kindeditor" >kindeditor</option><option value="markdown" selected>markdown</option>';
                             <?php }else{ ?>
