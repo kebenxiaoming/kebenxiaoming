@@ -53,6 +53,10 @@ if (is_file(ROOT_PATH . '.env')) {
 \sunny\Config::set(include CONF_PATH."config.php");
 //载入帮助类
 require SUNNY_PATH."helper.php";
+// 加载行为扩展文件
+if (is_file(APP_PATH . 'tags' . EXT)) {
+    \sunny\Hook::import(include APP_PATH . 'tags' . EXT);
+}
 //路由解析
 $Router=\sunny\Router::getInstance();
 $Router->dispatch();
