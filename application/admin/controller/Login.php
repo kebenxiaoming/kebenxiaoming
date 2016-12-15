@@ -14,7 +14,7 @@ class Login extends Base
         if(IS_POST){
             $verify=input('post.verify_code');
             //先检测验证码
-            if(captcha_check($verify)){
+            //if(captcha_check($verify)){
                 $username=input('post.user_name');
                 $password=input('post.password');
                 $remember=input('post.remember');
@@ -31,9 +31,9 @@ class Login extends Base
                 }else{
                     $this->showError("用户名或密码错误");
                 }
-            }else{
-                $this->showError("验证码错误");
-            }
+//            }else{
+//                $this->showError("验证码错误");
+//            }
         }
         // 模板输出
         $this->display();
