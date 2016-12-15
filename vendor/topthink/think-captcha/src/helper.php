@@ -30,7 +30,7 @@ function captcha($id = "", $config = [])
 function captcha_src($id = "")
 {
     $captcha=new think\captcha\CaptchaController();
-    return $captcha->index($id);
+    return $captcha->index($id)->send();
 }
 
 

@@ -40,7 +40,7 @@ class Login extends Base
     }
 
     public function verify(){
-        return captcha_src();
+        return captcha_src(1);
     }
 
 
