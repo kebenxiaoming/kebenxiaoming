@@ -75,11 +75,14 @@ class User extends Base{
             //判断邮箱格式
             $pattern = "/^([0-9A-Za-z\\-_\\.]+)@([0-9a-z]+\\.[a-z]{2,3}(\\.[a-z]{2})?)$/i";
             if(!preg_match($pattern,$data['email'] )){
-                $this->error("邮箱格式不正确，请重新输入！");
+                $this->error("邮箱格式不正确，请重新输入！");die;
             }
             //判断手机号格式
             if(!preg_match("/^0{0,1}(13[0-9]|15[7-9]|153|17[0-9]|156|18[0-9])[0-9]{8}$/",$data['mobile'])){
-                $this->error("手机号格式不正确，请重新输入！");
+                $this->error("手机号格式不正确，请重新输入！");die;
+            }
+            if($data['user_id']==1&&!empty($data['password'])){
+                $this->error("禁止修改初始管理员的密码！！");die;
             }
             if(!empty($data['password'])) {
                 $data['password'] = md5($data['password']);
