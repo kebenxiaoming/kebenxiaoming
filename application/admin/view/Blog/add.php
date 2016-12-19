@@ -326,7 +326,7 @@ require dirname(dirname(__FILE__))."/Public/sidebar.php";
             'uploadScript': '<?php echo url("File/uploadPicture");?>',
             'auto': true,
             'buttonText': "",
-            'uploadLimit': 3,
+            'uploadLimit': 1,
             'onUploadComplete': function (file, data, response) {
                 var filedata = JSON.parse(data);
                 var images = $("#picsval").val();
