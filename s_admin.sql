@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS `darling_article` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `cat_id` int(11) NOT NULL COMMENT '分类id',
   `title` varchar(255) NOT NULL COMMENT '标题',
+  `views` int(5) NOT NULL DEFAULT 0 COMMENT '阅读数',
   `pics` varchar(255) DEFAULT NULL,
   `description` varchar(520) NOT NULL,
   `content` text NOT NULL,
@@ -38,14 +39,8 @@ CREATE TABLE IF NOT EXISTS `darling_article` (
   `status` tinyint(1) NOT NULL COMMENT '状态1：可用；0：不可用',
   `sort` int(5) NOT NULL COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- 转存表中的数据 `darling_article`
---
-
-INSERT INTO `darling_article` (`id`, `cat_id`, `title`, `pics`, `description`, `content`, `create_time`, `update_time`, `status`, `sort`) VALUES
-(1, 0, '测试', '5', 'aaaaaaaa', '<p>\r\n	<img src="/uploads/20161206/68cdc7dcb9b0fb80b4e4a6f4d8587fe4.jpg" alt="" />\r\n</p>\r\n<p>\r\n	heheh\r\n</p>', 1481006158, 1481006158, 1, 3);
 
 -- --------------------------------------------------------
 
