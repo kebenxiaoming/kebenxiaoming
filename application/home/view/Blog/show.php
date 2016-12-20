@@ -6,6 +6,7 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
                     <h2><?php echo $this->vars['blog']['title'];?></h2>
                     <p><?php echo $this->vars['blog']['description'];?></p>
+                    <p style="float:right;">阅读数：<?php echo $this->vars['blog']['views'];?></p>
                 </div>
             <div class="col-md-8 sunny" style="margin:0 auto;width: 100%;">
                     <?php echo $this->vars['blog']['content'];?>

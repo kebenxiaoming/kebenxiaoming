@@ -28,7 +28,13 @@ class Blog extends base
 
     public function show(){
         $id=input('get.id');
+        if(empty($id)){
+            $this->error("未获取到id！");die;
+        }
         $article=model('Article')->find($id);
+        //使得阅读数加1
+        $sql="update ".config("prefix")."article set views=views+1 where id = ".$id;
+        model()->exec($sql);
         $this->assign("blog",$article);
         $this->display();
     }
