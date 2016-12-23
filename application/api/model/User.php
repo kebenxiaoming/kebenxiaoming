@@ -57,6 +57,9 @@ class User extends Model
         $userdata['user_name']=$username;
         $userdata['password']=md5($password);
         $userdata['login_time']=$now;
+        $userdata['status']=1;
+        //普通用户账号组
+        $userdata['user_group']=7;
         $userdata['login_ip']=getIp();
         $lastId=$this->save($userdata);
         if($lastId){
@@ -93,7 +96,7 @@ class User extends Model
             if(!empty($user)){
                 $now=time();
                 //判断token是否过期，过期则返回登录失败(过期时间为2小时)
-                if($user['token_time']+2*60*60>$now){
+                if($user['token_time']+2*60*60<$now){
                     return false;
                 }
                 //更新登录信息
