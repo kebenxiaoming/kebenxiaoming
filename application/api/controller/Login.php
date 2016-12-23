@@ -17,10 +17,10 @@ class Login extends Base
                 $password=input('post.password');
                 //在检测用户名和密码
                 $result=model("User")->login($username,$password);
-                if($result){
-                    $this->ajaxReturn($result,1,"登陆成功！！");
+                if($result['status']==1){
+                    $this->ajaxReturn($result['msg'],1,"登陆成功！！");
                 }else{
-                    $this->ajaxReturn("",0,"登陆失败！！");
+                    $this->ajaxReturn("",0,$result['msg']);
                 }
         }else{
             $this->ajaxReturn("",0,"请使用正确的请求方式！！");

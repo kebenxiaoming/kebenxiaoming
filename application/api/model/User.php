@@ -34,10 +34,25 @@ class User extends Model
                 $userdata['user_group']=$user_group['group_id'];
                 $userdata['user_role']=$user_group['group_role'];
                 session("user",$userdata);
-                return $userdata;
+                $data=array(
+                    "status"=>1,
+                    "msg"=>$userdata
+                );
+                return $data;
+            }else{
+                $data=array(
+                    "status"=>0,
+                    "msg"=>"密码错误！"
+                );
+                return $data;
             }
+        }else{
+            $data=array(
+                "status"=>0,
+                "msg"=>"不存在该用户名的用户！"
+            );
+            return $data;
         }
-        return false;
     }
 
     //注册用户
