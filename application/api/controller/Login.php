@@ -13,7 +13,7 @@ class Login extends Base
     //登录用户
     public function index(){
         if(IS_POST){
-                $username=input('post.user_name');
+                $username=input('post.username');
                 $password=input('post.password');
                 //在检测用户名和密码
                 $result=model("User")->login($username,$password);
@@ -30,7 +30,7 @@ class Login extends Base
     public function register(){
         //使用用户名和密码直接注册
         if(IS_POST){
-            $username=input('post.user_name');
+            $username=input('post.username');
             $password=input('post.password');
             //在检测用户名和密码
             $result=model("User")->register($username,$password);
