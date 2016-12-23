@@ -5,7 +5,7 @@ require dirname(dirname(__FILE__))."/Public/sidebar.php";
 ?>
 
 <div class="wz_qxgl_xl">
-    <select name="group_id" onchange="javascript:location.replace('group_role.html?group_id='+this.options[this.selectedIndex].value)" style="margin:5px 0px 0px">
+    <select name="group_id" onchange="javascript:location.replace('<?php echo url('Group/group_role')?>&group_id='+this.options[this.selectedIndex].value)" style="margin:5px 0px 0px">
         <?php
         $group_id="";
         if(isset($_GET['group_id'])){
