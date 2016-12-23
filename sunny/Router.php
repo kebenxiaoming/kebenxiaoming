@@ -32,6 +32,8 @@ class Router
             self::$module = $this->request->input($_GET, 'g');
             self::$controller = ucfirst($this->request->input($_GET, 'c'));
             self::$action = $this->request->input($_GET, 'a');
+            //获取之后去掉g,c,a的参数
+            unset($_GET['g']);unset($_GET['c']);unset($_GET['a']);
         }
         if(empty(self::$module)){
             self::$module=Config::get('default_module');
