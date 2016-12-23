@@ -49,7 +49,7 @@ class Base extends Controller
     }
 
     //返回json数据
-    public function ajaxReturn($data,$msg,$status){
+    public function ajaxReturn($data,$status,$msg){
         $result=array(
             "data"=>$data,
             "msg"=>$msg,
