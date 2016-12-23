@@ -47,8 +47,8 @@ class Login extends Base
     //退出时更新token使得token无效
     public function logout(){
         //清空session和缓存
-        session("user",null);
         $result=model("User")->tokenRefresh();
+        session("user",null);
         if($result){
             $this->ajaxReturn(
                 "", 1, "退出成功！"

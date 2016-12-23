@@ -29,7 +29,7 @@ class Base extends Controller
                 $result=model("User")->tokenLogin($token);
                 if(!$result) {
                     $this->ajaxReturn(
-                        "", 0, "token已经过期，请重新登录！"
+                        "", 0, "token已经过期或者出错，请重新登录！"
                     );
                 }
             }
