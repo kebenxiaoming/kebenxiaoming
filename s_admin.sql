@@ -296,6 +296,7 @@ INSERT INTO `darling_sys_log` (`op_id`, `user_name`, `action`, `class_name`, `cl
 
 CREATE TABLE IF NOT EXISTS `darling_user` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `token` varchar(520) COMMENT '接口登录token',
   `user_name` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   `real_name` varchar(255) NOT NULL,
@@ -303,6 +304,7 @@ CREATE TABLE IF NOT EXISTS `darling_user` (
   `email` varchar(255) NOT NULL,
   `user_desc` varchar(255) DEFAULT NULL,
   `login_time` int(11) DEFAULT NULL COMMENT '登录时间',
+  `token_time` int(11) DEFAULT NULL COMMENT '接口token过期记录',
   `status` tinyint(4) NOT NULL DEFAULT '1',
   `login_ip` varchar(32) DEFAULT NULL,
   `user_group` int(11) NOT NULL COMMENT ' 账号组：1:超级管理员；3：经销商管理；4：设计师',
