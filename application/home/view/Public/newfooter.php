@@ -59,11 +59,11 @@
         })
     });
 </script>
-<div class="back-to-top" style="display: block;
+<div class="back-to-top" id="to_top" style="display: block;
     position: fixed;
 	bottom: 10px;
 	right: 25%;
-	z-index: 10;" onclick="jQuery(this).scrollTop();">
+	z-index: 10;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
     <a style="cursor: pointer;
 	width: 35px;
 	height: 35px;
@@ -73,6 +73,6 @@
     background-color: #D43638;
     border-color: #910101;
     background-image: -moz-linear-gradient(center top , #EB5367, #E04751 50%, #DE404A 50%, #D43638);">回到顶部</a></div>
-<script src="https://lanterncn.cn/wp-content/themes/SimPo/js/backtotop.js" type="text/javascript"></script>
+
 </body>
 </html>
