@@ -98,10 +98,10 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                     foreach($this->vars['comments'] as $k=>$val){
                 ?>
                 <div class="personinfo"><?php if($val['uid']==0){echo "游客";}?></div><div class="postdate"><?php echo date("Y-m-d H:i:s",$val['create_time']);?></div><div id="reply"><?php echo $val['content'];?></div>
-                <?php } }?>
+                <?php }?>
                 <?php if($this->vars['has_more']){?>
                 <div class="loadmore" data-page="1">点击加载更多...</div>
-                <?php }else{ ?>
+                <?php }}else{ ?>
                     <div class="showno">暂时没有评论...</div>
                 <?php } ?>
                 </div>
