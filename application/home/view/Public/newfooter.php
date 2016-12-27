@@ -73,6 +73,5 @@
     background-color: #D43638;
     border-color: #910101;
     background-image: -moz-linear-gradient(center top , #EB5367, #E04751 50%, #DE404A 50%, #D43638);">回到顶部</a></div>
-
 </body>
 </html>
