@@ -80,7 +80,7 @@ class Blog extends base
             }
             $this->ajaxReturn($data,1,"获取数据成功！");
         }else{
-            $this->ajaxReturn("",0,"获取数据失败！");
+            $this->ajaxReturn("",0,"没有数据了或者数据加载失败，别担心！");
         }
     }
 
