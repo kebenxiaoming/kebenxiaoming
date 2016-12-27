@@ -69,6 +69,13 @@ require dirname(dirname(__FILE__))."/Public/header.php";
         text-align:center;
         line-height: 30px;
     }
+    .showno{
+        width:100%;
+        height:30px;
+        float:left;
+        text-align:center;
+        line-height: 30px;
+    }
 </style>
     <div id="fh5co-about-section">
         <div class="container">
@@ -86,12 +93,17 @@ require dirname(dirname(__FILE__))."/Public/header.php";
             <div class="blank"></div><div class="buttondiv"><input type="button" onclick="replyArticle(<?php echo $this->vars['blog']['id'];?>);" value="提交"/></div>
             <div class="commenttext">评论：</div>
             <div class="showcomments">
-                <?php if(isset($this->vars['comments'])){
+                <?php
+                if(isset($this->vars['comments'])){
                     foreach($this->vars['comments'] as $k=>$val){
                 ?>
                 <div class="personinfo"><?php if($val['uid']==0){echo "游客";}?></div><div class="postdate"><?php echo date("Y-m-d H:i:s",$val['create_time']);?></div><div id="reply"><?php echo $val['content'];?></div>
                 <?php } }?>
+                <?php if($this->vars['has_more']){?>
                 <div class="loadmore" data-page="1">点击加载更多...</div>
+                <?php }else{ ?>
+                    <div class="showno">暂时没有评论...</div>
+                <?php } ?>
                 </div>
         </div>
             <script>
@@ -104,6 +116,7 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                 $.post("<?php echo url('Blog/comment');?>",{id:id,content:content},function(data){
                     var newdata=JSON.parse(data);
                     if(newdata.status==1){
+                        $(".showno").remove();
                         $str='<div class="personinfo">游客</div><div class="postdate">'+newdata.data.create_time+'</div><div id="reply">'+newdata.data.content+'</div>';
                         $(".showcomments").prepend($str);
                     }else{

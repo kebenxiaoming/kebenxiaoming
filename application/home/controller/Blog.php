@@ -39,9 +39,17 @@ class Blog extends base
         $sql="update ".config("prefix")."article set views=views+1 where id = ".$id;
         model()->exec($sql);
         //查出评论来
-        $comments=model("Comment")->limit(0,3)->select();
+        $where["article_id"]=$id;
+        $comments=model("Comment")->where($where)->limit(0,3)->select();
         if(!empty($comments)){
             $this->assign("comments",$comments);
+            if(count($comments)<3){
+                $this->assign("has_more",false);
+            }else{
+                $this->assign("has_more",true);
+            }
+        }else{
+            $this->assign("has_more",false);
         }
         $this->assign("blog",$article);
         $this->display();
