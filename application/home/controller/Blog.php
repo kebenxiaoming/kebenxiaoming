@@ -40,7 +40,7 @@ class Blog extends base
         model()->exec($sql);
         //查出评论来
         $where["article_id"]=$id;
-        $comments=model("Comment")->where($where)->limit(0,3)->select();
+        $comments=model("Comment")->where($where)->limit(0,3)->order("create_time DESC")->select();
         if(!empty($comments)){
             $this->assign("comments",$comments);
             if(count($comments)<3){
