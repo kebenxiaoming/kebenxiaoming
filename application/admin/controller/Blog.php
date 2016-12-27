@@ -122,4 +122,41 @@ class Blog extends Base{
             $this->error("删除失败！",url('Blog/index'));die;
         }
     }
+    //评论列表
+    public function comment(){
+        $count=model("Comment")->count();
+        $listrows=config("LISTROWS")?config("LISTROWS"):10;
+        $page=new \sunny\Page($count,$listrows);
+        $comments=model("Comment")->limit($page->firstRow,$page->listRows)->select();
+        $this->assign("comments",$comments);
+        $this->assign("page_html",$page->show());
+
+        $acjs=renderJsConfirm("icon-remove");
+        $this->assign("action_confirm",$acjs);
+        $this->display();
+    }
+    //显示评论
+    public function showComment(){
+        $id=input('get.id');
+        if(empty($id)){
+            $this->error("未获取到id");die;
+        }
+        $comment=model("Comment")->find($id);
+        if(empty($comment)){
+            $this->error("为获取到评论内容！");die;
+        }
+        $article=model("Article")->field("title")->where("id=".$comment['article_id'])->find();
+        $comment['title']=$article['title'];
+        $this->assign("comment",$comment);
+        $this->display();
+    }
+    //删除评论
+    public function delComment(){
+        $id=input('get.id');
+        if($res=model("Comment")->where("id=".$id)->delete()){
+            $this->success("删除成功!",url('Blog/comment'));die;
+        }else{
+            $this->error("删除失败！",url('Blog/comment'));die;
+        }
+    }
 }
