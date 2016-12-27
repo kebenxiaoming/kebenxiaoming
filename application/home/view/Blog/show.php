@@ -120,7 +120,7 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                     var newdata=JSON.parse(data);
                     if(newdata.status==1){
                         $(".showno").remove();
-                        $str='<div class="personinfo"></br></br>游客</div><div class="postdate">'+newdata.data.create_time+'</div><div id="reply">'+newdata.data.content+'</div>';
+                        $str='<div class="personinfo">游客</div><div class="postdate">'+newdata.data.create_time+'</div><div id="reply">'+newdata.data.content+'</div>';
                         $(".showcomments").prepend($str);
                     }else{
                         alert(newdata.msg);
