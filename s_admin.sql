@@ -345,7 +345,33 @@ CREATE TABLE IF NOT EXISTS `darling_user_group` (
 INSERT INTO `darling_user_group` (`group_id`, `group_name`, `group_role`, `owner_id`, `group_desc`) VALUES
 (1, '超级管理员组', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28', 1, '万能的不是神，是程序员'),
 (7, '测试账号组', '1,5,17,18,22,23,24,25', 1, '啦啦啦');
+-- ----------------------------
+-- Table structure for darling_comment
+-- ----------------------------
+DROP TABLE IF EXISTS `darling_comment`;
+CREATE TABLE `darling_comment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `article_id` int(11) NOT NULL,
+  `uid` int(11) NOT NULL DEFAULT '0' COMMENT '目前没有用户默认为0',
+  `content` text NOT NULL,
+  `create_time` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
+-- ----------------------------
+-- Table structure for darling_reply
+-- ----------------------------
+DROP TABLE IF EXISTS `darling_reply`;
+CREATE TABLE `darling_reply` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `comment_id` int(11) NOT NULL,
+  `reply_id` int(11) NOT NULL,
+  `from_uid` int(11) NOT NULL,
+  `to_uid` int(11) NOT NULL,
+  `content` text NOT NULL,
+  `create_time` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
