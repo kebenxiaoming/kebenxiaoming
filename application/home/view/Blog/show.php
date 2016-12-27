@@ -110,23 +110,33 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                 </div>
         </div>
             <script>
+            var flag=true;
             var article_id=<?php echo $this->vars['blog']['id'];?>;
             function replyArticle(id){
                 var content=$("#needreply").val();
                 if(content==""){
                     alert("请输入要评论的内容！");return;
                 }
-                $.post("<?php echo url('Blog/comment');?>",{id:id,content:content},function(data){
-                    var newdata=JSON.parse(data);
-                    if(newdata.status==1){
-                        $(".showno").remove();
-                        $str='<div class="personinfo">游客</div><div class="postdate">'+newdata.data.create_time+'</div><div id="reply">'+newdata.data.content+'</div>';
-                        $(".showcomments").prepend($str);
-                    }else{
-                        alert(newdata.msg);
-                        return;
-                    }
-                });
+                if(flag) {
+                    flag=false;
+                    $.post("<?php echo url('Blog/comment');?>", {id: id, content: content}, function (data) {
+                        var newdata = JSON.parse(data);
+                        if (newdata.status == 1) {
+                            $(".showno").remove();
+                            $str = '<div class="personinfo">游客</div><div class="postdate">' + newdata.data.create_time + '</div><div id="reply">' + newdata.data.content + '</div>';
+                            $(".showcomments").prepend($str);
+                        } else {
+                            alert(newdata.msg);
+                            return;
+                        }
+                    });
+                }else{
+                    alert("请10秒之后再提交！");
+                }
+                setTimeout(
+                    "flag=true",
+                    10000
+                )
             }
             </script>
 <?php
