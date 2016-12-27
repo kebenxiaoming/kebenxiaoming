@@ -16,7 +16,8 @@ require dirname(dirname(__FILE__))."/Public/header.php";
         height:80px;
         float:left;
         text-align:center;
-        line-height: 80px;
+        padding-top: 20px;
+        font-size:0.6rem;
     }
     .postdate{
         width:90%;
@@ -24,6 +25,7 @@ require dirname(dirname(__FILE__))."/Public/header.php";
         float:left;
         text-align:left;
         line-height: 20px;
+        border-bottom: 1px dotted black;
     }
     #reply{
         width:90%;
@@ -54,8 +56,9 @@ require dirname(dirname(__FILE__))."/Public/header.php";
         float:left;
         width:10%;
         height:50px;
-        line-height: 50px;
+        padding-top:10px;
         text-align: center;
+        font-size:0.6rem;
     }
     .showcomments{
         float:left;
@@ -117,7 +120,7 @@ require dirname(dirname(__FILE__))."/Public/header.php";
                     var newdata=JSON.parse(data);
                     if(newdata.status==1){
                         $(".showno").remove();
-                        $str='<div class="personinfo">游客</div><div class="postdate">'+newdata.data.create_time+'</div><div id="reply">'+newdata.data.content+'</div>';
+                        $str='<div class="personinfo"></br></br>游客</div><div class="postdate">'+newdata.data.create_time+'</div><div id="reply">'+newdata.data.content+'</div>';
                         $(".showcomments").prepend($str);
                     }else{
                         alert(newdata.msg);
