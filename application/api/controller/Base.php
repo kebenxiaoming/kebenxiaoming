@@ -35,17 +35,17 @@ class Base extends Controller
             }
         }
         //判断用户是否登录，已经登录直接进入页面内
-        $user=session("user");
-        if(empty($user)){
-            //如果没登录判断是否上传了username以及password
-            $username=input("post.username");
-            $password=input("post.password");
-            if(empty($username)||empty($password)){
-                    $this->ajaxReturn(
-                        "", 0, "未获取到用户信息，请重试！！"
-                    );
-            }
-        }
+//        $user=session("user");
+//        if(empty($user)){
+//            //如果没登录判断是否上传了username以及password
+//            $username=input("post.username");
+//            $password=input("post.password");
+//            if(empty($username)||empty($password)){
+//                    $this->ajaxReturn(
+//                        "", 0, "未获取到用户信息，请重试！！"
+//                    );
+//            }
+//        }
     }
 
     //返回json数据
