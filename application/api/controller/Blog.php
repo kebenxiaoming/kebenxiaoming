@@ -20,7 +20,7 @@ class Blog extends Base{
                     $where = "id IN (" . $val['pics'] . ")";
                     $files = model("File")->where($where)->select();
                     foreach($files as $key=>$v){
-                        $files[$k]["realpath"]="http://kebenxiaoming.info/uploads/".$v['savepath'];
+                        $files[$key]["realpath"]="http://kebenxiaoming.info/uploads/".$v['savepath'];
                     }
                     $articles[$k]['picsdetail'] = $files;
                 }
