@@ -19,6 +19,9 @@ class Blog extends Base{
                 if (!empty($val['pics'])) {
                     $where = "id IN (" . $val['pics'] . ")";
                     $files = model("File")->where($where)->select();
+                    foreach($files as $key=>$v){
+                        $files[$k]["realpath"]="http://kebenxiaoming.info/uploads/".$v['savepath'];
+                    }
                     $articles[$k]['picsdetail'] = $files;
                 }
             }
