@@ -13,7 +13,7 @@ class Blog extends Base{
         $count=model("Article")->count();
         $listrows=config("LISTROWS")?config("LISTROWS"):10;
         $page=new \sunny\Page($count,$listrows);
-        $articles=model("Article")->field("views,title,pics,description,create_time")->limit($page->firstRow,$page->listRows)->select();
+        $articles=model("Article")->field("id,views,title,pics,description,create_time")->limit($page->firstRow,$page->listRows)->select();
         if(!empty($articles)) {
             foreach ($articles as $k => $val) {
                 if (!empty($val['pics'])) {
