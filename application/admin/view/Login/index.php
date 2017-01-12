@@ -15,7 +15,7 @@ require dirname(dirname(__FILE__))."/Public/simple_header.php";
                 </tr>
                 <tr>
                     <td width="177" height="53" valign="top"><input type="text" name="verify_code" id="textfield" placeholder="不用输" class="login2_nr_yz"></td>
-                    <td width="240" valign="top"><span style="color:red;font-size:10px;"><?php if(isset($this->vars['error'])){echo $this->vars['error'];}?></span></td>
+                    <td width="240" valign="top"><span style="color:red;font-size:10px;"><?php if(isset($this->vars['error'])){echo $this->vars['error'];}else{echo "下面的'记住我'所用的方法在7.1中被丢弃了,所以不用选，记不住= =!";}?></span></td>
                 </tr>
                 <tr>
                     <td height="58" valign="top"><input type="checkbox" name="remember" value="remember-me" id="checkbox"  class="login2_nr_xz"></td>
