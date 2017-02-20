@@ -1,181 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9089831d-bb8b-4da7-a718-eebcf8003c8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/img/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/diff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/jquery.scrollto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/pagedown-extra.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Admin/js/markdown/js/pagedown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/markdown.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/.scrutinizer.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/GithubMarkdown.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/Markdown.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/MarkdownExtra.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/Parser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/bin/markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/CodeTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/FencedCodeTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/HeadlineTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/HtmlTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/ListTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/QuoteTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/RuleTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/block/TableTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/CodeTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/EmphStrongTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/LinkTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/StrikeoutTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/inline/UrlLinkTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/phpunit.xml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/BaseMarkdownTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/GithubMarkdownTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/MarkdownExtraTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/MarkdownOLStartNumTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/MarkdownTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/ParserTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/fenced-code.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/fenced-code.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/special-attributes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/special-attributes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/tables.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/test_precedence.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/extra-data/test_precedence.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/del.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/del.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/dense-block-markers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/dense-block-markers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/dense-block-markers2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/dense-block-markers2.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-basics.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-basics.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-code-in-numbered-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-code-in-numbered-list.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-sample.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/github-sample.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/issue-33.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/issue-33.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/issue-38.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/issue-38.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/lists.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/non-tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/non-tables.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/tables.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/test_precedence.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/test_precedence.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/url.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/github-data/url.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/blockquote-nested.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/blockquote-nested.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/blockquote.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/blockquote.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/code.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/code.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/dense-block-markers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/dense-block-markers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/emphasis.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/emphasis.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/empty-line.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/empty-line.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/endless_loop_bug.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/endless_loop_bug.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/escape-in-link.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/escape-in-link.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/headline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/headline.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/hr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/hr.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/html-block.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/html-block.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/images.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/images.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/inline-html.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/inline-html.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/lazy-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/lazy-list.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/links.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/links.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list-marker-in-paragraph.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list-marker-in-paragraph.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list_and_reference.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list_and_reference.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list_items_with_undefined_ref.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/list_items_with_undefined_ref.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_amps_and_angle_encoding.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_amps_and_angle_encoding.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_auto_links.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_auto_links.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_backslash_escapes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_backslash_escapes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_blockquotes_with_code_blocks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_blockquotes_with_code_blocks.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_horizontal_rules.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_horizontal_rules.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_avanced.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_avanced.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_comments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_comments.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_inline_html_simple.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_links_inline_style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_links_inline_style.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_links_reference_style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_links_reference_style.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_literal_quotes_in_titles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_literal_quotes_in_titles.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_markdown_documentation_basics.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_markdown_documentation_basics.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_nested_blockquotes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_nested_blockquotes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_ordered_and_unordered_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_ordered_and_unordered_lists.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_strong_and_em_together.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_strong_and_em_together.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_tabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_tabs.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_tidyness.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/md1_tidyness.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/nested-lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/nested-lists.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/newline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/newline.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/paragraph.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/paragraph.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/references.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/references.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/specs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/specs.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/test_precedence.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/test_precedence.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/unicode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/unicode.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/utf8-do-not-kill-characters.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-data/utf8-do-not-kill-characters.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-ol-start-num-data/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-ol-start-num-data/list.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-ol-start-num-data/md1_ordered_and_unordered_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/markdown-ol-start-num-data/md1_ordered_and_unordered_lists.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/cebe/markdown/tests/profile.php" />
+    <list default="true" id="9089831d-bb8b-4da7-a718-eebcf8003c8e" name="Default" comment="修改">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
     </list>
     <list id="6546833f-7d4c-4ef1-9ff6-cc2279ea1a6b" name="Failed commit: Default" comment="Merge https://github.com/kebenxiaoming/kebenxiaoming&#10;&#10;# Conflicts:&#10;#&#9;composer.lock&#10;" />
     <ignored path="kebenxiaoming.iws" />
@@ -190,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="D:\wamp64\www\kebenxiaoming" />
   </component>
   <component name="DatabaseView">
     <option name="GROUP_SCHEMA" value="true" />
@@ -205,103 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Blog.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Blog.php">
+      <file leaf-file-name="demo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-              <folding>
-                <element signature="e#6#98#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="File.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sunny/File.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2109">
-              <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1919">
-              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sunny/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Base.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="64" column="116" selection-start-line="64" selection-start-column="116" selection-end-line="64" selection-end-column="116" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.lock" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.lock">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/Public/sidebar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
-              <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/add.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/Public/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="190">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -311,61 +58,66 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/admin/model/Module.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Public/header.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Index/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/model/MenuUrl.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/User/add.php" />
-        <option value="$PROJECT_DIR$/application/admin/model/UserGroup.php" />
-        <option value="$PROJECT_DIR$/sunny/helper.php" />
-        <option value="$PROJECT_DIR$/sunny/Controller.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/User/edit.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Public/footer.php" />
-        <option value="$PROJECT_DIR$/sunny/Page.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Group/edit.php" />
-        <option value="$PROJECT_DIR$/sunny/Model.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Group/add.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Group/group_role.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/User.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/User/showGroup.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Syslog.php" />
-        <option value="$PROJECT_DIR$/config/config.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/User/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Group/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/SysLog/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/System.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/System/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Module/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Module/edit.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Module/add.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Module.php" />
-        <option value="$PROJECT_DIR$/application/common.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Menu/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Menu/add.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Menu.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Menu/edit.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Public/navibar.php" />
-        <option value="$PROJECT_DIR$/sunny/Request.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/File/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Test.php" />
-        <option value="$PROJECT_DIR$/sunny/Router.php" />
-        <option value="$PROJECT_DIR$/sunny/Loader.php" />
         <option value="$PROJECT_DIR$/sunny/File.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Group.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/File.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/admin/model/File.php" />
         <option value="$PROJECT_DIR$/application/admin/model/Article.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Blog.php" />
         <option value="$PROJECT_DIR$/application/admin/view/Public/sidebar.php" />
         <option value="$PROJECT_DIR$/application/admin/view/Blog/index.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/Blog/add.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Base.php" />
         <option value="$PROJECT_DIR$/composer.lock" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/sunny/Request.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Group.php" />
+        <option value="$PROJECT_DIR$/sunny/Hook.php" />
+        <option value="$PROJECT_DIR$/application/tags.php" />
+        <option value="$PROJECT_DIR$/application/behavior/TestBehavior.php" />
+        <option value="$PROJECT_DIR$/sunny/sunny.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
+        <option value="$PROJECT_DIR$/vendor/topthink/think-captcha/src/CaptchaController.php" />
+        <option value="$PROJECT_DIR$/vendor/topthink/think-captcha/src/helper.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
+        <option value="$PROJECT_DIR$/config/config.php" />
+        <option value="$PROJECT_DIR$/application/admin/model/User.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/User.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/Blog/add.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/Blog/edit.php" />
+        <option value="$PROJECT_DIR$/demo.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Base.php" />
+        <option value="$PROJECT_DIR$/application/api/model/Article.php" />
+        <option value="$PROJECT_DIR$/application/api/model/File.php" />
+        <option value="$PROJECT_DIR$/application/api/model/GroupRole.php" />
+        <option value="$PROJECT_DIR$/application/api/model/UserGroup.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/User.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/Group/group_role.php" />
+        <option value="$PROJECT_DIR$/application/api/model/User.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/Login.php" />
+        <option value="$PROJECT_DIR$/sunny/Router.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/application/home/controller/base.php" />
+        <option value="$PROJECT_DIR$/application/home/model/Comment.php" />
+        <option value="$PROJECT_DIR$/application/home/model/Reply.php" />
+        <option value="$PROJECT_DIR$/s_admin.sql" />
+        <option value="$PROJECT_DIR$/application/home/view/Public/newfooter.php" />
+        <option value="$PROJECT_DIR$/application/home/view/Public/footer.php" />
+        <option value="$PROJECT_DIR$/application/admin/model/Comment.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Blog.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/Blog/showComment.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/Blog/comment.php" />
+        <option value="$PROJECT_DIR$/application/home/view/Blog/show.php" />
+        <option value="$PROJECT_DIR$/application/home/controller/Blog.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/Base.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/Blog.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/Login/index.php" />
       </list>
     </option>
   </component>
@@ -382,7 +134,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1924" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -410,6 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -438,207 +192,34 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Index" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kebenxiaoming" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="uploads" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../casartephoto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../house" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
+    <property name="SearchEverywhereHistoryKey" value="-&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\kebenxiaoming\sunny" />
-      <recent name="D:\wamp64\www\kebenxiaoming\application\admin\view\Menu" />
-      <recent name="D:\wamp64\www\kebenxiaoming\application\admin\view\Module" />
-      <recent name="D:\wamp64\www\kebenxiaoming\application\admin\view\SysLog" />
       <recent name="D:\wamp64\www\kebenxiaoming\application\admin\model" />
+      <recent name="D:\wamp64\www\kebenxiaoming\application\home\model" />
+      <recent name="D:\wamp64\www\kebenxiaoming" />
+      <recent name="D:\wamp64\www\kebenxiaoming\application\api" />
+      <recent name="D:\wamp64\www\kebenxiaoming\application" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\kebenxiaoming" />
       <recent name="D:\wamp64\www\kebenxiaoming\public\images" />
       <recent name="D:\wamp64\www\kebenxiaoming\sunny" />
       <recent name="D:\wamp64\www\kebenxiaoming\public\default" />
       <recent name="D:\wamp64\www\kebenxiaoming\application\home\controller" />
-      <recent name="D:\wamp64\www\kebenxiaoming\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -697,356 +278,378 @@
       <workItem from="1480645292699" duration="16530000" />
       <workItem from="1480900190213" duration="17860000" />
       <workItem from="1480988027272" duration="1392000" />
-      <workItem from="1481264590704" duration="189000" />
+      <workItem from="1481264590704" duration="4168000" />
+      <workItem from="1481505147648" duration="13034000" />
+      <workItem from="1481591240308" duration="4260000" />
+      <workItem from="1481677676295" duration="1220000" />
+      <workItem from="1481780493626" duration="3839000" />
+      <workItem from="1481868006970" duration="1113000" />
+      <workItem from="1481871108784" duration="703000" />
+      <workItem from="1482127429567" duration="3196000" />
+      <workItem from="1482196770408" duration="2318000" />
+      <workItem from="1482456556435" duration="12735000" />
+      <workItem from="1482479337319" duration="55000" />
+      <workItem from="1482715289034" duration="9826000" />
+      <workItem from="1482801263253" duration="17937000" />
+      <workItem from="1482825609372" duration="628000" />
+      <workItem from="1482888780661" duration="5000" />
+      <workItem from="1482976780959" duration="2202000" />
+      <workItem from="1483062620229" duration="4659000" />
+      <workItem from="1483515887314" duration="630000" />
+      <workItem from="1483673755463" duration="24000" />
+      <workItem from="1483937913032" duration="435000" />
+      <workItem from="1484209294621" duration="1052000" />
+      <workItem from="1484288173403" duration="28000" />
+      <workItem from="1486610464336" duration="2175000" />
     </task>
-    <task id="LOCAL-00001" summary="更新模型方法的update方法，修改条件使用primary key作为条件">
-      <created>1480648858218</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00052" summary="加入模块菜单下的非空判断">
+      <created>1481508510570</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
       <option name="project" value="LOCAL" />
-      <updated>1480648858218</updated>
+      <updated>1481508510571</updated>
     </task>
-    <task id="LOCAL-00002" summary="增加Response类，用来输出验证码，其他输出方式目前没用到">
-      <created>1480648932998</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00053" summary="编辑时加入是否是markdown的判断">
+      <created>1481512397708</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
-      <updated>1480648932998</updated>
+      <updated>1481512397708</updated>
     </task>
-    <task id="LOCAL-00003" summary="修改大小写转换">
-      <created>1480648954319</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00054" summary="修改时区为北京">
+      <created>1481513928461</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
       <option name="project" value="LOCAL" />
-      <updated>1480648954319</updated>
+      <updated>1481513928461</updated>
     </task>
-    <task id="LOCAL-00004" summary="修改where方法的条件组合方式">
-      <created>1480664224657</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00055" summary="略微修改了一点问题">
+      <created>1481592884813</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
       <option name="project" value="LOCAL" />
-      <updated>1480664224657</updated>
+      <updated>1481592884814</updated>
     </task>
-    <task id="LOCAL-00005" summary="新增分页类">
-      <created>1480668244885</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00056" summary="增加行为扩展，使用方式Hook::listen(&quot;名字&quot;);">
+      <created>1481592929884</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
       <option name="project" value="LOCAL" />
-      <updated>1480668244885</updated>
+      <updated>1481592929884</updated>
     </task>
-    <task id="LOCAL-00006" summary="修改了统计方法">
-      <created>1480668280127</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00057" summary="增加行为扩展，使用方式Hook::listen(&quot;名字&quot;);">
+      <created>1481593239247</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
       <option name="project" value="LOCAL" />
-      <updated>1480668280127</updated>
+      <updated>1481593239247</updated>
     </task>
-    <task id="LOCAL-00007" summary="县注释掉对于参数g,c,a的判断">
-      <created>1480668346555</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00058" summary="验证码中传入参数">
+      <created>1481780870484</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
       <option name="project" value="LOCAL" />
-      <updated>1480668346555</updated>
+      <updated>1481780870484</updated>
     </task>
-    <task id="LOCAL-00008" summary="新增部分配置参数">
-      <created>1480668368049</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00059" summary="先去掉验证码">
+      <created>1481793178932</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
       <option name="project" value="LOCAL" />
-      <updated>1480668368049</updated>
+      <updated>1481793178932</updated>
     </task>
-    <task id="LOCAL-00009" summary="新增一些公共方法">
-      <created>1480668405797</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00060" summary="先去掉验证码">
+      <created>1481793572676</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
       <option name="project" value="LOCAL" />
-      <updated>1480668405797</updated>
+      <updated>1481793572676</updated>
     </task>
-    <task id="LOCAL-00010" summary="修改了登录逻辑和页面">
-      <created>1480668438475</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00061" summary="测试线上的问题">
+      <created>1482128125906</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
       <option name="project" value="LOCAL" />
-      <updated>1480668438475</updated>
+      <updated>1482128125907</updated>
     </task>
-    <task id="LOCAL-00011" summary="修改了TP的验证码类">
-      <created>1480668537308</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00062" summary="恢复">
+      <created>1482128236033</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
       <option name="project" value="LOCAL" />
-      <updated>1480668537308</updated>
+      <updated>1482128236033</updated>
     </task>
-    <task id="LOCAL-00012" summary="增加param方法">
-      <created>1480670043963</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00063" summary="加入登录输入错误提示">
+      <created>1482128396912</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
       <option name="project" value="LOCAL" />
-      <updated>1480670043963</updated>
+      <updated>1482128396912</updated>
     </task>
-    <task id="LOCAL-00013" summary="按照新的方法全部重写">
-      <created>1480670578174</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00064" summary="加入禁止修改初始管理员密码">
+      <created>1482128740781</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
       <option name="project" value="LOCAL" />
-      <updated>1480670578174</updated>
+      <updated>1482128740781</updated>
     </task>
-    <task id="LOCAL-00014" summary="新增用户相关页面">
-      <created>1480670603776</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00065" summary="修改博客预览图的限制，只能传一张">
+      <created>1482132665688</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
       <option name="project" value="LOCAL" />
-      <updated>1480670603776</updated>
+      <updated>1482132665688</updated>
     </task>
-    <task id="LOCAL-00015" summary="按照新的模板输出方式重写页面">
-      <created>1480670643305</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00066" summary="增加阅读数显示">
+      <created>1482197291980</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1480670643305</updated>
+      <updated>1482197291980</updated>
     </task>
-    <task id="LOCAL-00016" summary="部分方法按照模型方法重写完成还有没完成的待完成">
-      <created>1480670700067</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00067" summary="更新sql表">
+      <created>1482197570818</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
       <option name="project" value="LOCAL" />
-      <updated>1480670700067</updated>
+      <updated>1482197570818</updated>
     </task>
-    <task id="LOCAL-00017" summary="修改重定向方法，使之好用">
-      <created>1480670741053</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00068" summary="获取到g,c,a的get参数之后再去掉他们，为了不影响以后的操作">
+      <created>1482456739746</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
       <option name="project" value="LOCAL" />
-      <updated>1480670741053</updated>
+      <updated>1482456739746</updated>
     </task>
-    <task id="LOCAL-00018" summary="修改路由url方法">
-      <created>1480670773436</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00069" summary="更新user表，增加token以及token_time字段，用来验证接口用户">
+      <created>1482464514690</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
       <option name="project" value="LOCAL" />
-      <updated>1480670773436</updated>
+      <updated>1482464514690</updated>
     </task>
-    <task id="LOCAL-00019" summary="修改delete方法">
-      <created>1480670802826</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00070" summary="增加接口模块，用来获取json数据">
+      <created>1482464628085</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
       <option name="project" value="LOCAL" />
-      <updated>1480670802826</updated>
+      <updated>1482464628085</updated>
     </task>
-    <task id="LOCAL-00020" summary="新增的分组管理部分">
-      <created>1480904476123</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00071" summary="修改返回json中的status和msg反的问题">
+      <created>1482464745581</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
       <option name="project" value="LOCAL" />
-      <updated>1480904476123</updated>
+      <updated>1482464745581</updated>
     </task>
-    <task id="LOCAL-00021" summary="新增的分组管理部分控制器">
-      <created>1480904501024</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+    <task id="LOCAL-00072" summary="修改username的获取名">
+      <created>1482472685663</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
       <option name="project" value="LOCAL" />
-      <updated>1480904501024</updated>
+      <updated>1482472685663</updated>
     </task>
-    <task id="LOCAL-00022" summary="修改显示分组成员的方法">
-      <created>1480904525169</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00073" summary="修改切换账号组修改权限的切换按钮链接">
+      <created>1482473155137</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
       <option name="project" value="LOCAL" />
-      <updated>1480904525169</updated>
+      <updated>1482473155137</updated>
     </task>
-    <task id="LOCAL-00023" summary="显示分组成员页面">
-      <created>1480904565069</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00074" summary="修改token过期判断以及注册添加信息">
+      <created>1482473625405</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
       <option name="project" value="LOCAL" />
-      <updated>1480904565069</updated>
+      <updated>1482473625405</updated>
     </task>
-    <task id="LOCAL-00024" summary="日志控制器">
-      <created>1480905116992</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00075" summary="修改user表中几个字段非空（去掉非空）">
+      <created>1482473781719</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
       <option name="project" value="LOCAL" />
-      <updated>1480905116992</updated>
+      <updated>1482473781719</updated>
     </task>
-    <task id="LOCAL-00025" summary="日志页面">
-      <created>1480905137408</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00076" summary="修改退出以及token过期或者出错的提示语">
+      <created>1482473940585</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
       <option name="project" value="LOCAL" />
-      <updated>1480905137408</updated>
+      <updated>1482473940585</updated>
     </task>
-    <task id="LOCAL-00026" summary="修改分页输出">
-      <created>1480905161082</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+    <task id="LOCAL-00077" summary="修改登录提示，使其更精确">
+      <created>1482474442533</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
       <option name="project" value="LOCAL" />
-      <updated>1480905161082</updated>
+      <updated>1482474442533</updated>
     </task>
-    <task id="LOCAL-00027" summary="修改分页输出">
-      <created>1480905234723</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+    <task id="LOCAL-00078" summary="增加了评论表">
+      <created>1482811290871</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
       <option name="project" value="LOCAL" />
-      <updated>1480905234723</updated>
+      <updated>1482811290871</updated>
     </task>
-    <task id="LOCAL-00028" summary="更新">
-      <created>1480906414172</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+    <task id="LOCAL-00079" summary="修改评论成数据库存储">
+      <created>1482817131102</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
       <option name="project" value="LOCAL" />
-      <updated>1480906414172</updated>
+      <updated>1482817131102</updated>
     </task>
-    <task id="LOCAL-00029" summary="模块管理页面">
-      <created>1480908168423</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+    <task id="LOCAL-00080" summary="修改评论为数据库存储的新增文件">
+      <created>1482817201658</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
       <option name="project" value="LOCAL" />
-      <updated>1480908168423</updated>
+      <updated>1482817201658</updated>
     </task>
-    <task id="LOCAL-00030" summary="模块管理控制器">
-      <created>1480908192255</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+    <task id="LOCAL-00081" summary="修改返回顶部按钮">
+      <created>1482817567377</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
       <option name="project" value="LOCAL" />
-      <updated>1480908192255</updated>
+      <updated>1482817567377</updated>
     </task>
-    <task id="LOCAL-00031" summary="系统信息页面">
-      <created>1480908211480</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+    <task id="LOCAL-00082" summary="返回顶部修改">
+      <created>1482817800629</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
       <option name="project" value="LOCAL" />
-      <updated>1480908211480</updated>
+      <updated>1482817800629</updated>
     </task>
-    <task id="LOCAL-00032" summary="菜单功能管理页面">
-      <created>1480910411460</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+    <task id="LOCAL-00083" summary="修改评论为自己的评论">
+      <created>1482818755377</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
       <option name="project" value="LOCAL" />
-      <updated>1480910411460</updated>
+      <updated>1482818755377</updated>
     </task>
-    <task id="LOCAL-00033" summary="菜单功能管理控制器">
-      <created>1480910444843</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+    <task id="LOCAL-00084" summary="修改返回顶部">
+      <created>1482818821785</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
       <option name="project" value="LOCAL" />
-      <updated>1480910444843</updated>
+      <updated>1482818821785</updated>
     </task>
-    <task id="LOCAL-00034" summary="去掉主键默认值">
-      <created>1480916029650</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+    <task id="LOCAL-00085" summary="修改评论相关">
+      <created>1482819466596</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
       <option name="project" value="LOCAL" />
-      <updated>1480916029650</updated>
+      <updated>1482819466596</updated>
     </task>
-    <task id="LOCAL-00035" summary="修改分页类">
-      <created>1480916051438</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+    <task id="LOCAL-00086" summary="修改没有评论的显示">
+      <created>1482819619050</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
       <option name="project" value="LOCAL" />
-      <updated>1480916051438</updated>
+      <updated>1482819619050</updated>
     </task>
-    <task id="LOCAL-00036" summary="修改控制器默认值首字母大写，即Index">
-      <created>1480916128923</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+    <task id="LOCAL-00087" summary="返回顶部修改">
+      <created>1482819757839</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
       <option name="project" value="LOCAL" />
-      <updated>1480916128923</updated>
+      <updated>1482819757839</updated>
     </task>
-    <task id="LOCAL-00037" summary="更新配置">
-      <created>1480916165699</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+    <task id="LOCAL-00088" summary="修改页面样式">
+      <created>1482821660403</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
       <option name="project" value="LOCAL" />
-      <updated>1480916165699</updated>
+      <updated>1482821660403</updated>
     </task>
-    <task id="LOCAL-00038" summary="更新公共函数文件中增加几个方法">
-      <created>1480916198825</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+    <task id="LOCAL-00089" summary="增加评论的后台显示">
+      <created>1482822891479</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
       <option name="project" value="LOCAL" />
-      <updated>1480916198825</updated>
+      <updated>1482822891479</updated>
     </task>
-    <task id="LOCAL-00039" summary="修改后台页面中的“首页”链接">
-      <created>1480916274285</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+    <task id="LOCAL-00090" summary="修改前台评论样式">
+      <created>1482823197895</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
       <option name="project" value="LOCAL" />
-      <updated>1480916274285</updated>
+      <updated>1482823197895</updated>
     </task>
-    <task id="LOCAL-00040" summary="新增文件类">
-      <created>1480917177268</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+    <task id="LOCAL-00091" summary="本地设置评论间隔为10秒">
+      <created>1482823818664</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
       <option name="project" value="LOCAL" />
-      <updated>1480917177268</updated>
+      <updated>1482823818664</updated>
     </task>
-    <task id="LOCAL-00041" summary="新增获取文件的方法">
-      <created>1480917207883</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+    <task id="LOCAL-00092" summary="按照时间逆序查出">
+      <created>1482823940601</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
       <option name="project" value="LOCAL" />
-      <updated>1480917207883</updated>
+      <updated>1482823940601</updated>
     </task>
-    <task id="LOCAL-00042" summary="修改文件类和测试类">
-      <created>1480917236328</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+    <task id="LOCAL-00093" summary="修改无数据提示语">
+      <created>1482824595529</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
       <option name="project" value="LOCAL" />
-      <updated>1480917236328</updated>
+      <updated>1482824595530</updated>
     </task>
-    <task id="LOCAL-00043" summary="新增测试文件上传的页面">
-      <created>1480917265937</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+    <task id="LOCAL-00094" summary="先去掉用户信息的判断，用于接口测试">
+      <created>1482976849227</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
       <option name="project" value="LOCAL" />
-      <updated>1480917265937</updated>
+      <updated>1482976849227</updated>
     </task>
-    <task id="LOCAL-00044" summary="去掉Request类的引入">
-      <created>1480918034797</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+    <task id="LOCAL-00095" summary="加上真实url路径">
+      <created>1482982558396</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1480918034797</updated>
+      <updated>1482982558396</updated>
     </task>
-    <task id="LOCAL-00045" summary="新增的文件的模型类">
-      <created>1480918166408</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+    <task id="LOCAL-00096" summary="修改">
+      <created>1482990661797</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
       <option name="project" value="LOCAL" />
-      <updated>1480918166408</updated>
+      <updated>1482990661797</updated>
     </task>
-    <task id="LOCAL-00046" summary="规范写法">
-      <created>1480921512282</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+    <task id="LOCAL-00097" summary="修改">
+      <created>1482990752129</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1480921512282</updated>
+      <updated>1482990752129</updated>
     </task>
-    <task id="LOCAL-00047" summary="去掉删除文件部分">
-      <created>1480921569642</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+    <task id="LOCAL-00098" summary="加入id">
+      <created>1483062665176</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
       <option name="project" value="LOCAL" />
-      <updated>1480921569642</updated>
+      <updated>1483062665177</updated>
     </task>
-    <task id="LOCAL-00048" summary="当前版本的数据库">
-      <created>1480992262619</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+    <task id="LOCAL-00099" summary="增加获取详情">
+      <created>1483063805898</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
       <option name="project" value="LOCAL" />
-      <updated>1480992262619</updated>
+      <updated>1483063805898</updated>
     </task>
-    <task id="LOCAL-00049" summary="修改66行">
-      <created>1480992915089</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
+    <task id="LOCAL-00100" summary="修改记住我被丢弃的提示">
+      <created>1484209739419</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
       <option name="project" value="LOCAL" />
-      <updated>1480992915089</updated>
+      <updated>1484209739419</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130909000" />
+    <option name="totallyTimeSpent" value="216962000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1058,19 +661,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21888413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1784188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12026002" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1332611" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1093,32 +696,32 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="日志页面" />
-    <MESSAGE value="修改分页输出" />
-    <MESSAGE value="更新" />
-    <MESSAGE value="模块管理页面" />
-    <MESSAGE value="模块管理控制器" />
-    <MESSAGE value="系统信息页面" />
-    <MESSAGE value="菜单功能管理页面" />
-    <MESSAGE value="菜单功能管理控制器" />
-    <MESSAGE value="去掉主键默认值" />
-    <MESSAGE value="修改分页类" />
-    <MESSAGE value="修改控制器默认值首字母大写，即Index" />
-    <MESSAGE value="更新配置" />
-    <MESSAGE value="更新公共函数文件中增加几个方法" />
-    <MESSAGE value="修改后台页面中的“首页”链接" />
-    <MESSAGE value="新增文件类" />
-    <MESSAGE value="新增获取文件的方法" />
-    <MESSAGE value="修改文件类和测试类" />
-    <MESSAGE value="新增测试文件上传的页面" />
-    <MESSAGE value="去掉Request类的引入" />
-    <MESSAGE value="新增的文件的模型类" />
-    <MESSAGE value="规范写法" />
-    <MESSAGE value="去掉删除文件部分" />
-    <MESSAGE value="当前版本的数据库" />
-    <MESSAGE value="修改66行" />
-    <MESSAGE value="Merge https://github.com/kebenxiaoming/kebenxiaoming&#10;&#10;# Conflicts:&#10;#&#9;composer.lock&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge https://github.com/kebenxiaoming/kebenxiaoming&#10;&#10;# Conflicts:&#10;#&#9;composer.lock&#10;" />
+    <MESSAGE value="修改token过期判断以及注册添加信息" />
+    <MESSAGE value="修改user表中几个字段非空（去掉非空）" />
+    <MESSAGE value="修改退出以及token过期或者出错的提示语" />
+    <MESSAGE value="修改登录提示，使其更精确" />
+    <MESSAGE value="增加了评论表" />
+    <MESSAGE value="修改评论成数据库存储" />
+    <MESSAGE value="修改评论为数据库存储的新增文件" />
+    <MESSAGE value="修改返回顶部按钮" />
+    <MESSAGE value="修改评论为自己的评论" />
+    <MESSAGE value="修改返回顶部" />
+    <MESSAGE value="修改评论相关" />
+    <MESSAGE value="修改没有评论的显示" />
+    <MESSAGE value="返回顶部修改" />
+    <MESSAGE value="修改页面样式" />
+    <MESSAGE value="增加评论的后台显示" />
+    <MESSAGE value="修改前台评论样式" />
+    <MESSAGE value="本地设置评论间隔为10秒" />
+    <MESSAGE value="按照时间逆序查出" />
+    <MESSAGE value="修改无数据提示语" />
+    <MESSAGE value="先去掉用户信息的判断，用于接口测试" />
+    <MESSAGE value="加上真实url路径" />
+    <MESSAGE value="修改" />
+    <MESSAGE value="加入id" />
+    <MESSAGE value="增加获取详情" />
+    <MESSAGE value="修改记住我被丢弃的提示" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改记住我被丢弃的提示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1127,356 +730,344 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Group/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="112" selection-start-line="28" selection-start-column="112" selection-end-line="28" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Syslog/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Syslog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/System/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="840" column="9" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Module/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/User/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="138" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Module/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="45" column="130" selection-start-line="45" selection-start-column="130" selection-end-line="45" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/User/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="51" column="82" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Menu/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Menu/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="103" column="10" selection-start-line="5" selection-start-column="3" selection-end-line="103" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Module/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="41" column="168" selection-start-line="41" selection-start-column="168" selection-end-line="41" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Menu/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="134" column="14" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Public/navibar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="154" selection-start-line="4" selection-start-column="154" selection-end-line="4" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/model/GroupRole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="42" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/File/index.php" />
-    <entry file="file://$PROJECT_DIR$/Uploads/20161205/35fe793c9bb4f6e2fc77ed58d6bf0d41.jpg" />
-    <entry file="file://$PROJECT_DIR$/Uploads/20161205/c0f7604922b6e3dfc4ec8bbe7f571d9a.jpg" />
-    <entry file="file://$PROJECT_DIR$/uploads/20161205/31cf6461e7cb3b8b203afb1a29d48f59.jpg" />
-    <entry file="file://$PROJECT_DIR$/sunny/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/sunny.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Cookie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="587" column="21" selection-start-line="587" selection-start-column="9" selection-end-line="587" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
+    <entry file="file://$PROJECT_DIR$/html2canvas.js" />
+    <entry file="file://$PROJECT_DIR$/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/application/home/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Menu.php">
+    <entry file="file://$PROJECT_DIR$/sunny/helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1577">
-          <caret line="89" column="56" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
+        <state relative-caret-position="228">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Module.php">
+    <entry file="file://$PROJECT_DIR$/application/home/model/Reply.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="83" selection-start-line="12" selection-start-column="8" selection-end-line="15" selection-end-column="83" />
+        <state relative-caret-position="209">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/System.php">
+    <entry file="file://$PROJECT_DIR$/application/home/model/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <caret line="14" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/File.php">
+    <entry file="file://$PROJECT_DIR$/application/home/controller/base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="133">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Index/index.php">
+    <entry file="file://$PROJECT_DIR$/public/Admin/js/jquery-2.1.4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="4810" column="4" selection-start-line="4810" selection-start-column="4" selection-end-line="4810" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="352" column="73" selection-start-line="352" selection-start-column="61" selection-end-line="352" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s_admin.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="367" column="30" selection-start-line="367" selection-start-column="30" selection-end-line="367" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/view/Public/newfooter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="74" column="116" selection-start-line="61" selection-start-column="0" selection-end-line="74" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/view/Public/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="116" selection-start-line="52" selection-start-column="116" selection-end-line="52" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/view/Public/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2375">
-          <caret line="133" column="31" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="46" selection-start-line="12" selection-start-column="8" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="e#6#108#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/model/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#98#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/model/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Public/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
-          <folding />
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="21" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
+          <caret line="21" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Public/header.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/Public/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="152">
+          <caret line="8" column="79" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/add.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/showComment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="418">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Blog.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="150" column="25" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="316" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/model/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/cp_11.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/cp_06.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/cp_03.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/cp_13.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/sy_03.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/sy_02.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/sy_06.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/uploadifive-cancel.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/zxj.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/Blog/comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="176" selection-start-line="21" selection-start-column="176" selection-end-line="21" selection-end-column="176" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/view/Blog/show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1786">
+          <caret line="94" column="82" selection-start-line="94" selection-start-column="82" selection-end-line="94" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Admin/images/sy_07.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/controller/Blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="39" column="28" selection-start-line="37" selection-start-column="8" selection-end-line="39" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="191" column="40" selection-start-line="191" selection-start-column="34" selection-end-line="191" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mcrypt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4199">
+          <caret line="221" column="57" selection-start-line="221" selection-start-column="54" selection-end-line="221" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/Login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#6#98#0#PHP" expanded="true" />
+            <marker date="1484209695076" expanded="true" signature="1256:1288" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/File.php">
+    <entry file="file://$PROJECT_DIR$/sunny/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2109">
-          <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+        <state relative-caret-position="912">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.php">
+    <entry file="file://$PROJECT_DIR$/application/tags.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1919">
-          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sunny/Model.php">
+    <entry file="file://$PROJECT_DIR$/sunny/Hook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        <state relative-caret-position="298">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Base.php">
+    <entry file="file://$PROJECT_DIR$/sunny/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="64" column="116" selection-start-line="64" selection-start-column="116" selection-end-line="64" selection-end-column="116" />
+        <state relative-caret-position="-2109">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/File/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="e#129#150#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/behavior/TestBehavior.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#98#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunny/sunny.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>

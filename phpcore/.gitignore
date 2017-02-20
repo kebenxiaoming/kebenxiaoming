@@ -1,0 +1,9 @@
+.DS_Store
+*.swp
+*.swo
+*.wsm
+*.wsn
+*.swn
+*.swm
+build/chm/*.hh*
+build/chm/files/*
