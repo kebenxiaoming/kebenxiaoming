@@ -13,7 +13,7 @@
         <div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
             <h3>关注我</h3>
             <ul class="fh5co-social">
-                <li><a href="http://weibo.com/u/1601890381"><i class="icon-weibo"></i> 微博</a></li>
+                <!-- <li><a href="http://weibo.com/u/1601890381"><i class="icon-weibo"></i> 微博</a></li> -->
                 <li><a href="https://github.com/kebenxiaoming"><i class="icon-github"></i> Github</a></li>
             </ul>
         </div>
