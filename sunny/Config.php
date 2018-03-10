@@ -17,7 +17,17 @@ class Config
     private static $config = [];
     // 参数作用域
     private static $range = '_sys_';
+    //单例
+    protected static $_instance;
 
+
+    //单例方法,用于访问实例的公共的静态方法
+    public static function getInstance(){
+        if(!(self::$_instance instanceof self)){
+            self::$_instance = new self;
+        }
+        return self::$_instance;
+    }
     // 设定配置参数的作用域
     public static function range($range)
     {

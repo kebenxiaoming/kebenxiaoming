@@ -16,6 +16,7 @@ class Router
     public static $module;
     public static $controller;
     public static $action;
+    protected static $route;
     //单例
     protected static $_instance;
 
@@ -46,6 +47,16 @@ class Router
         }
     }
 
+    /**
+     * 运用新的方式解析路由
+     * @author sunnier <xiaoyao_xiao@126.com>
+     */
+    public static function parseRoute(){
+        $route=Route::getInstance();
+
+        return $route->getRest();
+    }
+
     //创建__clone方法防止对象被复制克隆
     public function __clone(){
         trigger_error('Clone is not allow!',E_USER_ERROR);
@@ -59,8 +70,9 @@ class Router
         return self::$_instance;
     }
 
-    public function dispatch()
+    public function dispatch($params='')
     {
+        //使用新的方式解析路由
         //引入新增的文件
         $classname='\\app\\'.self::$module.'\\controller\\'.self::$controller;
         self::invokeMethod(array($classname,self::$action));

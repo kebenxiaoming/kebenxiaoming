@@ -75,10 +75,17 @@ if (!function_exists('url')) {
                     $newvars.="?".$k."=".strval($val);
                 }
             }
-            if (!empty($newvars)) {
-                return "/index.php/" . Router::$module . "/" . $new[0] . "/" . $new[1] . $newvars;
+            if(Config::get('URL_MODE')===1) {
+                if (!empty($newvars)) {
+                    return "/" . Router::$module . "/" . $new[0] . "/" . $new[1] . $newvars;
+                }
+                return "/" . Router::$module . "/" . $new[0] . "/" . $new[1];
+            }else{
+                if (!empty($newvars)) {
+                    return "/index.php/" . Router::$module . "/" . $new[0] . "/" . $new[1] . $newvars;
+                }
+                return "/index.php/" . Router::$module . "/" . $new[0] . "/" . $new[1];
             }
-            return "/index.php/" . Router::$module . "/" . $new[0] . "/" . $new[1];
         }
     }
 }

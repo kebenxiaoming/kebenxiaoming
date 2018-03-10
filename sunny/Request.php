@@ -56,6 +56,39 @@ class Request
         trigger_error('Clone is not allow!',E_USER_ERROR);
     }
     /**
+     * 当前请求的host
+     * @access public
+     * @return string
+     */
+    public function host()
+    {
+        if (isset($_SERVER['HTTP_X_REAL_HOST'])) {
+            return $_SERVER['HTTP_X_REAL_HOST'];
+        }
+
+        return $this->server('HTTP_HOST');
+    }
+    /**
+     * 获取server参数
+     * @access public
+     * @param  mixed         $name 数据名称
+     * @param  string        $default 默认值
+     * @param  string|array  $filter 过滤方法
+     * @return mixed
+     */
+    public function server($name = '', $default = null, $filter = '')
+    {
+        if (empty($this->server)) {
+            $this->server = $_SERVER;
+        }
+
+        if (is_array($name)) {
+            return $this->server = array_merge($this->server, $name);
+        }
+
+        return $this->input($this->server, false === $name ? false : strtoupper($name), $default, $filter);
+    }
+    /**
      * 是否为GET请求
      * @access public
      * @return bool

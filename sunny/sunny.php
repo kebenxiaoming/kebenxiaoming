@@ -19,6 +19,7 @@ defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(APP_PATH)) . DS);
 defined('PUBLIC_PATH') or define('PUBLIC_PATH', ROOT_PATH.'public'.DS);
 defined("TPL_PATH") or define("TPL_PATH",SUNNY_PATH."tpl".DS);
 defined('VENDOR_PATH') or define('VENDOR_PATH', ROOT_PATH . 'vendor' . DS);
+defined('ROUTE_PATH') or define('ROUTE_PATH', ROOT_PATH . 'route' . DS);
 defined('CONF_PATH') or define('CONF_PATH', ROOT_PATH.'config'.DS); // 配置文件目录
 defined('ENV_PREFIX') or define('ENV_PREFIX', 'PHP_'); // 环境变量的配置前缀
 
@@ -57,6 +58,16 @@ require SUNNY_PATH."helper.php";
 if (is_file(APP_PATH . 'tags' . EXT)) {
     \sunny\Hook::import(include APP_PATH . 'tags' . EXT);
 }
-//路由解析
+// 注册核心类的静态代理
+sunny\Facade::bind([
+    sunny\facade\Route::class    => sunny\Route::class,
+]);
 $Router=\sunny\Router::getInstance();
-$Router->dispatch();
+if(\sunny\Config::get('URL_MODE')===1) {
+    //载入路由
+    require ROUTE_PATH . "route.php";
+    $res = \sunny\Router::parseRoute();
+    $Router->dispatch($res);
+}else {
+    $Router->dispatch();
+}
