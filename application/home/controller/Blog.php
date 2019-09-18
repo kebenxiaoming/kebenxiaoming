@@ -114,8 +114,8 @@ class Blog extends base
 
     //添加文章回复
     public function comment(){
-        $id=input("post.id");
-        $content=input("post.content");
+        $id=input("post.id",0,'int');
+        $content=input("post.content",'','string');
         if(empty($id)||empty($content)){
             $this->ajaxReturn("",0,"所传参数存在空值!");
         }
