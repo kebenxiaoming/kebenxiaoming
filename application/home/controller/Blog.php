@@ -67,6 +67,7 @@ class Blog extends base
         $comments=model("Comment")->where($where)->limit($page->firstRow,$page->listRows)->order("create_time DESC")->select();
         if(!empty($comments)) {
             foreach($comments as $k=>$v){
+                $comments[$k]['content']=html_entity_decode($v['content']);
                 $comments[$k]['create_time']=date("Y-m-d H:i:s",$v['create_time']);
             }
             $data['comments']=$comments;
@@ -116,6 +117,7 @@ class Blog extends base
     public function comment(){
         $id=input("post.id",0,'int');
         $content=input("post.content",'','string');
+        $content=htmlentities($content);
         if(empty($id)||empty($content)){
             $this->ajaxReturn("",0,"所传参数存在空值!");
         }
