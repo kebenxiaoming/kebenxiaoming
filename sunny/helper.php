@@ -72,7 +72,9 @@ if (!function_exists('url')) {
 //                if(in_array($k,array('g','c','a'))){
 //                    throw new Exception("输入有误，路由的方法url的输入传参中禁止使用默认的get参数：g,c,a！");
 //                }
-                    $newvars.="?".$k."=".strval($val);
+                    if(strpos(strtolower($val),strtolower($url))===false) {
+                        $newvars .= "?" . $k . "=" . strval($val);
+                    }
                 }
             }
             if(Config::get('URL_MODE')===1) {
